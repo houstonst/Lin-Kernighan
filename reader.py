@@ -1,14 +1,15 @@
-import csv
-
 def reader(file, height, width):
   cityNames = []
   coords = []
   newCoords = []
 
   with open(file) as infile:
-    # csv_reader = csv.reader(infile, delimiter = ',')
     for row in infile:
-      rowArray = row.split(',')#re.split(r',*\s*', row)
+      rowArray = []
+      if "," in row:
+        rowArray = row.split(",")
+      else:
+        rowArray = row.split(" ")
       coords.append([int(float(rowArray[1])), int(float(rowArray[2]))])    #python cannot convert from string representation
       newCoords.append([int(float(rowArray[1])), int(float(rowArray[2]))]) #of a float to an int. Convert to float first.
       cityNames.append(rowArray[0])                                     

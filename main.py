@@ -1,6 +1,8 @@
-from win32.win32api import GetSystemMetrics
-from reader import *
 from fi import *
+from lk import lin
+from reader import *
+from win32.win32api import GetSystemMetrics
+
 
 def main():
     #set window size
@@ -11,9 +13,13 @@ def main():
     print("Enter a .csv or .txt file [example.csv or example.txt]:")
     file = "./tests/" + input()
 
-    #process input and run farthest insertion
+    #process input and run farthest insertion. Store farthest insertion tour and cost into variables
     cityNames, rawCoords, guiCoords = reader(file, height, width)
-    farthestInsertion(rawCoords, guiCoords, cityNames, height, width, "1")
+    fiTour, fiCost = farthestInsertion(rawCoords, guiCoords, cityNames, height, width, "2") #1: GUI; 2: STDOUT
+    print("\n---- Farthest Insertion complete ----\n")
+    
+    #run lin-kernighan on farthest insertion tour and cost
+    lin(rawCoords, guiCoords, cityNames, fiTour, fiCost, height, width, "1") #1: GUI; 2: STDOUT
 
 if __name__ == "__main__":
     main()

@@ -1,6 +1,6 @@
-import operator, time, math
-from euclidean import *
 from tkinter import *
+from euclidean import *
+
 # from tsp import *
 
 def initTour(weightedGraph): #finds initial tour and cost between the two furthest away points
@@ -130,7 +130,6 @@ def step(initCoords, graph, path, lineList, cost, itr, wndw, option):
       print("error")
 
 def farthestInsertion(initCoords, graph, nameArray, height, width, option):
-  print("here")
   if option == "1":
     # TKINTER #
     root = Tk()
@@ -147,7 +146,6 @@ def farthestInsertion(initCoords, graph, nameArray, height, width, option):
       w.create_text(pair[0], pair[1] - 12, fill = "black", font = "Times 10 bold", text = name)
     # TKINTER #
 
-  startTime = time.time()
   path = []
   cost = 0.0
   lineList = {}
@@ -165,10 +163,7 @@ def farthestInsertion(initCoords, graph, nameArray, height, width, option):
       while i < len(graph):
         w = 0
         path, cost, lineList = step(initCoords, graph, path, lineList, cost, i, w, option)
-        i += 1 
-
-      runtime = time.time() - startTime
-      print("Running time: {}".format(runtime))
+        i += 1
 
   if option == "1":
     # TKINTER #
@@ -179,6 +174,30 @@ def farthestInsertion(initCoords, graph, nameArray, height, width, option):
     # TKINTER #
   else:
     stepper()
-  
-  print(path, cost)
-  return path, cost, 0
+
+  if option == "2":
+    root = Tk()
+    canvas_height = height
+    canvas_width = width
+    root.title("Farthest Insertion Tour")
+    root.iconbitmap('./graphics/favicon.ico')
+    w = Canvas(root, width = canvas_width, height = canvas_height)
+    w.pack(expand = YES, fill=BOTH)
+    for coord in graph:
+      index = graph.index(coord)
+      name = nameArray[index]
+      w.create_oval((coord[0]-3, coord[1]-3, coord[0] + 3, coord[1] + 3), fill = "red")
+      w.create_text(coord[0], coord[1] - 12, fill = "black", font = "Times 10 bold", text = name)
+
+    last = graph[path[len(path)-1]]
+    for i in range(len(path)-1):
+      node = path[i]
+      nxt = path[i+1]
+      a = w.create_line(graph[node][0], graph[node][1], graph[nxt][0], graph[nxt][1], fill = "black")
+      lineList.update({(node, nxt): a})
+    a = w.create_line(graph[path[0]][0], graph[path[0]][1], last[0], last[1], fill = "black")
+    lineList.update({(path[0], path[len(path)-1])})
+    root.mainloop()
+    # TKINTER #
+
+  return path, cost
