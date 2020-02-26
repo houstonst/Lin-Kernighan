@@ -14,11 +14,11 @@ def reader(file, height, width):
       newCoords.append([int(float(rowArray[1])), int(float(rowArray[2]))]) #of a float to an int. Convert to float first.
       cityNames.append(rowArray[0])                                     
   
-  newCoords = fitter(newCoords, height, width)
+  newCoords = fitter(newCoords, height, width, file)
   return cityNames, coords, newCoords
 
 
-def fitter(coords, GUIheight, GUIwidth): #force coordinates to fit GUI window size
+def fitter(coords, GUIheight, GUIwidth, file): #force coordinates to fit GUI window size
   maxX = 0
   maxY = 0
   minX = 999999

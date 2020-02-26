@@ -59,8 +59,6 @@ def step(initCoords, graph, path, lineList, cost, itr, wndw, option):
             edgeList.append((wg[r][c], r, c))
     minDamage = 999999
     deletedEdge = (-1, -1)
-    addedEdge1 = -1
-    addedEdge2 = -1
     for edge in edgeList: #does not seem to correctly assess damages
       pEdge1 = wg[nextNode][edge[1]]
       pEdge2 = wg[nextNode][edge[2]]
@@ -68,8 +66,6 @@ def step(initCoords, graph, path, lineList, cost, itr, wndw, option):
       if damage < minDamage:
         minDamage = damage
         deletedEdge = (edge[1], edge[2]) #edge in the node-pair form
-        addedEdge1 = (nextNode, edge[1])
-        addedEdge2 = (nextNode, edge[2])
 
     #remove and add the appropriate edges to include the new node. Adjust path and cost.
     cost = minDamage
@@ -130,6 +126,7 @@ def step(initCoords, graph, path, lineList, cost, itr, wndw, option):
       print("error")
 
 def farthestInsertion(initCoords, graph, nameArray, height, width, option):
+  print("\n<<< RUN FARTHEST INSERTION >>>")
   if option == "1":
     # TKINTER #
     root = Tk()
@@ -175,29 +172,29 @@ def farthestInsertion(initCoords, graph, nameArray, height, width, option):
   else:
     stepper()
 
-  if option == "2":
-    root = Tk()
-    canvas_height = height
-    canvas_width = width
-    root.title("Farthest Insertion Tour")
-    root.iconbitmap('./graphics/favicon.ico')
-    w = Canvas(root, width = canvas_width, height = canvas_height)
-    w.pack(expand = YES, fill=BOTH)
-    for coord in graph:
-      index = graph.index(coord)
-      name = nameArray[index]
-      w.create_oval((coord[0]-3, coord[1]-3, coord[0] + 3, coord[1] + 3), fill = "red")
-      w.create_text(coord[0], coord[1] - 12, fill = "black", font = "Times 10 bold", text = name)
+  # if option == "2":
+  #   root = Tk()
+  #   canvas_height = height
+  #   canvas_width = width
+  #   root.title("Farthest Insertion Tour")
+  #   root.iconbitmap('./graphics/favicon.ico')
+  #   w = Canvas(root, width = canvas_width, height = canvas_height)
+  #   w.pack(expand = YES, fill=BOTH)
+  #   for coord in graph:
+  #     index = graph.index(coord)
+  #     name = nameArray[index]
+  #     w.create_oval((coord[0]-3, coord[1]-3, coord[0] + 3, coord[1] + 3), fill = "red")
+  #     w.create_text(coord[0], coord[1] - 12, fill = "black", font = "Times 10 bold", text = name)
 
-    last = graph[path[len(path)-1]]
-    for i in range(len(path)-1):
-      node = path[i]
-      nxt = path[i+1]
-      a = w.create_line(graph[node][0], graph[node][1], graph[nxt][0], graph[nxt][1], fill = "black")
-      lineList.update({(node, nxt): a})
-    a = w.create_line(graph[path[0]][0], graph[path[0]][1], last[0], last[1], fill = "black")
-    lineList.update({(path[0], path[len(path)-1])})
-    root.mainloop()
+  #   last = graph[path[len(path)-1]]
+  #   for i in range(len(path)-1):
+  #     node = path[i]
+  #     nxt = path[i+1]
+  #     a = w.create_line(graph[node][0], graph[node][1], graph[nxt][0], graph[nxt][1], fill = "black")
+  #     lineList.update({(node, nxt): a})
+  #   a = w.create_line(graph[path[0]][0], graph[path[0]][1], last[0], last[1], fill = "black")
+  #   lineList.update({(path[0], path[len(path)-1])})
+  #   root.mainloop()
     # TKINTER #
-
-  return path, cost
+  print("-Cost: {}\n".format(cost))
+  return path, cost, lineList
