@@ -1,3 +1,4 @@
+from lkUtils import stringify
 from tkinter import *
 from euclidean import *
 
@@ -196,5 +197,6 @@ def farthestInsertion(initCoords, graph, nameArray, height, width, option):
   #   lineList.update({(path[0], path[len(path)-1])})
   #   root.mainloop()
     # TKINTER #
-  print("-Cost: {}\n".format(cost))
-  return path, cost, lineList
+  print("-Cost: {}".format(cost))
+  print("-Initial Tour: {}\n".format(stringify(path)))
+  return path, cost

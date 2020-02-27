@@ -12,10 +12,10 @@ def main():
     print("Enter a .csv or .txt file [example.csv or example.txt]:")
     file = "./tests/" + input()
     cityNames, rawCoords, guiCoords = reader(file, height, width)
-    fiTour, fiCost, guiLines = farthestInsertion(rawCoords, guiCoords, cityNames, height, width, "2") #1: GUI; 2: STDOUT
+    fiTour, fiCost = farthestInsertion(rawCoords, guiCoords, cityNames, height, width, "2") #1: GUI; 2: STDOUT
     
     #run lin-kernighan
-    lin(rawCoords, guiCoords, cityNames, fiTour, fiCost, guiLines, height, width, "1") #1: GUI; 2: STDOUT
+    lin(rawCoords, guiCoords, cityNames, fiTour, fiCost, height, width, "1") #1: GUI; 2: STDOUT
 
 if __name__ == "__main__":
     main()
