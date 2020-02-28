@@ -1,45 +1,34 @@
+import staticVars as sv
 from stepFuncs import *
 
-def lin(rawCoords, guiCoords, cityNames, tour, cost, height, width, option):
-    #rawCoords: The coordinates given in the input file
-    #guiCoords: The coordinates after they are scaled for the GUI. For graphics only
-    #cityNames: Array of unique identifiers for each node
+def lin(tour, cost):
     #tour: The tour resulting from Farthest Insertion. Stored as a list
     #cost: The summarized edge costs of tour
-    #height: GUI height
-    #width: GUI width
-    #option: A "1" runs the heuristic with graphics, a "2" does so without
     
-    """ INIT """
-    #set GUI variables for all other functions to see
-    height = GetSystemMetrics(1) - 200
-    width = GetSystemMetrics(0) - 200
-    root = Tk() #GUI for the starting path
-    canvas_height = height
-    canvas_width = width
-    root.title("Lin-Kernighan")
-    root.iconbitmap('./graphics/favicon.ico')
-    wndw = Canvas(root, width = canvas_width, height = canvas_height)
-    wndw.pack(expand = YES, fill=BOTH)
+    """ STORE DYNAMIC VARIABLES """
+    #gain-sum
+    gainSum = 0
+
+    #edge sets
+    added = set()
+    removed = set()
+
+    #line IDs
     lines = {}
 
     #draw onto GUI  
     print("<<< INITIALIZE GUI >>>\n")
-    gui(guiCoords, cityNames, tour, wndw, lines)
-
-    #store weighted graph
-    wg = weightedGraph(rawCoords)
-
-    #store added and removed edges
-    added = set()
-    removed = set()
+    gui(tour, lines)
 
 
     """ STEP TWO """
-    def step2(): #non-callable function required for button functionality
-        nonlocal lines
+    def step2():
         print("<<< STEP 2 >>>")
-        removeEdge(tour, 1, added, removed, wndw, lines) #needs parameter to specify where to remove from
+
+        #order the 5 longest edges
+
+        #remove edge
+        removeEdge(tour, 0, added, removed, lines, gainSum)
         button.configure(text = "Add Edge", command = step3)
 
 
@@ -102,6 +91,6 @@ def lin(rawCoords, guiCoords, cityNames, tour, cost, height, width, option):
     
     """ FINALIZE """
     #run GUI on loop
-    button = Button(root, text = "Remove Edge", command = step2)
-    button.pack(side = BOTTOM)
-    root.mainloop()
+    button = Button(sv.root, text = "Remove Edge", command = step2, relief = RIDGE, bd = 4)
+    button.pack(side = BOTTOM, pady = 15)
+    sv.root.mainloop()

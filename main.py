@@ -1,21 +1,19 @@
-from fi import *
+import staticVars as sv
+from euclidean import *
+from fi import farthestInsertion
 from lk import lin
 from reader import *
-from win32.win32api import GetSystemMetrics
 
 def main():
-    #set GUI parameters
-    height = GetSystemMetrics(1) - 200
-    width = GetSystemMetrics(0) - 200
-
     #accept input and run farthest insertion
     print("Enter a .csv or .txt file [example.csv or example.txt]:")
     file = "./tests/" + input()
-    cityNames, rawCoords, guiCoords = reader(file, height, width)
-    fiTour, fiCost = farthestInsertion(rawCoords, guiCoords, cityNames, height, width, "2") #1: GUI; 2: STDOUT
+    sv.cityNames, sv.rawCoords, sv.guiCoords = reader(file, sv.height, sv.width)
+    sv.wg = weightedGraph(sv.rawCoords)
+    fiTour, fiCost = farthestInsertion(sv.rawCoords, sv.guiCoords, sv.cityNames, sv.height, sv.width, "2") #1: GUI; 2: STDOUT
     
     #run lin-kernighan
-    lin(rawCoords, guiCoords, cityNames, fiTour, fiCost, height, width, "1") #1: GUI; 2: STDOUT
+    lin(fiTour, fiCost)
 
 if __name__ == "__main__":
     main()

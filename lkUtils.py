@@ -46,3 +46,5 @@ def stringify(nodeArray):
         string += str(node) + ","
     string += str(nodeArray[-1]) + "]"
     return string
+
+# def erase(wndw, removed, edge):
