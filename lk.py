@@ -6,6 +6,9 @@ def lin(tour, cost):
     #cost: The summarized edge costs of tour
     
     """ STORE DYNAMIC VARIABLES """
+    #best tour
+    best = list(tour) #prevents pointer issue
+
     #line IDs
     lines = {}
 
@@ -17,7 +20,7 @@ def lin(tour, cost):
     added = set()
     removed = set()
 
-    #path or tour
+    #working path or tour
     nodeArray = []
 
     #node of interest
@@ -29,7 +32,7 @@ def lin(tour, cost):
 
     """ STEP TWO """
     def step2():
-        nonlocal nodeArray, node, removed, gainSum #declare nonlocal if overwriting variables in scope of lin()
+        nonlocal nodeArray, node, removed, lines, gainSum #declare nonlocal if overwriting variables in scope of lin()
         print("<<< STEP 2 >>>")
 
         #list the 5 longest edges in descending order
@@ -38,7 +41,7 @@ def lin(tour, cost):
         print("--Longest: {}".format(stringify(longest)))
 
         #remove edges
-        nodeArray, node, removed, gainSum = removeEdge(tour, longest[0], removed, lines, gainSum)
+        nodeArray, node, removed, lines, gainSum = removeEdge(tour, longest[0], removed, lines, gainSum)
 
         #update button
         button.configure(text = "Add Edge", command = step3)
@@ -46,37 +49,51 @@ def lin(tour, cost):
 
     """ STEP THREE """
     def step3():
+        nonlocal nodeArray, added, lines, gainSum
         print("<<< STEP 3 >>>")
         #find 5 candidates
         candidates = findCandidates(nodeArray, node, removed) #needs parameter to specify where to add from
 
         #add a candidate edge
-        addEdge(nodeArray, node, added, lines, gainSum, candidates)
+        oldConfigs, nodeArray, added, lines, gainSum = addEdge(nodeArray, node, added, lines, gainSum, candidates)
 
         #update button
-        button.configure(text = "Form Delta", command = step4)
+        button.configure(text = "Form Delta", command = step5a)
 
 
-    """ STEP FOUR """
-    def step4():
-        print("<<< STEP 4 >>>")
-        formDelta() #placeholder. Delta formation already performed by steps 2 and 3
-        button.configure(text = "Generate Tour", command = step5)
-
-
-    """ STEP FIVE """
-    def step5():
-        print("<<< STEP 5 >>>")
-        generateTour()
+    """ STEP FIVEa """
+    def step5a():
+        nonlocal nodeArray, gainSum
+        print("<<< STEP 5a >>>")
+        nodeArray, gainSum = breakDelta(nodeArray, removed, lines, gainSum)
 
         #update button
-        button.configure(text = "Compare Tour", command = step6)
+        button.configure(text = "Compare Tour", command = step5b)
+
+
+    """ STEP FIVEb """
+    def step5b():
+        nonlocal nodeArray, lines, gainSum
+        print("<<< STEP 5b >>>")
+        nodeArray, lines, gainSum = generateTour(nodeArray, lines, gainSum)
+
+        #update button
+        button.configure(text = "Compare Tour", command = step6a)
     
 
-    """ STEP SIX """
-    def step6():
-        print("<<< STEP 6 >>>")
-        compareTour()
+    """ STEP SIXa """
+    def step6a():
+        nonlocal best
+        print("<<< STEP 6a >>>")
+        best = compareTour(nodeArray, best)
+
+        #update button
+        button.configure(text = "Remove Edge", command = step6b)
+
+    """ STEP SIXb """
+    def step6b():
+        print("<<< STEP 6b >>>")
+        restoreDelta()
 
         #update button
         button.configure(text = "Remove Edge", command = step7)

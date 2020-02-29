@@ -60,7 +60,7 @@ def removeEdge(tour, edge, removed, lines, gainSum):
     print("-Calculate the gain-sum")
     print("--Gain-sum = {}\n".format(gainSum))
 
-    return path, node, removed, gainSum
+    return path, node, removed, lines, gainSum
 
 
 """ STEPS THREE AND EIGHT"""
@@ -93,6 +93,12 @@ def addEdge(path, node, added, lines, gainSum, candidates):
     #add chosen edge
     print("-Add first edge to improve gain-sum")
     try:
+        #highlight node
+        nodeX = sv.guiCoords[node][0]
+        nodeY = sv.guiCoords[node][1]
+        sv.wndw.create_oval((nodeX-3, nodeY-3, nodeX + 3, nodeY + 3), fill = "red")
+
+        #create delta path
         deltaPath = path + [edge[1]]
         gainSum -= sv.wg[edge[0]][edge[1]]
         added.add(edge)
@@ -100,41 +106,85 @@ def addEdge(path, node, added, lines, gainSum, candidates):
         lines.update({edge: a})
         print("--Adding {} produces delta path: {}".format(edge, stringify(deltaPath)))
         print("--Added set contains: {}".format(added))
+
+        #calculate the gain-sum
+        print("-Calculate the gain-sum")
+        print("--Gain-sum = {}\n".format(gainSum))
     except:
         print("\n!!! NO FEASIBLE CANDIDATES. HALT SCAN. !!!")
-        return None
-
-
-""" STEPS FOUR AND NINE """
-def formDelta():
-    #this is a place-holder. Delta path formed by step 3
-    print("-This is a place-holder. Delta path formed by steps 2+3, or 7+8\n")
+        return path, added, gainSum
+    
+    oldConfigs = [deltaPath, added, lines, gainSum]
+    return oldConfigs, deltaPath, added, lines, gainSum
 
 
 """ STEPS FIVE AND TEN """
-def generateTour():
-    #remove edge xw of the cycle incident with w that was not just added
+def breakDelta(deltaPath, removed, lines, gainSum):
+    #identify edge xw of the cycle incident with w that was not just added
     print("-Remove edge xw of the cycle incident with w that was not just added")
-    print("--Stub")
+    triNode = deltaPath[-1] #the node joining the tail and cycle
+    x = deltaPath[deltaPath.index(triNode)+1] #x is the node in the adjacent edge that wasn't just added
+    edge = (x, triNode)
 
+    #highlight node
+    node = x #rename to make nodeX and nodeY names cleaner
+    nodeX = sv.guiCoords[node][0]
+    nodeY = sv.guiCoords[node][1]
+    sv.wndw.create_oval((nodeX-3, nodeY-3, nodeX + 3, nodeY + 3), fill = "blue")
 
+    #remove edge xw to create a path
+    print("-Remove edge xw")
+    deltaPath = deltaPath[:-1] #remove last edge
+    triNodeIndex = deltaPath.index(triNode)
+    leftSection = deltaPath[:triNodeIndex+1] #left section goes until the triNode. Keep the same
+    rightSection = deltaPath[triNodeIndex+1:]
+    rightSection.reverse()
+    edge = (edge[1], edge[0]) #reverse this data structure as well for GUI use
+    path = leftSection + rightSection
+    print("--Removing {} produces path: {}".format(edge, stringify(path))) #do not update removed. Only a check
+    
+    #update gain-sum and GUI
+    print("-Update gain-sum and GUI")
+    gainSum += sv.wg[edge[0]][edge[1]]
+    sv.wndw.itemconfig(lines[edge], fill = "red", dash = (5, 1))
+    print("--Gain-sum = {}\n".format(gainSum))
+
+    return path, gainSum
+
+def generateTour(path, lines, gainSum):
     #join the two hanging ends of the path to form a tour
     print("-Join the two hanging ends of the path to form a tour")
-    print("--Stub")
+    tour = path + [path[0]]
+    edge = (tour[-2], tour[-1])
 
+    #calculate the gain-sum
+    print("-Calculate the gain-sum")
+    gainSum -= sv.wg[edge[0]][edge[1]]
+    print("--Gain-sum = {}\n".format(gainSum))
 
     #update GUI to reflect tour
-    print("-Update GUI")
-    print("--Stub")
+    print("-Update gain-sum and GUI")
+    a = sv.wndw.create_line(sv.guiCoords[edge[0]][0], sv.guiCoords[edge[0]][1], sv.guiCoords[edge[1]][0], sv.guiCoords[edge[1]][1], fill = "green")
+    lines.update({edge: a})
+    print("--Adding {} produces tour: {}\n".format(edge, stringify(tour)))
 
-
-    #restore GUI to continue scan
-    print("-Restore GUI")
-    print("--Stub\n")
-
+    return tour, lines, gainSum
 
 """ STEPS SIX AND TEN"""
-def compareTour():
+def compareTour(tour, best):
     #compare tour with best seen so far
     print("-Compare tour with the best seen so far. Replace as necessary")
+    tourCost = calculate(tour)
+    bestCost = calculate(best)
+    print(best, bestCost)
+    print(tour, tourCost)
+    if tourCost < bestCost:
+        best = list(tour)
+    print("--New tour cost: {}, old tour cost: {}".format(tourCost, bestCost))
+
+    return best
+
+def restoreDelta():
+    #restore GUI to continue scan
+    print("-Restore GUI")
     print("--Stub\n")

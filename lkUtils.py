@@ -60,3 +60,12 @@ def inTour(nodeArray, edge):
         if nodeArray[i] == edge[0] and nodeArray[i+1] == edge[1]:
             return True
     return False
+
+
+#calculate cost of path or tour
+def calculate(nodeArray):
+    cost = 0
+    for i in range(len(nodeArray)-1):
+        cost += sv.wg[nodeArray[i]][nodeArray[i+1]]
+    
+    return cost
