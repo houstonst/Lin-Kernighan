@@ -38,7 +38,7 @@ def longEdges(tour, added):
             longest += [edge]
     return longest
     
-def removeEdge(tour, edge, added, removed, lines, gainSum):
+def removeEdge(tour, edge, removed, lines, gainSum):
     #highlight node
     node = edge[0]
     nodeX = sv.guiCoords[node][0]
@@ -53,31 +53,56 @@ def removeEdge(tour, edge, added, removed, lines, gainSum):
     removed.add(edge)
     sv.wndw.delete(lines[edge])
     del lines[edge]
-    print("--Removing {} produces: {}".format(edge, stringify(path)))
+    print("--Removing {} produces path: {}".format(edge, stringify(path)))
     print("--Removed set contains: {}".format(removed))
 
     #calculate the gain-sum
     print("-Calculate the gain-sum")
     print("--Gain-sum = {}\n".format(gainSum))
 
+    return path, node, removed, gainSum
+
 
 """ STEPS THREE AND EIGHT"""
-def addEdge():
-    #order the neighbors of the node by distance
-    print("-Order neighbors of the node by distance")
-    print("--Stub")
+def findCandidates(path, node, removed):
+    #order 5 neighbors of the node by shortest to greatest distance
+    print("-Order 5 neighbors of the node by shortest to greatest distance")
+    candidates = []
+    nodeSublist = sv.wg[node]
+    prevNode, nextNode = around(path, node)
+    for i in range(len(nodeSublist)):
+        if i != node and i != prevNode and i != nextNode and (node, i) not in removed: #checks if: self-directed, adjacent in path, already removed
+            candidates += [[(node, i), nodeSublist[i]]]
+    
+    candidates.sort(key = lambda c:c[1])
+    candidates = candidates[:5]
+    print("--Candidates: {}".format(stringify(candidates)))
 
-    #check candidates against gain-sum
-    print("-Check 5 candidates against gain-sum")
-    print("--Stub")
+    return candidates
 
-    #add first edge to improve gain-sum
+def addEdge(path, node, added, lines, gainSum, candidates):
+    #check candidates against gain-sum and pick first edge that keeps it positive
+    print("-Check 5 candidates against gain-sum and pick first edge that keeps it positive")
+    edge = None
+    for [candidateEdge, candidateCost] in candidates:
+        if gainSum - candidateCost > 0:
+            edge = candidateEdge
+            break
+    print("--Chosen edge: {}".format(edge))
+
+    #add chosen edge
     print("-Add first edge to improve gain-sum")
-    print("--Stub")
-
-    #update GUI
-    print("-Update GUI")
-    print("--Stub\n")
+    try:
+        deltaPath = path + [edge[1]]
+        gainSum -= sv.wg[edge[0]][edge[1]]
+        added.add(edge)
+        a = sv.wndw.create_line(sv.guiCoords[edge[0]][0], sv.guiCoords[edge[0]][1], sv.guiCoords[edge[1]][0], sv.guiCoords[edge[1]][1], fill = "black")
+        lines.update({edge: a})
+        print("--Adding {} produces delta path: {}".format(edge, stringify(deltaPath)))
+        print("--Added set contains: {}".format(added))
+    except:
+        print("\n!!! NO FEASIBLE CANDIDATES. HALT SCAN. !!!")
+        return None
 
 
 """ STEPS FOUR AND NINE """

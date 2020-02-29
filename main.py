@@ -1,8 +1,9 @@
 from reader import *
 from euclidean import *
+from rand import *
 
 def main():
-    #accept input and run farthest insertion
+    #accept input
     print("Enter a .csv or .txt file [example.csv or example.txt]:")
     file = "./tests/" + input()
 
@@ -11,12 +12,20 @@ def main():
     import staticVars as sv
     from fi import farthestInsertion
 
+    #form GUI and weighted graph
     sv.cityNames, sv.rawCoords, sv.guiCoords = reader(file, sv.height, sv.width)
     sv.wg = weightedGraph(sv.rawCoords)
-    fiTour, fiCost = farthestInsertion(sv.rawCoords, sv.guiCoords, sv.cityNames, sv.height, sv.width, "2") #1: GUI; 2: STDOUT
+
+    #create initial tour
+    # tour, cost = farthestInsertion(sv.rawCoords, sv.guiCoords, sv.cityNames, sv.height, sv.width, "2") #farthestInsertion
+    # tour, cost = randomTour(sv.rawCoords, sv.cityNames) #random tour
+    tour = [9,4,10,6,8,1,3,5,2,0,7,9] #fixed tour based on 11.csv
+    cost = 0
+    for i in range(len(tour)-1):
+      cost += sv.wg[tour[i]][tour[i+1]]
     
     #run lin-kernighan
-    lin(fiTour, fiCost)
+    lin(tour, cost)
 
 if __name__ == "__main__":
     main()

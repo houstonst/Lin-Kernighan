@@ -18,11 +18,15 @@ def around(nodeArray, node):
     
     #path (first and last not the same)
     else:
-        if index > 0 and index < len(nodeArray)-1: #must be in the middle, or a neighbor is out of range
+        if index > 0 and index < len(nodeArray)-1: #middle
             prevNode = nodeArray[index-1]
             nextNode = nodeArray[index+1]
-        else:
-            print("Error. Neighboring index out of range")
+        elif index == 0: #front
+            prevNode = None
+            nextNode = nodeArray[1]
+        else: #end
+            prevNode = nodeArray[-2]
+            nextNode = None
     
     return prevNode, nextNode
 

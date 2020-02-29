@@ -6,13 +6,6 @@ def lin(tour, cost):
     #cost: The summarized edge costs of tour
     
     """ STORE DYNAMIC VARIABLES """
-    #gain-sum
-    gainSum = 0
-
-    #edge sets
-    added = set()
-    removed = set()
-
     #line IDs
     lines = {}
 
@@ -20,9 +13,23 @@ def lin(tour, cost):
     print("<<< INITIALIZE GUI >>>\n")
     gui(tour, lines)
 
+    #edge sets
+    added = set()
+    removed = set()
+
+    #path or tour
+    nodeArray = []
+
+    #node of interest
+    node = None
+
+    #gain-sum
+    gainSum = 0
+
 
     """ STEP TWO """
     def step2():
+        nonlocal nodeArray, node, removed, gainSum #declare nonlocal if overwriting variables in scope of lin()
         print("<<< STEP 2 >>>")
 
         #list the 5 longest edges in descending order
@@ -31,14 +38,22 @@ def lin(tour, cost):
         print("--Longest: {}".format(stringify(longest)))
 
         #remove edges
-        removeEdge(tour, longest[0], added, removed, lines, gainSum)
+        nodeArray, node, removed, gainSum = removeEdge(tour, longest[0], removed, lines, gainSum)
+
+        #update button
         button.configure(text = "Add Edge", command = step3)
 
 
     """ STEP THREE """
     def step3():
         print("<<< STEP 3 >>>")
-        addEdge() #needs parameter to specify where to add from
+        #find 5 candidates
+        candidates = findCandidates(nodeArray, node, removed) #needs parameter to specify where to add from
+
+        #add a candidate edge
+        addEdge(nodeArray, node, added, lines, gainSum, candidates)
+
+        #update button
         button.configure(text = "Form Delta", command = step4)
 
 
@@ -53,6 +68,8 @@ def lin(tour, cost):
     def step5():
         print("<<< STEP 5 >>>")
         generateTour()
+
+        #update button
         button.configure(text = "Compare Tour", command = step6)
     
 
@@ -60,6 +77,8 @@ def lin(tour, cost):
     def step6():
         print("<<< STEP 6 >>>")
         compareTour()
+
+        #update button
         button.configure(text = "Remove Edge", command = step7)
 
 
@@ -67,6 +86,8 @@ def lin(tour, cost):
     def step7():
         print("<<< STEP 7 >>>")
         # removeEdge() #must remove xw
+
+        #update button
         button.configure(text = "Add Edge", command = step8)
 
 
@@ -81,6 +102,8 @@ def lin(tour, cost):
     def step9():
         print("<<< STEP 9 >>>")
         formDelta() #placeholder. Delta formation already performed by steps 7 and 8
+
+        #update button
         button.configure(text = "Generate Tour", command = step10)
 
 
@@ -89,6 +112,8 @@ def lin(tour, cost):
         print("<<< STEP 10 >>>")
         generateTour()
         compareTour()
+
+        #update button
         # button.configure(text = "Remove Edge", command = step2)
 
     
