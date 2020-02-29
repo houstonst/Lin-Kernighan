@@ -23,30 +23,36 @@ def gui(tour, lines):
 
 
 """ STEPS TWO AND SEVEN"""
-def removeEdge(tour, node, added, removed, lines, gainSum):
+#find 5 longest edges in a tour not already added in
+def longEdges(tour, added):
+    flat_wg = []
+    longest = []
+    for i in range(len(sv.wg)):
+        for j in range(len(sv.wg[i])):
+            edge = (i, j)
+            cost = sv.wg[i][j]
+            flat_wg += [[edge, cost]]
+    flat_wg.sort(key = lambda c:c[1], reverse = True)
+    for [edge, cost] in flat_wg:
+        if inTour(tour, edge) and edge not in added and len(longest) < 5:
+            longest += [edge]
+    return longest
+    
+def removeEdge(tour, edge, added, removed, lines, gainSum):
     #highlight node
+    node = edge[0]
     nodeX = sv.guiCoords[node][0]
     nodeY = sv.guiCoords[node][1]
     sv.wndw.create_oval((nodeX-3, nodeY-3, nodeX + 3, nodeY + 3), fill = "blue")
 
-    #find the node's neighbors
-    print("-Find the node's neighbors")
-    prevNode, nextNode = around(tour, node)
-    print("--Node: {}, Previous: {}, Next: {}".format(node, prevNode, nextNode))
-
     #pick an edge connecting the node to remove
     print("-Pick an edge and remove it")
     path = []
-    prevEdge = (prevNode, node)
-    nextEdge = (node, nextNode)
-    for edge in [prevEdge, nextEdge]:
-        if edge not in added:
-            path = removeFromTour(tour, edge)
-            gainSum += sv.wg[edge[0]][edge[1]]
-            removed.add(edge)
-            sv.wndw.delete(lines[edge])
-            del lines[edge]
-            break
+    path = removeFromTour(tour, edge)
+    gainSum += sv.wg[edge[0]][edge[1]]
+    removed.add(edge)
+    sv.wndw.delete(lines[edge])
+    del lines[edge]
     print("--Removing {} produces: {}".format(edge, stringify(path)))
     print("--Removed set contains: {}".format(removed))
 

@@ -49,24 +49,10 @@ def stringify(nodeArray):
     string += str(nodeArray[-1]) + "]"
     return string
 
+
 #see if an edge is in a tour or path
 def inTour(nodeArray, edge):
     for i in range(len(nodeArray)-1):
         if nodeArray[i] == edge[0] and nodeArray[i+1] == edge[1]:
             return True
     return False
-
-#find 5 longest edges in a tour
-def longEdges(tour):
-    flat_wg = []
-    longest = []
-    for i in range(len(sv.wg)):
-        for j in range(len(sv.wg[i])):
-            edge = (i, j)
-            cost = sv.wg[i][j]
-            flat_wg += [[edge, cost]]
-    flat_wg.sort(key = lambda c:c[1], reverse = True)
-    for [edge, cost] in flat_wg:
-        if inTour(tour, edge) and len(longest) < 5:
-            longest += [edge]
-    return longest
