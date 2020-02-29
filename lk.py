@@ -25,7 +25,22 @@ def lin(tour, cost):
     def step2():
         print("<<< STEP 2 >>>")
 
-        #order the 5 longest edges
+        #list the 5 longest edges in descending order
+        print("-List the 5 longest edges in tour")
+        longest = longEdges(tour)        
+        print("--Longest: {}".format(longest))
+
+        # for i in range(len(tour)-1):
+
+
+
+            # edge = (tour[i], tour[i+1])
+            # edgeCost = sv.wg[edge[0]][edge[1]]
+            # for j in range(5):
+            #     if edgeCost > sv.wg[longest[j][0]][longest[j][1]]:
+            #         longest[j] = edge
+            #         break
+
 
         #remove edge
         removeEdge(tour, 0, added, removed, lines, gainSum)
