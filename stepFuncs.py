@@ -114,12 +114,12 @@ def addEdge(path, node, added, lines, gainSum, candidates):
         print("\n!!! NO FEASIBLE CANDIDATES. HALT SCAN. !!!")
         return path, added, gainSum
     
-    oldConfigs = [deltaPath, added, lines, gainSum]
+    oldConfigs = [deltaPath, lines, gainSum]
     return oldConfigs, deltaPath, added, lines, gainSum
 
 
 """ STEPS FIVE AND TEN """
-def breakDelta(deltaPath, removed, lines, gainSum):
+def breakDelta(deltaPath, lines, gainSum):
     #identify edge xw of the cycle incident with w that was not just added
     print("-Remove edge xw of the cycle incident with w that was not just added")
     triNode = deltaPath[-1] #the node joining the tail and cycle
@@ -176,15 +176,28 @@ def compareTour(tour, best):
     print("-Compare tour with the best seen so far. Replace as necessary")
     tourCost = calculate(tour)
     bestCost = calculate(best)
-    print(best, bestCost)
-    print(tour, tourCost)
     if tourCost < bestCost:
         best = list(tour)
-    print("--New tour cost: {}, old tour cost: {}".format(tourCost, bestCost))
+    print("--New tour cost: {}, old tour cost: {}\n".format(tourCost, bestCost))
 
     return best
 
-def restoreDelta():
+def restoreDelta(tour, oldConfigs):
+    #oldConfigs = [deltaPath, lines, gainSum]
+    deltaPath = oldConfigs[0]
+    lines = oldConfigs[1]
+    gainSum = oldConfigs[2]
+
     #restore GUI to continue scan
-    print("-Restore GUI")
-    print("--Stub\n")
+    print("-Restore GUI\n")
+    triNode = deltaPath[-1] #the node joining the tail and cycle
+    x = deltaPath[deltaPath.index(triNode)+1] #x is the node in the adjacent edge that wasn't just added
+    edge = (x, triNode)
+    removedEdge = (edge[1], edge[0])
+    addedEdge = (tour[-2], tour[-1])
+    sv.wndw.itemconfig(lines[removedEdge], fill = "black", dash = ())
+    sv.wndw.delete(lines[addedEdge])
+    del lines[addedEdge]
+
+    return deltaPath, lines, gainSum
+    

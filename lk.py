@@ -9,6 +9,9 @@ def lin(tour, cost):
     #best tour
     best = list(tour) #prevents pointer issue
 
+    #track old configurations
+    oldConfigs = []
+
     #line IDs
     lines = {}
 
@@ -49,7 +52,7 @@ def lin(tour, cost):
 
     """ STEP THREE """
     def step3():
-        nonlocal nodeArray, added, lines, gainSum
+        nonlocal oldConfigs, nodeArray, added, lines, gainSum
         print("<<< STEP 3 >>>")
         #find 5 candidates
         candidates = findCandidates(nodeArray, node, removed) #needs parameter to specify where to add from
@@ -65,7 +68,7 @@ def lin(tour, cost):
     def step5a():
         nonlocal nodeArray, gainSum
         print("<<< STEP 5a >>>")
-        nodeArray, gainSum = breakDelta(nodeArray, removed, lines, gainSum)
+        nodeArray, gainSum = breakDelta(nodeArray, lines, gainSum)
 
         #update button
         button.configure(text = "Compare Tour", command = step5b)
@@ -92,8 +95,9 @@ def lin(tour, cost):
 
     """ STEP SIXb """
     def step6b():
+        nonlocal nodeArray
         print("<<< STEP 6b >>>")
-        restoreDelta()
+        nodeArray, lines, gainSum = restoreDelta(nodeArray, oldConfigs)
 
         #update button
         button.configure(text = "Remove Edge", command = step7)
