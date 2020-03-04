@@ -66,9 +66,9 @@ def lin(tour, cost):
 
     """ STEP FIVEa """
     def step5a():
-        nonlocal nodeArray, gainSum
+        nonlocal nodeArray, gainSum, lines, removed
         print("<<< STEP 5a >>>")
-        nodeArray, gainSum = breakDelta(nodeArray, lines, gainSum)
+        nodeArray, gainSum, lines, removed = breakDelta(nodeArray, lines, gainSum, removed, True)
 
         #update button
         button.configure(text = "Compare Tour", command = step5b)
@@ -95,7 +95,7 @@ def lin(tour, cost):
 
     """ STEP SIXb """
     def step6b():
-        nonlocal nodeArray
+        nonlocal nodeArray, lines, gainSum
         print("<<< STEP 6b >>>")
         nodeArray, lines, gainSum = restoreDelta(nodeArray, oldConfigs)
 
@@ -105,8 +105,9 @@ def lin(tour, cost):
 
     """ STEP SEVEN """
     def step7():
+        nonlocal nodeArray, gainSum, lines, removed
         print("<<< STEP 7 >>>")
-        # removeEdge() #must remove xw
+        nodeArray, gainSum, lines, removed = breakDelta(nodeArray, lines, gainSum, removed, False)
 
         #update button
         button.configure(text = "Add Edge", command = step8)
@@ -114,8 +115,16 @@ def lin(tour, cost):
 
     """ STEP EIGHT """
     def step8():
+        nonlocal nodeArray, added, lines, gainSum
         print("<<< STEP 8 >>>")
-        addEdge() #join x to nearby node y
+        #specify last node
+        node = nodeArray[-1]
+        
+        #find 5 candidates
+        candidates = findCandidates(nodeArray, node, removed) #needs parameter to specify where to add from
+
+        #add a candidate edge
+        oldConfigs, nodeArray, added, lines, gainSum = addEdge(nodeArray, node, added, lines, gainSum, candidates)
         button.configure(text = "Form Delta", command = step9)
 
 

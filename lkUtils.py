@@ -32,12 +32,12 @@ def around(nodeArray, node):
 
 
 #remove an edge from a tour
-def removeFromTour(tour, edge):
+def removeFromArray(nodeArray, edge):
     #destroy circuit
-    path = tour
+    path = nodeArray
     path.remove(path[0])
     
-    #shift tour until the edge is split between the beginning and end of the path
+    #shift nodeArray until the edge is split between the beginning and end of the path
     while path[0] != edge[1] and path[-1] != edge[0]:
         val = path.pop()
         path.insert(0, val)
@@ -67,5 +67,21 @@ def calculate(nodeArray):
     cost = 0
     for i in range(len(nodeArray)-1):
         cost += sv.wg[nodeArray[i]][nodeArray[i+1]]
-    
     return cost
+
+#abstracts breakDelta()
+def removeXW(deltaPath, triNode, edge):
+    deltaPath = deltaPath[:-1] #remove last edge
+    triNodeIndex = deltaPath.index(triNode)
+    leftSection = deltaPath[:triNodeIndex+1] #left section goes until the triNode. Keep the same
+    rightSection = deltaPath[triNodeIndex+1:]
+    rightSection.reverse()
+    edge = (edge[1], edge[0]) #reverse this data structure as well for GUI use
+    path = leftSection + rightSection
+    return path, edge
+
+def inSet(nodeSet, edge):
+    if edge in nodeSet or (edge[1], edge[0]) in nodeSet:
+        return True
+    else:
+        return False

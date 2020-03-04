@@ -34,11 +34,11 @@ def longEdges(tour, added):
             flat_wg += [[edge, cost]]
     flat_wg.sort(key = lambda c:c[1], reverse = True)
     for [edge, cost] in flat_wg:
-        if inTour(tour, edge) and edge not in added and len(longest) < 5:
+        if inTour(tour, edge) and not inSet(added, edge) and len(longest) < 5:
             longest += [edge]
     return longest
     
-def removeEdge(tour, edge, removed, lines, gainSum):
+def removeEdge(nodeArray, edge, removed, lines, gainSum):
     #highlight node
     node = edge[0]
     nodeX = sv.guiCoords[node][0]
@@ -48,7 +48,7 @@ def removeEdge(tour, edge, removed, lines, gainSum):
     #pick an edge connecting the node to remove
     print("-Pick an edge and remove it")
     path = []
-    path = removeFromTour(tour, edge)
+    path = removeFromArray(nodeArray, edge)
     gainSum += sv.wg[edge[0]][edge[1]]
     removed.add(edge)
     sv.wndw.delete(lines[edge])
@@ -71,7 +71,7 @@ def findCandidates(path, node, removed):
     nodeSublist = sv.wg[node]
     prevNode, nextNode = around(path, node)
     for i in range(len(nodeSublist)):
-        if i != node and i != prevNode and i != nextNode and (node, i) not in removed: #checks if: self-directed, adjacent in path, already removed
+        if i != path[0] and i != node and i != prevNode and i != nextNode and not inSet(removed, (node, i)): #checks if: recreating tour, self-directed, adjacent in path, already removed
             candidates += [[(node, i), nodeSublist[i]]]
     
     candidates.sort(key = lambda c:c[1])
@@ -119,12 +119,13 @@ def addEdge(path, node, added, lines, gainSum, candidates):
 
 
 """ STEPS FIVE AND TEN """
-def breakDelta(deltaPath, lines, gainSum):
+def breakDelta(deltaPath, lines, gainSum, removed, red):
     #identify edge xw of the cycle incident with w that was not just added
-    print("-Remove edge xw of the cycle incident with w that was not just added")
+    print("-Find edge xw of the cycle incident with w that was not just added")
     triNode = deltaPath[-1] #the node joining the tail and cycle
     x = deltaPath[deltaPath.index(triNode)+1] #x is the node in the adjacent edge that wasn't just added
     edge = (x, triNode)
+    print("--Edge xw: {}".format(edge))
 
     #highlight node
     node = x #rename to make nodeX and nodeY names cleaner
@@ -134,22 +135,22 @@ def breakDelta(deltaPath, lines, gainSum):
 
     #remove edge xw to create a path
     print("-Remove edge xw")
-    deltaPath = deltaPath[:-1] #remove last edge
-    triNodeIndex = deltaPath.index(triNode)
-    leftSection = deltaPath[:triNodeIndex+1] #left section goes until the triNode. Keep the same
-    rightSection = deltaPath[triNodeIndex+1:]
-    rightSection.reverse()
-    edge = (edge[1], edge[0]) #reverse this data structure as well for GUI use
-    path = leftSection + rightSection
+    path, edge = removeXW(deltaPath, triNode, edge)
+    removed.add(edge)
     print("--Removing {} produces path: {}".format(edge, stringify(path))) #do not update removed. Only a check
+    print("--Removed set contains: {}".format(removed))
     
     #update gain-sum and GUI
     print("-Update gain-sum and GUI")
     gainSum += sv.wg[edge[0]][edge[1]]
-    sv.wndw.itemconfig(lines[edge], fill = "red", dash = (5, 1))
+    if red == True:
+        sv.wndw.itemconfig(lines[edge], fill = "red", dash = (5, 1))
+    else:
+        sv.wndw.delete(lines[edge])
+        del lines[edge]
     print("--Gain-sum = {}\n".format(gainSum))
 
-    return path, gainSum
+    return path, gainSum, lines, removed
 
 def generateTour(path, lines, gainSum):
     #join the two hanging ends of the path to form a tour
@@ -184,9 +185,13 @@ def compareTour(tour, best):
 
 def restoreDelta(tour, oldConfigs):
     #oldConfigs = [deltaPath, lines, gainSum]
+
+    #restore delta path
+    print("-Restore delta path")
     deltaPath = oldConfigs[0]
     lines = oldConfigs[1]
     gainSum = oldConfigs[2]
+    print("--Gain-sum: {}, delta path: {}".format(gainSum, stringify(deltaPath)))
 
     #restore GUI to continue scan
     print("-Restore GUI\n")
@@ -200,4 +205,3 @@ def restoreDelta(tour, oldConfigs):
     del lines[addedEdge]
 
     return deltaPath, lines, gainSum
-    
