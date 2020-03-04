@@ -212,7 +212,7 @@ def restoreDelta(tour, oldConfigs):
 
 
 """ STEP 10 """
-def prepareScan(orig, path, best, lines):
+def concludeScan(orig, path, best, lines):
     #print orig
     print("-Original path: {}".format(stringify(orig)))
 
@@ -249,3 +249,19 @@ def prepareScan(orig, path, best, lines):
     a = sv.wndw.create_line(sv.guiCoords[orig[0]][0], sv.guiCoords[orig[0]][1], last[0], last[1], fill = "black")
 
     return orig, added, removed
+
+
+""" STEP ELEVEN """
+def prepareScan(orig, lines):
+    #sweep GUI
+    print("-Sweep GUI")
+    for line in lines:
+        sv.wndw.delete(lines[line])
+
+    #overlap original edges
+    last = sv.guiCoords[orig[len(orig)-1]]
+    for i in range(len(orig)-1):
+      node = orig[i]
+      nxt = orig[i+1]
+      a = sv.wndw.create_line(sv.guiCoords[node][0], sv.guiCoords[node][1], sv.guiCoords[nxt][0], sv.guiCoords[nxt][1], fill = "black")
+    a = sv.wndw.create_line(sv.guiCoords[orig[0]][0], sv.guiCoords[orig[0]][1], last[0], last[1], fill = "black")

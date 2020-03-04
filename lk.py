@@ -9,6 +9,9 @@ def lin(tour, cost):
     #store starting tour as variable for node/edge scan initiation
     orig = list(tour)
 
+    #iteration tracker
+    i = 0
+
     #best tour
     best = list(tour) #prevents pointer issue
 
@@ -38,7 +41,7 @@ def lin(tour, cost):
 
     """ STEP TWO """
     def step2():
-        nonlocal nodeArray, node, removed, lines, gainSum #declare nonlocal if overwriting variables in scope of lin()
+        nonlocal i, nodeArray, node, removed, lines, gainSum #declare nonlocal if overwriting variables in scope of lin()
         print("<<< STEP 2 >>>")
 
         #list the 5 longest edges in descending order
@@ -47,7 +50,7 @@ def lin(tour, cost):
         print("--Longest: {}".format(stringify(longest)))
 
         #remove edges
-        nodeArray, node, removed, lines, gainSum = removeEdge(tour, longest[0], removed, lines, gainSum)
+        nodeArray, node, removed, lines, gainSum = removeEdge(tour, longest[i], removed, lines, gainSum)
 
         #update button
         button.configure(text = "Add Edge", command = step3)
@@ -136,7 +139,7 @@ def lin(tour, cost):
         #if found, acknowledge best tour
         if found:
             print("Best tour: {}".format(stringify(best)))
-            button.configure(text = "Done", command = step10)
+            button.configure(text = "Show Difference", command = step10)
         else:
             button.configure(text = "Break Delta", command = step5a)
 
@@ -147,7 +150,22 @@ def lin(tour, cost):
         print("<<< STEP 10 >>>")
         
         #prepare for next node/edge scan
-        nodeArray, added, removed = prepareScan(orig, nodeArray, best, lines)
+        nodeArray, added, removed = concludeScan(orig, nodeArray, best, lines)
+
+        #configure button
+        button.configure(text = "Sweep GUI", command = step11)
+
+    def step11():
+        nonlocal i
+        print("<<< STEP 11 >>>")
+        #sweep GUI
+        prepareScan(orig, lines)
+
+        #increment iteration counter
+        i += 1
+
+        #configure button
+        button.configure(text = "Sweep GUI", command = step2)
 
     
     """ FINALIZE """
