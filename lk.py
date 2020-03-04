@@ -43,12 +43,12 @@ def lin(tour, cost):
 
     """ STEP TWO """
     def step2():
-        nonlocal i, nodeArray, node, removed, lines, gainSum #declare nonlocal if overwriting variables in scope of lin()
-        print("<<< STEP 2 >>>")
-        nodeArray = list(orig)
+        nonlocal i, nodeArray, node, removed, lines, bestLines, gainSum #declare nonlocal if overwriting variables in scope of lin()
+        if i < 5:
+            print("<<< STEP 2 >>>")
+            nodeArray = list(orig)
 
-        #list the 5 longest edges in descending order
-        try:
+            #list the 5 longest edges in descending order
             print("-List the 5 longest edges in tour")
             longest = longEdges(orig, added)        
             print("--Longest: {}".format(stringify(longest)))
@@ -58,10 +58,18 @@ def lin(tour, cost):
 
             #update button
             button.configure(text = "Add Edge", command = step3)
-        except:
-            print("\n------------------------------\n")
+        else:
             print("{ SWEEP COMPLETE. HALT WORK. }")
             print("-BEST TOUR IN SWEEP: {}\n\n\n".format(stringify(best)))
+
+            #update GUI
+            for line in lines.keys():
+                sv.wndw.delete(lines[line])
+            bestLines = addLines(best, bestLines, 4, "light green")
+            lines = addLines(orig, lines, 1, "black")
+
+            #configure button
+            button.configure(text = "Done", command = None)
 
 
     """ STEP THREE """
@@ -173,7 +181,7 @@ def lin(tour, cost):
         i += 1
 
         #configure button
-        button.configure(text = "Sweep GUI", command = step2)
+        button.configure(text = "Begin Scan", command = step2)
 
     
     """ FINALIZE """
