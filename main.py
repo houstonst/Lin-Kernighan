@@ -19,7 +19,9 @@ def main():
     #create initial tour
     # tour, cost = farthestInsertion(sv.rawCoords, sv.guiCoords, sv.cityNames, sv.height, sv.width, "2") #farthestInsertion
     # tour, cost = randomTour(sv.rawCoords, sv.cityNames) #random tour
+
     tour = [9,4,10,6,8,1,3,5,2,0,7,9] #fixed tour based on 11.csv
+    tour = [8,10,7,9,2,5,0,4,6,3,1,8]
     cost = 0
     for i in range(len(tour)-1):
       cost += sv.wg[tour[i]][tour[i+1]]

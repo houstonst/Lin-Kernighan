@@ -6,6 +6,9 @@ def lin(tour, cost):
     #cost: The summarized edge costs of tour
     
     """ STORE DYNAMIC VARIABLES """
+    #store starting tour as variable for node/edge scan initiation
+    orig = list(tour)
+
     #best tour
     best = list(tour) #prevents pointer issue
 
@@ -58,10 +61,14 @@ def lin(tour, cost):
         candidates = findCandidates(nodeArray, node, removed) #needs parameter to specify where to add from
 
         #add a candidate edge
-        oldConfigs, nodeArray, added, lines, gainSum = addEdge(nodeArray, node, added, lines, gainSum, candidates)
+        oldConfigs, nodeArray, added, lines, gainSum, found = addEdge(nodeArray, node, added, lines, gainSum, candidates)
 
-        #update button
-        button.configure(text = "Form Delta", command = step5a)
+        #if found, acknowledge best tour
+        if found:
+            print("Best tour: {}".format(stringify(best)))
+            button.configure(text = "Done", command = step10)
+        else:
+            button.configure(text = "Break Delta", command = step5a)
 
 
     """ STEP FIVEa """
@@ -71,7 +78,7 @@ def lin(tour, cost):
         nodeArray, gainSum, lines, removed = breakDelta(nodeArray, lines, gainSum, removed, True)
 
         #update button
-        button.configure(text = "Compare Tour", command = step5b)
+        button.configure(text = "Visualize Tour", command = step5b)
 
 
     """ STEP FIVEb """
@@ -89,9 +96,9 @@ def lin(tour, cost):
         nonlocal best
         print("<<< STEP 6a >>>")
         best = compareTour(nodeArray, best)
-
+        print("--Best tour: {}\n".format(stringify(best)))
         #update button
-        button.configure(text = "Remove Edge", command = step6b)
+        button.configure(text = "Restore Delta", command = step6b)
 
     """ STEP SIXb """
     def step6b():
@@ -100,7 +107,7 @@ def lin(tour, cost):
         nodeArray, lines, gainSum = restoreDelta(nodeArray, oldConfigs)
 
         #update button
-        button.configure(text = "Remove Edge", command = step7)
+        button.configure(text = "Break Delta", command = step7)
 
 
     """ STEP SEVEN """
@@ -115,7 +122,7 @@ def lin(tour, cost):
 
     """ STEP EIGHT """
     def step8():
-        nonlocal nodeArray, added, lines, gainSum
+        nonlocal oldConfigs, nodeArray, added, lines, gainSum
         print("<<< STEP 8 >>>")
         #specify last node
         node = nodeArray[-1]
@@ -124,27 +131,23 @@ def lin(tour, cost):
         candidates = findCandidates(nodeArray, node, removed) #needs parameter to specify where to add from
 
         #add a candidate edge
-        oldConfigs, nodeArray, added, lines, gainSum = addEdge(nodeArray, node, added, lines, gainSum, candidates)
-        button.configure(text = "Form Delta", command = step9)
-
-
-    """ STEP NINE """
-    def step9():
-        print("<<< STEP 9 >>>")
-        formDelta() #placeholder. Delta formation already performed by steps 7 and 8
-
-        #update button
-        button.configure(text = "Generate Tour", command = step10)
+        oldConfigs, nodeArray, added, lines, gainSum, found = addEdge(nodeArray, node, added, lines, gainSum, candidates)
+        
+        #if found, acknowledge best tour
+        if found:
+            print("Best tour: {}".format(stringify(best)))
+            button.configure(text = "Done", command = step10)
+        else:
+            button.configure(text = "Break Delta", command = step5a)
 
 
     """ STEP TEN """
     def step10():
+        nonlocal nodeArray, added, removed
         print("<<< STEP 10 >>>")
-        generateTour()
-        compareTour()
-
-        #update button
-        # button.configure(text = "Remove Edge", command = step2)
+        
+        #prepare for next node/edge scan
+        nodeArray, added, removed = prepareScan(orig, nodeArray, best, lines)
 
     
     """ FINALIZE """

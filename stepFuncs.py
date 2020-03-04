@@ -19,6 +19,7 @@ def gui(tour, lines):
       nxt = tour[i+1]
       a = sv.wndw.create_line(sv.guiCoords[node][0], sv.guiCoords[node][1], sv.guiCoords[nxt][0], sv.guiCoords[nxt][1], fill = "black")
       lines.update({(node, nxt): a})
+      lines.update({(nxt, node): a})
     a = sv.wndw.create_line(sv.guiCoords[tour[0]][0], sv.guiCoords[tour[0]][1], last[0], last[1], fill = "black")
 
 
@@ -52,7 +53,6 @@ def removeEdge(nodeArray, edge, removed, lines, gainSum):
     gainSum += sv.wg[edge[0]][edge[1]]
     removed.add(edge)
     sv.wndw.delete(lines[edge])
-    del lines[edge]
     print("--Removing {} produces path: {}".format(edge, stringify(path)))
     print("--Removed set contains: {}".format(removed))
 
@@ -74,9 +74,12 @@ def findCandidates(path, node, removed):
         if i != path[0] and i != node and i != prevNode and i != nextNode and not inSet(removed, (node, i)): #checks if: recreating tour, self-directed, adjacent in path, already removed
             candidates += [[(node, i), nodeSublist[i]]]
     
-    candidates.sort(key = lambda c:c[1])
-    candidates = candidates[:5]
-    print("--Candidates: {}".format(stringify(candidates)))
+    try:
+        candidates.sort(key = lambda c:c[1])
+        candidates = candidates[:5]
+        print("--Candidates: {}".format(stringify(candidates)))
+    except:
+        print("--Candidates: {}".format(candidates))
 
     return candidates
 
@@ -104,6 +107,7 @@ def addEdge(path, node, added, lines, gainSum, candidates):
         added.add(edge)
         a = sv.wndw.create_line(sv.guiCoords[edge[0]][0], sv.guiCoords[edge[0]][1], sv.guiCoords[edge[1]][0], sv.guiCoords[edge[1]][1], fill = "black")
         lines.update({edge: a})
+        lines.update({(edge[1], edge[0]): a})
         print("--Adding {} produces delta path: {}".format(edge, stringify(deltaPath)))
         print("--Added set contains: {}".format(added))
 
@@ -111,11 +115,12 @@ def addEdge(path, node, added, lines, gainSum, candidates):
         print("-Calculate the gain-sum")
         print("--Gain-sum = {}\n".format(gainSum))
     except:
-        print("\n!!! NO FEASIBLE CANDIDATES. HALT SCAN. !!!")
-        return path, added, gainSum
+        print("\n-------------------------------------------------------")
+        print("\n{ NO FEASIBLE CANDIDATES. HALT SCAN. RETURN BEST TOUR }\n")
+        return [], path, added, lines, gainSum, True
     
     oldConfigs = [deltaPath, lines, gainSum]
-    return oldConfigs, deltaPath, added, lines, gainSum
+    return oldConfigs, deltaPath, added, lines, gainSum, False
 
 
 """ STEPS FIVE AND TEN """
@@ -147,7 +152,6 @@ def breakDelta(deltaPath, lines, gainSum, removed, red):
         sv.wndw.itemconfig(lines[edge], fill = "red", dash = (5, 1))
     else:
         sv.wndw.delete(lines[edge])
-        del lines[edge]
     print("--Gain-sum = {}\n".format(gainSum))
 
     return path, gainSum, lines, removed
@@ -167,11 +171,12 @@ def generateTour(path, lines, gainSum):
     print("-Update gain-sum and GUI")
     a = sv.wndw.create_line(sv.guiCoords[edge[0]][0], sv.guiCoords[edge[0]][1], sv.guiCoords[edge[1]][0], sv.guiCoords[edge[1]][1], fill = "green")
     lines.update({edge: a})
+    lines.update({(edge[1], edge[0]): a})
     print("--Adding {} produces tour: {}\n".format(edge, stringify(tour)))
 
     return tour, lines, gainSum
 
-""" STEPS SIX AND TEN"""
+""" STEP SIX"""
 def compareTour(tour, best):
     #compare tour with best seen so far
     print("-Compare tour with the best seen so far. Replace as necessary")
@@ -179,7 +184,7 @@ def compareTour(tour, best):
     bestCost = calculate(best)
     if tourCost < bestCost:
         best = list(tour)
-    print("--New tour cost: {}, old tour cost: {}\n".format(tourCost, bestCost))
+    print("--New tour cost: {}, old tour cost: {}".format(tourCost, bestCost))
 
     return best
 
@@ -202,6 +207,45 @@ def restoreDelta(tour, oldConfigs):
     addedEdge = (tour[-2], tour[-1])
     sv.wndw.itemconfig(lines[removedEdge], fill = "black", dash = ())
     sv.wndw.delete(lines[addedEdge])
-    del lines[addedEdge]
 
     return deltaPath, lines, gainSum
+
+
+""" STEP 10 """
+def prepareScan(orig, path, best, lines):
+    #print orig
+    print("-Original path: {}".format(stringify(orig)))
+
+    #reset added/removed sets
+    print("-Reset added/removed sets")
+    added = set()
+    removed = set()
+    print("--Added set: {}, removed set: {}".format(added, removed))
+
+    #reset gain-sum
+    print("-Reset gain-sum")
+    gainSum = 0
+    print("--Gain-sum: {}".format(gainSum))
+
+    #reinitialize GUI
+    print("-Reinitialize GUI")
+    for line in lines:
+        sv.wndw.delete(lines[line])
+    
+    #draw best edges
+    last = sv.guiCoords[best[len(best)-1]]
+    for i in range(len(best)-1):
+      node = best[i]
+      nxt = best[i+1]
+      a = sv.wndw.create_line(sv.guiCoords[node][0], sv.guiCoords[node][1], sv.guiCoords[nxt][0], sv.guiCoords[nxt][1], fill = "light blue", width = 4)
+    a = sv.wndw.create_line(sv.guiCoords[best[0]][0], sv.guiCoords[best[0]][1], last[0], last[1], fill = "light blue", width = 4)
+
+    #overlap original edges
+    last = sv.guiCoords[orig[len(orig)-1]]
+    for i in range(len(orig)-1):
+      node = orig[i]
+      nxt = orig[i+1]
+      a = sv.wndw.create_line(sv.guiCoords[node][0], sv.guiCoords[node][1], sv.guiCoords[nxt][0], sv.guiCoords[nxt][1], fill = "black")
+    a = sv.wndw.create_line(sv.guiCoords[orig[0]][0], sv.guiCoords[orig[0]][1], last[0], last[1], fill = "black")
+
+    return orig, added, removed
