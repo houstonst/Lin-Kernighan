@@ -13,19 +13,12 @@ def gui(tour, lines):
       sv.wndw.create_text(coord[0], coord[1] - 12, fill = "black", font = "Times 10 bold", text = name)
 
     #draw edges
-    last = sv.guiCoords[tour[len(tour)-1]]
-    for i in range(len(tour)-1):
-      node = tour[i]
-      nxt = tour[i+1]
-      a = sv.wndw.create_line(sv.guiCoords[node][0], sv.guiCoords[node][1], sv.guiCoords[nxt][0], sv.guiCoords[nxt][1], fill = "black")
-      lines.update({(node, nxt): a})
-      lines.update({(nxt, node): a})
-    a = sv.wndw.create_line(sv.guiCoords[tour[0]][0], sv.guiCoords[tour[0]][1], last[0], last[1], fill = "black")
+    lines = addLines(tour, lines, 1, "black")
 
 
 """ STEPS TWO AND SEVEN"""
 #find 5 longest edges in a tour not already added in
-def longEdges(tour, added):
+def longEdges(orig, added):
     flat_wg = []
     longest = []
     for i in range(len(sv.wg)):
@@ -35,7 +28,7 @@ def longEdges(tour, added):
             flat_wg += [[edge, cost]]
     flat_wg.sort(key = lambda c:c[1], reverse = True)
     for [edge, cost] in flat_wg:
-        if inTour(tour, edge) and not inSet(added, edge) and len(longest) < 5:
+        if inTour(orig, edge) and not inSet(added, edge) and len(longest) < 5:
             longest += [edge]
     return longest
     
@@ -115,8 +108,8 @@ def addEdge(path, node, added, lines, gainSum, candidates):
         print("-Calculate the gain-sum")
         print("--Gain-sum = {}\n".format(gainSum))
     except:
-        print("\n-------------------------------------------------------")
-        print("\n{ NO FEASIBLE CANDIDATES. HALT SCAN. RETURN BEST TOUR }\n")
+        print("\n--------------------------------------")
+        print("\n{ NO FEASIBLE CANDIDATES. HALT SCAN. }")
         return [], path, added, lines, gainSum, True
     
     oldConfigs = [deltaPath, lines, gainSum]
@@ -212,9 +205,9 @@ def restoreDelta(tour, oldConfigs):
 
 
 """ STEP 10 """
-def concludeScan(orig, path, best, lines):
-    #print orig
-    print("-Original path: {}".format(stringify(orig)))
+def concludeScan(orig, path, best, lines, bestLines):
+    #reset nodeArray
+    nodeArray = orig
 
     #reset added/removed sets
     print("-Reset added/removed sets")
@@ -228,40 +221,29 @@ def concludeScan(orig, path, best, lines):
     print("--Gain-sum: {}".format(gainSum))
 
     #reinitialize GUI
-    print("-Reinitialize GUI")
-    for line in lines:
+    print("-Reinitialize GUI\n")
+    for line in lines.keys():
         sv.wndw.delete(lines[line])
     
     #draw best edges
-    last = sv.guiCoords[best[len(best)-1]]
-    for i in range(len(best)-1):
-      node = best[i]
-      nxt = best[i+1]
-      a = sv.wndw.create_line(sv.guiCoords[node][0], sv.guiCoords[node][1], sv.guiCoords[nxt][0], sv.guiCoords[nxt][1], fill = "light blue", width = 4)
-    a = sv.wndw.create_line(sv.guiCoords[best[0]][0], sv.guiCoords[best[0]][1], last[0], last[1], fill = "light blue", width = 4)
+    bestLines = addLines(best, bestLines, 4, "light blue")
 
     #overlap original edges
-    last = sv.guiCoords[orig[len(orig)-1]]
-    for i in range(len(orig)-1):
-      node = orig[i]
-      nxt = orig[i+1]
-      a = sv.wndw.create_line(sv.guiCoords[node][0], sv.guiCoords[node][1], sv.guiCoords[nxt][0], sv.guiCoords[nxt][1], fill = "black")
-    a = sv.wndw.create_line(sv.guiCoords[orig[0]][0], sv.guiCoords[orig[0]][1], last[0], last[1], fill = "black")
+    lines = addLines(orig, lines, 1,  "black")
 
-    return orig, added, removed
+    return nodeArray, added, removed, lines, bestLines
 
 
 """ STEP ELEVEN """
-def prepareScan(orig, lines):
+def prepareScan(orig, lines, bestLines):
     #sweep GUI
-    print("-Sweep GUI")
-    for line in lines:
+    print("-Sweep GUI\n")
+    for line in lines.keys():
         sv.wndw.delete(lines[line])
+    for line in bestLines.keys():
+        sv.wndw.delete(bestLines[line])
 
-    #overlap original edges
-    last = sv.guiCoords[orig[len(orig)-1]]
-    for i in range(len(orig)-1):
-      node = orig[i]
-      nxt = orig[i+1]
-      a = sv.wndw.create_line(sv.guiCoords[node][0], sv.guiCoords[node][1], sv.guiCoords[nxt][0], sv.guiCoords[nxt][1], fill = "black")
-    a = sv.wndw.create_line(sv.guiCoords[orig[0]][0], sv.guiCoords[orig[0]][1], last[0], last[1], fill = "black")
+    #draw original edges
+    lines = addLines(orig, lines, 1, "black")
+    
+    return lines, bestLines

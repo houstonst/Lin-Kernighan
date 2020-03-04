@@ -35,6 +35,8 @@ def around(nodeArray, node):
 def removeFromArray(nodeArray, edge):
     #destroy circuit
     path = nodeArray
+    print("------")
+    print(path)
     path.remove(path[0])
     
     #shift nodeArray until the edge is split between the beginning and end of the path
@@ -85,3 +87,13 @@ def inSet(nodeSet, edge):
         return True
     else:
         return False
+
+def addLines(nodeArray, lines, width, color):
+    for i in range(len(nodeArray)-1):
+      node = nodeArray[i]
+      nxt = nodeArray[i+1]
+      a = sv.wndw.create_line(sv.guiCoords[node][0], sv.guiCoords[node][1], sv.guiCoords[nxt][0], sv.guiCoords[nxt][1], fill = color, width = width)
+      lines.update({(node, nxt): a})
+      lines.update({(nxt, node): a})
+
+    return lines

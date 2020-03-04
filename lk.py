@@ -1,5 +1,6 @@
 import staticVars as sv
 from stepFuncs import *
+from copy import deepcopy
 
 def lin(tour, cost):
     #tour: The tour resulting from Farthest Insertion. Stored as a list
@@ -20,6 +21,7 @@ def lin(tour, cost):
 
     #line IDs
     lines = {}
+    bestLines = {}
 
     #draw onto GUI  
     print("<<< INITIALIZE GUI >>>\n")
@@ -43,17 +45,23 @@ def lin(tour, cost):
     def step2():
         nonlocal i, nodeArray, node, removed, lines, gainSum #declare nonlocal if overwriting variables in scope of lin()
         print("<<< STEP 2 >>>")
+        nodeArray = list(orig)
 
         #list the 5 longest edges in descending order
-        print("-List the 5 longest edges in tour")
-        longest = longEdges(tour, added)        
-        print("--Longest: {}".format(stringify(longest)))
+        try:
+            print("-List the 5 longest edges in tour")
+            longest = longEdges(orig, added)        
+            print("--Longest: {}".format(stringify(longest)))
 
-        #remove edges
-        nodeArray, node, removed, lines, gainSum = removeEdge(tour, longest[i], removed, lines, gainSum)
+            #remove edges
+            nodeArray, node, removed, lines, gainSum = removeEdge(nodeArray, longest[i], removed, lines, gainSum)
 
-        #update button
-        button.configure(text = "Add Edge", command = step3)
+            #update button
+            button.configure(text = "Add Edge", command = step3)
+        except:
+            print("\n------------------------------\n")
+            print("{ SWEEP COMPLETE. HALT WORK. }")
+            print("-BEST TOUR IN SWEEP: {}\n\n\n".format(stringify(best)))
 
 
     """ STEP THREE """
@@ -68,7 +76,7 @@ def lin(tour, cost):
 
         #if found, acknowledge best tour
         if found:
-            print("Best tour: {}".format(stringify(best)))
+            print("-BEST TOUR: {}\n".format(stringify(best)))
             button.configure(text = "Done", command = step10)
         else:
             button.configure(text = "Break Delta", command = step5a)
@@ -138,7 +146,7 @@ def lin(tour, cost):
         
         #if found, acknowledge best tour
         if found:
-            print("Best tour: {}".format(stringify(best)))
+            print("-BEST TOUR: {}\n".format(stringify(best)))
             button.configure(text = "Show Difference", command = step10)
         else:
             button.configure(text = "Break Delta", command = step5a)
@@ -146,20 +154,20 @@ def lin(tour, cost):
 
     """ STEP TEN """
     def step10():
-        nonlocal nodeArray, added, removed
+        nonlocal orig, nodeArray, added, removed, lines, bestLines
         print("<<< STEP 10 >>>")
         
         #prepare for next node/edge scan
-        nodeArray, added, removed = concludeScan(orig, nodeArray, best, lines)
+        nodeArray, added, removed, lines, bestLines = concludeScan(orig, nodeArray, best, lines, bestLines)
 
         #configure button
         button.configure(text = "Sweep GUI", command = step11)
 
     def step11():
-        nonlocal i
+        nonlocal orig, i, lines, bestLines
         print("<<< STEP 11 >>>")
         #sweep GUI
-        prepareScan(orig, lines)
+        lines, bestLines = prepareScan(orig, lines, bestLines)
 
         #increment iteration counter
         i += 1
