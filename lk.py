@@ -60,7 +60,9 @@ def lin(tour, cost):
             button.configure(text = "Add Edge", command = step3)
         else:
             print("{ SWEEP COMPLETE. HALT WORK. }")
-            print("-BEST TOUR IN SWEEP: {}\n\n\n".format(stringify(best)))
+            print("-BEST TOUR IN SWEEP: {}".format(stringify(best)))
+            print("--ORIGINAL COST: {}".format(calculate(orig)))
+            print("--BEST TOUR COST: {}\n\n\n".format(calculate(best)))
 
             #update GUI
             for line in lines.keys():
