@@ -34,10 +34,14 @@ def longEdges(orig, added):
     
 def removeEdge(nodeArray, edge, removed, lines, gainSum):
     #highlight node
-    node = edge[0]
-    nodeX = sv.guiCoords[node][0]
-    nodeY = sv.guiCoords[node][1]
-    sv.wndw.create_oval((nodeX-3, nodeY-3, nodeX + 3, nodeY + 3), fill = "blue")
+    nodeA = edge[0]
+    nodeB = edge[1]
+    nodeAx = sv.guiCoords[nodeA][0]
+    nodeAy = sv.guiCoords[nodeA][1]
+    nodeBx = sv.guiCoords[nodeB][0]
+    nodeBy = sv.guiCoords[nodeB][1]
+    sv.wndw.create_oval((nodeAx-3, nodeAy-3, nodeAx + 3, nodeAy + 3), fill = "blue")
+    sv.wndw.create_oval((nodeBx-3, nodeBy-3, nodeBx + 3, nodeBy + 3), fill = "blue")
 
     #pick an edge connecting the node to remove
     print("-Pick an edge and remove it")
@@ -53,11 +57,16 @@ def removeEdge(nodeArray, edge, removed, lines, gainSum):
     print("-Calculate the gain-sum")
     print("--Gain-sum = {}\n".format(gainSum))
 
-    return path, node, removed, lines, gainSum
+    return path, nodeA, nodeB, removed, lines, gainSum
 
 
 """ STEPS THREE AND EIGHT"""
-def findCandidates(path, node, removed):
+def findCandidates(path, node, unused, removed):
+    #unhighlight unused node
+    unusedX = sv.guiCoords[unused][0]
+    unusedY = sv.guiCoords[unused][1]
+    sv.wndw.create_oval((unusedX-3, unusedY-3, unusedX + 3, unusedY + 3), fill = "red")
+
     #order 5 neighbors of the node by shortest to greatest distance
     print("-Order 5 neighbors of the node by shortest to greatest distance")
     candidates = []
@@ -76,7 +85,7 @@ def findCandidates(path, node, removed):
 
     return candidates
 
-def addEdge(path, node, added, lines, gainSum, candidates):
+def addEdge(path, node, added, lines, gainSum, candidates, i):
     #check candidates against gain-sum and pick first edge that keeps it positive
     print("-Check 5 candidates against gain-sum and pick first edge that keeps it positive")
     edge = None
@@ -94,6 +103,10 @@ def addEdge(path, node, added, lines, gainSum, candidates):
         nodeY = sv.guiCoords[node][1]
         sv.wndw.create_oval((nodeX-3, nodeY-3, nodeX + 3, nodeY + 3), fill = "red")
 
+        #must reverse path if choosing other node in order to correctly generate delta path
+        if i == 1:
+            path = path.reverse()
+
         #create delta path
         deltaPath = path + [edge[1]]
         gainSum -= sv.wg[edge[0]][edge[1]]
@@ -108,8 +121,12 @@ def addEdge(path, node, added, lines, gainSum, candidates):
         print("-Calculate the gain-sum")
         print("--Gain-sum = {}\n".format(gainSum))
     except:
-        print("\n--------------------------------------")
-        print("\n{ NO FEASIBLE CANDIDATES. HALT SCAN. }")
+        if i == 0:
+            print("\n--------------------------------------")
+            print("\n{ NO FEASIBLE CANDIDATES. TRY OTHER NODE. }")
+        elif i == 1 or i == 2:
+            print("\n--------------------------------------")
+            print("\n{ NO FEASIBLE CANDIDATES. HALT SCAN. }")
         return [], path, added, lines, gainSum, True
     
     oldConfigs = [deltaPath, lines, gainSum]
@@ -170,16 +187,17 @@ def generateTour(path, lines, gainSum):
     return tour, lines, gainSum
 
 """ STEP SIX"""
-def compareTour(tour, best):
+def compareTour(tour, improved, best):
     #compare tour with best seen so far
     print("-Compare tour with the best seen so far. Replace as necessary")
     tourCost = calculate(tour)
     bestCost = calculate(best)
     if tourCost < bestCost:
         best = list(tour)
+        improved = True
     print("--New tour cost: {}, old tour cost: {}".format(tourCost, bestCost))
 
-    return best
+    return best, improved
 
 def restoreDelta(tour, oldConfigs):
     #oldConfigs = [deltaPath, lines, gainSum]

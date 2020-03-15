@@ -11,6 +11,7 @@ def main():
     from lk import lin
     import staticVars as sv
     from fi import farthestInsertion
+    from lkUtils import calculate
 
     #form GUI and weighted graph
     sv.cityNames, sv.rawCoords, sv.guiCoords = reader(file, sv.height, sv.width)
@@ -20,11 +21,8 @@ def main():
     # tour, cost = farthestInsertion(sv.rawCoords, sv.guiCoords, sv.cityNames, sv.height, sv.width, "2") #farthestInsertion
     tour, cost = randomTour(sv.rawCoords, sv.cityNames) #random tour
 
-    # tour = [9,4,10,6,8,1,3,5,2,0,7,9] #fixed tour based on 11.csv
-    # tour = [8,10,7,9,2,5,0,4,6,3,1,8]
-    # cost = 0
-    # for i in range(len(tour)-1):
-    #   cost += sv.wg[tour[i]][tour[i+1]]
+    # tour = [3,0,2,5,1,4,3] #fixed tour based on 6.csv
+    # cost = calculate(tour)
     
     #run lin-kernighan
     lin(tour, cost)

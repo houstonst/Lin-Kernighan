@@ -16,6 +16,9 @@ def lin(tour, cost):
     #best tour
     best = list(tour) #prevents pointer issue
 
+    #improved boolean
+    improved = False
+
     #track old configurations
     oldConfigs = []
 
@@ -35,7 +38,8 @@ def lin(tour, cost):
     nodeArray = []
 
     #node of interest
-    node = None
+    nodeA = None
+    nodeB = None
 
     #gain-sum
     gainSum = 0
@@ -43,18 +47,18 @@ def lin(tour, cost):
 
     """ STEP TWO """
     def step2():
-        nonlocal i, nodeArray, node, removed, lines, bestLines, gainSum #declare nonlocal if overwriting variables in scope of lin()
+        nonlocal i, nodeArray, nodeA, nodeB, removed, lines, bestLines, gainSum #declare nonlocal if overwriting variables in scope of lin()
         if i < 5:
             print("<<< STEP 2 >>>")
-            nodeArray = list(orig)
+            nodeArray = list(best)
 
             #list the 5 longest edges in descending order
             print("-List the 5 longest edges in tour")
-            longest = longEdges(orig, added)        
+            longest = longEdges(nodeArray, added)        
             print("--Longest: {}".format(stringify(longest)))
 
             #remove edges
-            nodeArray, node, removed, lines, gainSum = removeEdge(nodeArray, longest[i], removed, lines, gainSum)
+            nodeArray, nodeA, nodeB, removed, lines, gainSum = removeEdge(nodeArray, longest[i], removed, lines, gainSum)
 
             #update button
             button.configure(text = "Add Edge", command = step3)
@@ -76,19 +80,27 @@ def lin(tour, cost):
 
     """ STEP THREE """
     def step3():
-        nonlocal oldConfigs, nodeArray, added, lines, gainSum
+        nonlocal i, oldConfigs, nodeArray, added, lines, gainSum, improved
         print("<<< STEP 3 >>>")
-        #find 5 candidates
-        candidates = findCandidates(nodeArray, node, removed) #needs parameter to specify where to add from
+        #find 5 candidates and add edge if possible
+        candidates = findCandidates(nodeArray, nodeA, nodeB, removed)
+        oldConfigs, nodeArray, added, lines, gainSum, complete = addEdge(nodeArray, nodeA, added, lines, gainSum, candidates, 0)
 
-        #add a candidate edge
-        oldConfigs, nodeArray, added, lines, gainSum, found = addEdge(nodeArray, node, added, lines, gainSum, candidates)
+        #try other node if previous attempt unsuccessful
+        if complete == True:
+            candidates = findCandidates(nodeArray, nodeB, nodeA, removed)
+            oldConfigs, nodeArray, added, lines, gainSum, complete = addEdge(nodeArray, nodeB, added, lines, gainSum, candidates, 1)
 
-        #if found, acknowledge best tour
-        if found:
-            print("-BEST TOUR: {}\n".format(stringify(best)))
-            button.configure(text = "Done", command = step10)
-        else:
+        #check for completion and improvement
+        if complete and improved: #scan complete, improvement made. Cease sweep and restart heuristic
+            print("-NEW BEST TOUR: {}\n".format(stringify(best)))
+            i = 0
+            button.configure(text = "Show Difference", command = step10)
+        elif complete and not improved:#scan complete, no improvement made. Continue sweep with new scan
+            print("-UNCHANGED BEST TOUR: {}\n".format(stringify(best)))
+            i += 1
+            button.configure(text = "Show Difference", command = step10)
+        else: #scan incomplete, continue scan
             button.configure(text = "Break Delta", command = step5a)
 
 
@@ -114,9 +126,9 @@ def lin(tour, cost):
 
     """ STEP SIXa """
     def step6a():
-        nonlocal best
+        nonlocal best, improved
         print("<<< STEP 6a >>>")
-        best = compareTour(nodeArray, best)
+        best, improved = compareTour(nodeArray, improved, best)
         print("--Best tour: {}\n".format(stringify(best)))
         #update button
         button.configure(text = "Restore Delta", command = step6b)
@@ -143,22 +155,28 @@ def lin(tour, cost):
 
     """ STEP EIGHT """
     def step8():
-        nonlocal oldConfigs, nodeArray, added, lines, gainSum
+        nonlocal oldConfigs, nodeArray, added, lines, gainSum, i, orig, improved
         print("<<< STEP 8 >>>")
         #specify last node
-        node = nodeArray[-1]
+        nodeA = nodeArray[-1]
+        nodeB = nodeArray[0] #arbitrary. Not applied in step 8 so doesn't matter
         
-        #find 5 candidates
-        candidates = findCandidates(nodeArray, node, removed) #needs parameter to specify where to add from
+        #find candidates
+        candidates = findCandidates(nodeArray, nodeA, nodeB, removed)
 
         #add a candidate edge
-        oldConfigs, nodeArray, added, lines, gainSum, found = addEdge(nodeArray, node, added, lines, gainSum, candidates)
-        
-        #if found, acknowledge best tour
-        if found:
-            print("-BEST TOUR: {}\n".format(stringify(best)))
+        oldConfigs, nodeArray, added, lines, gainSum, complete = addEdge(nodeArray, nodeA, added, lines, gainSum, candidates, 2)
+
+        #check for completion and improvement
+        if complete and improved: #scan complete, improvement made. Cease sweep and restart heuristic
+            print("-NEW BEST TOUR: {}\n".format(stringify(best)))
+            i = 0
             button.configure(text = "Show Difference", command = step10)
-        else:
+        elif complete and not improved:#scan complete, no improvement made. Continue sweep with new scan
+            print("-UNCHANGED BEST TOUR: {}\n".format(stringify(best)))
+            i += 1
+            button.configure(text = "Show Difference", command = step10)
+        else: #scan incomplete, continue scan
             button.configure(text = "Break Delta", command = step5a)
 
 
@@ -174,13 +192,14 @@ def lin(tour, cost):
         button.configure(text = "Sweep GUI", command = step11)
 
     def step11():
-        nonlocal orig, i, lines, bestLines
+        nonlocal orig, lines, bestLines, improved
         print("<<< STEP 11 >>>")
         #sweep GUI
-        lines, bestLines = prepareScan(orig, lines, bestLines)
+        lines, bestLines = prepareScan(best, lines, bestLines)
 
-        #increment iteration counter
-        i += 1
+        #set orig and improved to prepare for a new scan
+        orig = list(best)
+        improved = False
 
         #configure button
         button.configure(text = "Begin Scan", command = step2)
