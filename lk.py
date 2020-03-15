@@ -7,7 +7,10 @@ def lin(tour, cost):
     #cost: The summarized edge costs of tour
     
     """ STORE DYNAMIC VARIABLES """
-    #store starting tour as variable for node/edge scan initiation
+    #store very first tour
+    start = list(tour)
+
+    #store starting tour per scan as variable for node/edge scan initiation
     orig = list(tour)
 
     #iteration tracker
@@ -63,16 +66,22 @@ def lin(tour, cost):
             #update button
             button.configure(text = "Add Edge", command = step3)
         else:
+            startCost = round(calculate(start))
+            bestCost = round(calculate(best))
             print("{ SWEEP COMPLETE. HALT WORK. }")
             print("-BEST TOUR IN SWEEP: {}".format(stringify(best)))
-            print("--ORIGINAL COST: {}".format(calculate(orig)))
-            print("--BEST TOUR COST: {}\n\n\n".format(calculate(best)))
+            print("--ORIGINAL COST: {}".format(startCost))
+            print("--BEST TOUR COST: {}".format(bestCost))
+            division = bestCost / startCost
+            decimal = 1 - division
+            print("--IMPROVED BY {}%\n\n\n".format(round(decimal*100)))
+
 
             #update GUI
             for line in lines.keys():
                 sv.wndw.delete(lines[line])
             bestLines = addLines(best, bestLines, 4, "light green")
-            lines = addLines(orig, lines, 1, "black")
+            lines = addLines(start, lines, 1, "black")
 
             #configure button
             button.configure(text = "Done", command = None)
