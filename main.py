@@ -1,6 +1,5 @@
 from reader import *
 from euclidean import *
-from rand import *
 
 def main():
     #accept input
@@ -9,6 +8,7 @@ def main():
 
     print("\n-Pick a path generation algorithm (random by default):")
     print("""--farthest: Farthest Insertion
+--nearest: Nearest Neighbor
 --fixed: Fixed Tour defined in code""")
     algo = input()
 
@@ -25,7 +25,9 @@ def main():
     from lk import lin
     import staticVars as sv
     from fi import farthestInsertion
+    from nn import nearestNeighbor
     from lkUtils import calculate
+    from rand import randomTour
 
     #form GUI and weighted graph
     sv.cityNames, sv.rawCoords, sv.guiCoords = reader(file, sv.height, sv.width)
@@ -35,12 +37,16 @@ def main():
     tour = None
     cost = None
     if algo == "farthest":
-        tour, cost = farthestInsertion(sv.rawCoords, sv.guiCoords, sv.cityNames, sv.height, sv.width, "2") #farthestInsertion
+        tour, cost = farthestInsertion(sv.rawCoords, sv.guiCoords, sv.cityNames, sv.height, sv.width, "2")
+    elif algo == "nearest":
+        tour, cost = nearestNeighbor(sv.rawCoords, sv.guiCoords, sv.cityNames, sv.height, sv.width, "2")
     elif algo == "fixed":
         tour = [3,0,2,5,1,4,3] #fixed tour for 6.csv
         cost = calculate(tour)
+        print("-Initial Cost: {}".format(cost))
+        print("-Initial Tour: {}\n".format(stringify(tour)))
     else:
-        tour, cost = randomTour(sv.rawCoords, sv.cityNames) #random tour
+        tour, cost = randomTour(sv.rawCoords, sv.cityNames)
 
     #run lin-kernighan
     lin(tour, cost, option)

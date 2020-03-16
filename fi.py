@@ -173,30 +173,6 @@ def farthestInsertion(initCoords, graph, nameArray, height, width, option):
   else:
     stepper()
 
-  # if option == "2":
-  #   root = Tk()
-  #   canvas_height = height
-  #   canvas_width = width
-  #   root.title("Farthest Insertion Tour")
-  #   root.iconbitmap('./graphics/favicon.ico')
-  #   w = Canvas(root, width = canvas_width, height = canvas_height)
-  #   w.pack(expand = YES, fill=BOTH)
-  #   for coord in graph:
-  #     index = graph.index(coord)
-  #     name = nameArray[index]
-  #     w.create_oval((coord[0]-3, coord[1]-3, coord[0] + 3, coord[1] + 3), fill = "red")
-  #     w.create_text(coord[0], coord[1] - 12, fill = "black", font = "Times 10 bold", text = name)
-
-  #   last = graph[path[len(path)-1]]
-  #   for i in range(len(path)-1):
-  #     node = path[i]
-  #     nxt = path[i+1]
-  #     a = w.create_line(graph[node][0], graph[node][1], graph[nxt][0], graph[nxt][1], fill = "black")
-  #     lineList.update({(node, nxt): a})
-  #   a = w.create_line(graph[path[0]][0], graph[path[0]][1], last[0], last[1], fill = "black")
-  #   lineList.update({(path[0], path[len(path)-1])})
-  #   root.mainloop()
-    # TKINTER #
-  print("-Cost: {}".format(cost))
+  print("-Initial Cost: {}".format(cost))
   print("-Initial Tour: {}\n".format(stringify(path)))
   return path, cost
