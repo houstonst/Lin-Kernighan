@@ -6,12 +6,20 @@ def main():
     #accept input
     print("-Enter a .csv or .txt file [example.csv or example.txt]:")
     file = "./tests/" + input()
-    print("\n\n-Pick a path generation algorithm (random by default):")
-    print("""
---farthest: Farthest Insertion
---fixed: Fixed Tour defined in code
-""")
+
+    print("\n-Pick a path generation algorithm (random by default):")
+    print("""--farthest: Farthest Insertion
+--fixed: Fixed Tour defined in code""")
     algo = input()
+
+    print("\n-Pick to run in step mode, at pace, or fast as possible:")
+    print("""--step
+--slow
+--medium
+--fast
+--max""")
+    option = input()
+    print("\n")
 
     #import after accepting input or else GUI runs annoyingly
     from lk import lin
@@ -35,7 +43,7 @@ def main():
         tour, cost = randomTour(sv.rawCoords, sv.cityNames) #random tour
 
     #run lin-kernighan
-    lin(tour, cost, "auto")
+    lin(tour, cost, option)
 
 if __name__ == "__main__":
     main()

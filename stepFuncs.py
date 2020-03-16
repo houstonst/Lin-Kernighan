@@ -44,18 +44,18 @@ def removeEdge(nodeArray, edge, removed, lines, gainSum):
     sv.wndw.create_oval((nodeBx-3, nodeBy-3, nodeBx + 3, nodeBy + 3), fill = "blue")
 
     #remove the edge
-    print("-Pick an edge and remove it")
+    # print("-Pick an edge and remove it")
     path = []
     path = removeFromArray(nodeArray, edge)
     gainSum += sv.wg[edge[0]][edge[1]]
     removed.add(edge)
     sv.wndw.delete(lines[edge])
-    print("--Removing {} produces path: {}".format(edge, stringify(path)))
-    print("--Removed set contains: {}".format(removed))
+    # print("--Removing {} produces path: {}".format(edge, stringify(path)))
+    # print("--Removed set contains: {}".format(removed))
 
     #calculate the gain-sum
-    print("-Calculate the gain-sum")
-    print("--Gain-sum = {}\n".format(gainSum))
+    # print("-Calculate the gain-sum")
+    # print("--Gain-sum = {}\n".format(gainSum))
 
     return path, nodeA, nodeB, removed, lines, gainSum
 
@@ -68,7 +68,7 @@ def findCandidates(path, node, unused, removed):
     sv.wndw.create_oval((unusedX-3, unusedY-3, unusedX + 3, unusedY + 3), fill = "red")
 
     #order 5 neighbors of the node by shortest to greatest distance
-    print("-Order 5 neighbors of the node by shortest to greatest distance")
+    # print("-Order 5 neighbors of the node by shortest to greatest distance")
     candidates = []
     nodeSublist = sv.wg[node]
     prevNode, nextNode = around(path, node)
@@ -79,24 +79,25 @@ def findCandidates(path, node, unused, removed):
     try: #candidates populated correctly
         candidates.sort(key = lambda c:c[1])
         candidates = candidates[:5]
-        print("--Candidates: {}".format(stringify(candidates)))
+        # print("--Candidates: {}".format(stringify(candidates)))
     except: #no candidates exist
-        print("--No existing candidates")
+        # print("--No existing candidates")
+        pass
 
     return candidates
 
 def addEdge(path, node, added, lines, gainSum, candidates, option):
     #check candidates against gain-sum and pick first edge that keeps it positive
-    print("-Check 5 candidates against gain-sum and pick first edge that keeps it positive")
+    # print("-Check 5 candidates against gain-sum and pick first edge that keeps it positive")
     edge = None
     for [candidateEdge, candidateCost] in candidates:
         if gainSum - candidateCost > 0:
             edge = candidateEdge
             break
-    print("--Chosen edge: {}".format(edge))
+    # print("--Chosen edge: {}".format(edge))
 
     #add chosen edge
-    print("-Add first edge to improve gain-sum")
+    # print("-Add first edge to improve gain-sum")
     try:
         #highlight node
         nodeX = sv.guiCoords[node][0]
@@ -114,19 +115,21 @@ def addEdge(path, node, added, lines, gainSum, candidates, option):
         a = sv.wndw.create_line(sv.guiCoords[edge[0]][0], sv.guiCoords[edge[0]][1], sv.guiCoords[edge[1]][0], sv.guiCoords[edge[1]][1], fill = "black")
         lines.update({edge: a})
         lines.update({(edge[1], edge[0]): a})
-        print("--Adding {} produces delta path: {}".format(edge, stringify(deltaPath)))
-        print("--Added set contains: {}".format(added))
+        # print("--Adding {} produces delta path: {}".format(edge, stringify(deltaPath)))
+        # print("--Added set contains: {}".format(added))
 
         #calculate the gain-sum
-        print("-Calculate the gain-sum")
-        print("--Gain-sum = {}\n".format(gainSum))
+        # print("-Calculate the gain-sum")
+        # print("--Gain-sum = {}\n".format(gainSum))
     except:
         if option == 0: #tried first node. No feasible candidates existed
-            print("\n-----------------------------------------------")
-            print("\n<<< NO FEASIBLE CANDIDATES. TRY OTHER NODE. >>>")
+            # print("\n-----------------------------------------------")
+            # print("\n<<< NO FEASIBLE CANDIDATES. TRY OTHER NODE. >>>")
+            pass
         elif option == 1 or option == 2: #tried second node or could not create new delta path. Halt scan
-            print("\n------------------------------------------")
-            print("\n<<< NO FEASIBLE CANDIDATES. HALT SCAN. >>>")
+            # print("\n------------------------------------------")
+            # print("\n<<< NO FEASIBLE CANDIDATES. HALT SCAN. >>>")
+            pass
         return [], path, added, lines, gainSum, True
     
     oldConfigs = [deltaPath, lines, gainSum]
@@ -136,11 +139,11 @@ def addEdge(path, node, added, lines, gainSum, candidates, option):
 """ STEPS FIVE AND TEN """
 def breakDelta(deltaPath, lines, gainSum, removed, red):
     #identify edge xw of the cycle incident with w that was not just added
-    print("-Find edge xw of the cycle incident with w that was not just added")
+    # print("-Find edge xw of the cycle incident with w that was not just added")
     triNode = deltaPath[-1] #the node joining the tail and cycle
     x = deltaPath[deltaPath.index(triNode)+1] #x is the node in the adjacent edge that wasn't just added
     edge = (x, triNode)
-    print("--Edge xw: {}".format(edge))
+    # print("--Edge xw: {}".format(edge))
 
     #highlight node
     node = x #rename to make nodeX and nodeY names cleaner
@@ -149,40 +152,40 @@ def breakDelta(deltaPath, lines, gainSum, removed, red):
     sv.wndw.create_oval((nodeX-3, nodeY-3, nodeX + 3, nodeY + 3), fill = "blue")
 
     #remove edge xw to create a path
-    print("-Remove edge xw")
+    # print("-Remove edge xw")
     path, edge = removeXW(deltaPath, triNode, edge)
     removed.add(edge)
-    print("--Removing {} produces path: {}".format(edge, stringify(path))) #do not update removed. Only a check
-    print("--Removed set contains: {}".format(removed))
+    # print("--Removing {} produces path: {}".format(edge, stringify(path))) #do not update removed. Only a check
+    # print("--Removed set contains: {}".format(removed))
     
     #update gain-sum and GUI
-    print("-Update gain-sum and GUI")
+    # print("-Update gain-sum and GUI")
     gainSum += sv.wg[edge[0]][edge[1]]
     if red == True:
         sv.wndw.itemconfig(lines[edge], fill = "red", dash = (5, 1))
     else:
         sv.wndw.delete(lines[edge])
-    print("--Gain-sum = {}\n".format(gainSum))
+    # print("--Gain-sum = {}\n".format(gainSum))
 
     return path, gainSum, lines, removed
 
 def generateTour(path, lines, gainSum):
     #join the two hanging ends of the path to form a tour
-    print("-Join the two hanging ends of the path to form a tour")
+    # print("-Join the two hanging ends of the path to form a tour")
     tour = path + [path[0]]
     edge = (tour[-2], tour[-1])
 
     #calculate the gain-sum
-    print("-Calculate the gain-sum")
+    # print("-Calculate the gain-sum")
     gainSum -= sv.wg[edge[0]][edge[1]]
-    print("--Gain-sum = {}\n".format(gainSum))
+    # print("--Gain-sum = {}\n".format(gainSum))
 
     #update GUI to reflect tour
-    print("-Update gain-sum and GUI")
+    # print("-Update gain-sum and GUI")
     a = sv.wndw.create_line(sv.guiCoords[edge[0]][0], sv.guiCoords[edge[0]][1], sv.guiCoords[edge[1]][0], sv.guiCoords[edge[1]][1], fill = "green")
     lines.update({edge: a})
     lines.update({(edge[1], edge[0]): a})
-    print("--Adding {} produces tour: {}\n".format(edge, stringify(tour)))
+    # print("--Adding {} produces tour: {}\n".format(edge, stringify(tour)))
 
     return tour, lines, gainSum
 
@@ -190,13 +193,13 @@ def generateTour(path, lines, gainSum):
 """ STEP SIX"""
 def compareTour(tour, improved, best):
     #compare tour with best seen so far
-    print("-Compare tour with the best seen so far. Replace as necessary")
+    # print("-Compare tour with the best seen so far. Replace as necessary")
     tourCost = calculate(tour)
     bestCost = calculate(best)
     if tourCost < bestCost:
         best = list(tour)
         improved = True
-    print("--New tour cost: {}, old tour cost: {}".format(tourCost, bestCost))
+    # print("--New tour cost: {}, old tour cost: {}".format(tourCost, bestCost))
 
     return best, improved
 
@@ -204,14 +207,14 @@ def restoreDelta(tour, oldConfigs):
     #oldConfigs = [deltaPath, lines, gainSum]
 
     #restore delta path
-    print("-Restore delta path")
+    # print("-Restore delta path")
     deltaPath = oldConfigs[0]
     lines = oldConfigs[1]
     gainSum = oldConfigs[2]
-    print("--Gain-sum: {}, delta path: {}".format(gainSum, stringify(deltaPath)))
+    # print("--Gain-sum: {}, delta path: {}".format(gainSum, stringify(deltaPath)))
 
     #restore GUI to continue scan
-    print("-Restore GUI\n")
+    # print("-Restore GUI\n")
     triNode = deltaPath[-1] #the node joining the tail and cycle
     x = deltaPath[deltaPath.index(triNode)+1] #x is the node in the adjacent edge that wasn't just added
     edge = (x, triNode)
@@ -229,18 +232,18 @@ def concludeScan(scanStart, path, best, lines, bestLines):
     nodeArray = scanStart
 
     #reset added/removed sets
-    print("-Reset added/removed sets")
+    # print("-Reset added/removed sets")
     added = set()
     removed = set()
-    print("--Added set: {}, removed set: {}".format(added, removed))
+    # print("--Added set: {}, removed set: {}".format(added, removed))
 
     #reset gain-sum
-    print("-Reset gain-sum")
+    # print("-Reset gain-sum")
     gainSum = 0
-    print("--Gain-sum: {}".format(gainSum))
+    # print("--Gain-sum: {}".format(gainSum))
 
     #reinitialize GUI
-    print("-Reinitialize GUI\n")
+    # print("-Reinitialize GUI\n")
     for line in lines.keys():
         sv.wndw.delete(lines[line])
     
@@ -256,7 +259,7 @@ def concludeScan(scanStart, path, best, lines, bestLines):
 """ STEP ELEVEN """
 def prepareScan(scanStart, lines, bestLines):
     #clean GUI
-    print("-Clean GUI\n")
+    # print("-Clean GUI\n")
     for line in lines.keys():
         sv.wndw.delete(lines[line])
     for line in bestLines.keys():
