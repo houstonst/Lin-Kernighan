@@ -1,8 +1,9 @@
+import time
 import staticVars as sv
 from stepFuncs import *
 from copy import deepcopy
 
-def lin(tour, cost):
+def lin(tour, cost, option):
     #tour: The tour resulting from Farthest Insertion. Stored as a list
     #cost: The summarized edge costs of tour
     
@@ -63,8 +64,11 @@ def lin(tour, cost):
             nodeArray, nodeA, nodeB, removed, lines, gainSum = removeEdge(nodeArray, longest[i], removed, lines, gainSum)
 
             #advance to next step
-            button.configure(text = "Add Edge", command = step3)
-            # step3()
+            if option == "step":
+                button.configure(text = "Add Edge", command = step3)
+            else:
+                button.pack_forget()
+                sv.root.after(1000, step3)
 
         else:
             #scans complete, sweeps complete, heuristic finished. Print final results
@@ -106,16 +110,22 @@ def lin(tour, cost):
         if complete and improved: #scan complete, improvement made. Cease sweep and restart heuristic with best tour
             print("-NEW BEST TOUR: {}\n".format(stringify(best)))
             i = 0
-            button.configure(text = "Show Difference", command = step10)
-            # step10()
+            if option == "step":
+                button.configure(text = "Show Difference", command = step10)
+            else:
+                sv.root.after(1000, step10)
         elif complete and not improved:#scan complete, no improvement made. Continue sweep with new scan
             print("-UNCHANGED BEST TOUR: {}\n".format(stringify(best)))
             i += 1
-            button.configure(text = "Show Difference", command = step10)
-            # step10()
+            if option == "step":
+                button.configure(text = "Show Difference", command = step10)
+            else:
+                sv.root.after(1000, step10)
         else: #scan incomplete, continue scan
-            button.configure(text = "Break Delta", command = step5a)
-            # step5a()
+            if option == "step":
+                button.configure(text = "Break Delta", command = step5a)
+            else:
+                sv.root.after(1000, step5a)
 
 
     """ STEP FIVEa """
@@ -127,8 +137,10 @@ def lin(tour, cost):
         nodeArray, gainSum, lines, removed = breakDelta(nodeArray, lines, gainSum, removed, True)
 
         #advance to next step
-        button.configure(text = "Visualize Tour", command = step5b)
-        # step5b()
+        if option == "step":
+            button.configure(text = "Visualize Tour", command = step5b)
+        else:
+            sv.root.after(1000, step5b)
 
 
     """ STEP FIVEb """
@@ -140,8 +152,10 @@ def lin(tour, cost):
         nodeArray, lines, gainSum = generateTour(nodeArray, lines, gainSum)
 
         #advance to next step
-        button.configure(text = "Compare Tour", command = step6a)
-        # step6a()
+        if option == "step":
+            button.configure(text = "Compare Tour", command = step6a)
+        else:
+            sv.root.after(1000, step6a)
 
 
     """ STEP SIXa """
@@ -154,8 +168,10 @@ def lin(tour, cost):
         print("--Best tour: {}\n".format(stringify(best)))
 
         #advance to next step
-        button.configure(text = "Restore Delta", command = step6b)
-        # step6b()
+        if option == "step":
+            button.configure(text = "Restore Delta", command = step6b)
+        else:
+            sv.root.after(1000, step6b)
 
 
     """ STEP SIXb """
@@ -167,8 +183,10 @@ def lin(tour, cost):
         nodeArray, lines, gainSum = restoreDelta(nodeArray, oldConfigs)
 
         #advance to next step
-        button.configure(text = "Break Delta", command = step7)
-        # step7()
+        if option == "step":
+            button.configure(text = "Break Delta", command = step7)
+        else:
+            sv.root.after(1000, step7)
 
 
     """ STEP SEVEN """
@@ -180,8 +198,10 @@ def lin(tour, cost):
         nodeArray, gainSum, lines, removed = breakDelta(nodeArray, lines, gainSum, removed, False)
 
         #advance to next step
-        button.configure(text = "Add Edge", command = step8)
-        # step8()
+        if option == "step":
+            button.configure(text = "Add Edge", command = step8)
+        else:
+            sv.root.after(1000, step8)
 
 
     """ STEP EIGHT """
@@ -203,16 +223,22 @@ def lin(tour, cost):
         if complete and improved: #scan complete, improvement made. Cease sweep and restart heuristic with best known tour
             print("-NEW BEST TOUR: {}\n".format(stringify(best)))
             i = 0
-            button.configure(text = "Show Difference", command = step10)
-            # step10()
+            if option == "step":
+                button.configure(text = "Show Difference", command = step10)
+            else:
+                sv.root.after(1000, step10)
         elif complete and not improved:#scan complete, no improvement made. Continue sweep with new scan
             print("-UNCHANGED BEST TOUR: {}\n".format(stringify(best)))
             i += 1
-            button.configure(text = "Show Difference", command = step10)
-            # step10()
+            if option == "step":
+                button.configure(text = "Show Difference", command = step10)
+            else:
+                sv.root.after(1000, step10)
         else: #scan incomplete, continue scan
-            button.configure(text = "Break Delta", command = step5a)
-            # step5a()
+            if option == "step":
+                button.configure(text = "Break Delta", command = step5a)
+            else:
+                sv.root.after(1000, step5a)
 
 
     """ STEP TEN """
@@ -223,16 +249,18 @@ def lin(tour, cost):
         #prepare for next node/edge scan
         nodeArray, added, removed, lines, bestLines = concludeScan(scanStart, nodeArray, best, lines, bestLines)
 
-        #configure button
-        button.configure(text = "Clean GUI", command = step11)
-        # step11()
+        #advance to next step
+        if option == "step":
+            button.configure(text = "Clean GUI", command = step11)
+        else:
+            sv.root.after(1000, step11)
 
 
     """ STEP ELEVEN """
     def step11():
         nonlocal scanStart, lines, bestLines, improved
         print("<<< STEP 11 >>>")
-        
+
         #clean GUI
         lines, bestLines = prepareScan(best, lines, bestLines)
 
@@ -240,13 +268,21 @@ def lin(tour, cost):
         scanStart = list(best)
         improved = False
 
-        #configure button
-        button.configure(text = "Begin Scan", command = step2)
-        # step2()
+        #advance to next step
+        if option == "step":
+            button.configure(text = "Begin Scan", command = step2)
+        else:
+            sv.root.after(1000, step2)
 
     
     """ GUI LOOP """
     #run GUI on loop
-    button = Button(sv.root, text = "Remove Edge", command = step2, relief = RIDGE, bd = 4)
-    button.pack(side = BOTTOM, pady = 15)
+    if option == "step":
+        button = Button(sv.root, text = "Remove Edge", command = step2, relief = RIDGE, bd = 4)
+        button.pack(side = BOTTOM, pady = 15)
+    else:
+        def begin():
+            sv.root.after(1000, step2)
+        button = Button(sv.root, text = "Start", command = begin, relief = RIDGE, bd = 4)
+        button.pack(side = BOTTOM, pady = 15)
     sv.root.mainloop()
