@@ -18,10 +18,10 @@ def main():
     sv.wg = weightedGraph(sv.rawCoords)
 
     #create initial tour
-    # tour, cost = farthestInsertion(sv.rawCoords, sv.guiCoords, sv.cityNames, sv.height, sv.width, "2") #farthestInsertion
-    tour, cost = randomTour(sv.rawCoords, sv.cityNames) #random tour
+    tour, cost = farthestInsertion(sv.rawCoords, sv.guiCoords, sv.cityNames, sv.height, sv.width, "2") #farthestInsertion
+    # tour, cost = randomTour(sv.rawCoords, sv.cityNames) #random tour
 
-    # tour = [3,0,2,5,1,4,3] #fixed tour based on 6.csv
+    # tour = [3,0,2,5,1,4,3] #fixed tour for 6.csv
     # cost = calculate(tour)
     
     #run lin-kernighan

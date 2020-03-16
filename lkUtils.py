@@ -35,8 +35,6 @@ def around(nodeArray, node):
 def removeFromArray(nodeArray, edge):
     #destroy circuit
     path = nodeArray
-    print("------")
-    print(path)
     path.remove(path[0])
     
     #shift nodeArray until the edge is split between the beginning and end of the path
@@ -71,6 +69,7 @@ def calculate(nodeArray):
         cost += sv.wg[nodeArray[i]][nodeArray[i+1]]
     return cost
 
+
 #abstracts breakDelta()
 def removeXW(deltaPath, triNode, edge):
     deltaPath = deltaPath[:-1] #remove last edge
@@ -82,12 +81,16 @@ def removeXW(deltaPath, triNode, edge):
     path = leftSection + rightSection
     return path, edge
 
+
+#check if edge or its reversal is in the set
 def inSet(nodeSet, edge):
     if edge in nodeSet or (edge[1], edge[0]) in nodeSet:
         return True
     else:
         return False
 
+
+#update the GUI with lines
 def addLines(nodeArray, lines, width, color):
     for i in range(len(nodeArray)-1):
       node = nodeArray[i]

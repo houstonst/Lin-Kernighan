@@ -18,7 +18,7 @@ def gui(tour, lines):
 
 """ STEPS TWO AND SEVEN"""
 #find 5 longest edges in a tour not already added in
-def longEdges(orig, added):
+def longEdges(scanStart, added):
     flat_wg = []
     longest = []
     for i in range(len(sv.wg)):
@@ -28,12 +28,12 @@ def longEdges(orig, added):
             flat_wg += [[edge, cost]]
     flat_wg.sort(key = lambda c:c[1], reverse = True)
     for [edge, cost] in flat_wg:
-        if inTour(orig, edge) and not inSet(added, edge) and len(longest) < 5:
+        if inTour(scanStart, edge) and not inSet(added, edge) and len(longest) < 5:
             longest += [edge]
     return longest
     
 def removeEdge(nodeArray, edge, removed, lines, gainSum):
-    #highlight node
+    #highlight node head and tail nodes
     nodeA = edge[0]
     nodeB = edge[1]
     nodeAx = sv.guiCoords[nodeA][0]
@@ -43,7 +43,7 @@ def removeEdge(nodeArray, edge, removed, lines, gainSum):
     sv.wndw.create_oval((nodeAx-3, nodeAy-3, nodeAx + 3, nodeAy + 3), fill = "blue")
     sv.wndw.create_oval((nodeBx-3, nodeBy-3, nodeBx + 3, nodeBy + 3), fill = "blue")
 
-    #pick an edge connecting the node to remove
+    #remove the edge
     print("-Pick an edge and remove it")
     path = []
     path = removeFromArray(nodeArray, edge)
@@ -76,16 +76,16 @@ def findCandidates(path, node, unused, removed):
         if i != path[0] and i != node and i != prevNode and i != nextNode and not inSet(removed, (node, i)): #checks if: recreating tour, self-directed, adjacent in path, already removed
             candidates += [[(node, i), nodeSublist[i]]]
     
-    try:
+    try: #candidates populated correctly
         candidates.sort(key = lambda c:c[1])
         candidates = candidates[:5]
         print("--Candidates: {}".format(stringify(candidates)))
-    except:
-        print("--Candidates: {}".format(candidates))
+    except: #no candidates exist
+        print("--No existing candidates")
 
     return candidates
 
-def addEdge(path, node, added, lines, gainSum, candidates, i):
+def addEdge(path, node, added, lines, gainSum, candidates, option):
     #check candidates against gain-sum and pick first edge that keeps it positive
     print("-Check 5 candidates against gain-sum and pick first edge that keeps it positive")
     edge = None
@@ -104,7 +104,7 @@ def addEdge(path, node, added, lines, gainSum, candidates, i):
         sv.wndw.create_oval((nodeX-3, nodeY-3, nodeX + 3, nodeY + 3), fill = "red")
 
         #must reverse path if choosing other node in order to correctly generate delta path
-        if i == 1:
+        if option == 1:
             path = path.reverse()
 
         #create delta path
@@ -121,12 +121,12 @@ def addEdge(path, node, added, lines, gainSum, candidates, i):
         print("-Calculate the gain-sum")
         print("--Gain-sum = {}\n".format(gainSum))
     except:
-        if i == 0:
-            print("\n--------------------------------------")
-            print("\n{ NO FEASIBLE CANDIDATES. TRY OTHER NODE. }")
-        elif i == 1 or i == 2:
-            print("\n--------------------------------------")
-            print("\n{ NO FEASIBLE CANDIDATES. HALT SCAN. }")
+        if option == 0: #tried first node. No feasible candidates existed
+            print("\n-----------------------------------------------")
+            print("\n<<< NO FEASIBLE CANDIDATES. TRY OTHER NODE. >>>")
+        elif option == 1 or option == 2: #tried second node or could not create new delta path. Halt scan
+            print("\n------------------------------------------")
+            print("\n<<< NO FEASIBLE CANDIDATES. HALT SCAN. >>>")
         return [], path, added, lines, gainSum, True
     
     oldConfigs = [deltaPath, lines, gainSum]
@@ -186,6 +186,7 @@ def generateTour(path, lines, gainSum):
 
     return tour, lines, gainSum
 
+
 """ STEP SIX"""
 def compareTour(tour, improved, best):
     #compare tour with best seen so far
@@ -223,9 +224,9 @@ def restoreDelta(tour, oldConfigs):
 
 
 """ STEP 10 """
-def concludeScan(orig, path, best, lines, bestLines):
+def concludeScan(scanStart, path, best, lines, bestLines):
     #reset nodeArray
-    nodeArray = orig
+    nodeArray = scanStart
 
     #reset added/removed sets
     print("-Reset added/removed sets")
@@ -247,21 +248,21 @@ def concludeScan(orig, path, best, lines, bestLines):
     bestLines = addLines(best, bestLines, 4, "light blue")
 
     #overlap original edges
-    lines = addLines(orig, lines, 1,  "black")
+    lines = addLines(scanStart, lines, 1,  "black")
 
     return nodeArray, added, removed, lines, bestLines
 
 
 """ STEP ELEVEN """
-def prepareScan(orig, lines, bestLines):
-    #sweep GUI
-    print("-Sweep GUI\n")
+def prepareScan(scanStart, lines, bestLines):
+    #clean GUI
+    print("-Clean GUI\n")
     for line in lines.keys():
         sv.wndw.delete(lines[line])
     for line in bestLines.keys():
         sv.wndw.delete(bestLines[line])
 
     #draw original edges
-    lines = addLines(orig, lines, 1, "black")
+    lines = addLines(scanStart, lines, 1, "black")
     
     return lines, bestLines
