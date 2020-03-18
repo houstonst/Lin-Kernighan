@@ -25,8 +25,11 @@ def lin(tour, cost, option):
     #store starting tour for each scan
     scanStart = list(tour)
 
-    #step iteration tracker
-    i = 0
+    #scan iteration tracker
+    scan = 0
+
+    #candidate iteration tracker
+    cand = 0
 
     #best tour
     best = list(tour) #prevents pointer issue
@@ -61,8 +64,8 @@ def lin(tour, cost, option):
 
     """ STEP TWO """
     def step2():
-        nonlocal i, nodeArray, nodeA, nodeB, removed, lines, bestLines, gainSum
-        if i < 5:
+        nonlocal scan, cand, nodeArray, nodeA, nodeB, removed, lines, bestLines, gainSum, delay
+        if scan < 48*2*5: #multiply by 2 in order to do a scan for both nodes of the deleted edge
             # print("<<< STEP 2 >>>")
             nodeArray = list(best) #a new scan works with the best tour seen so far
 
@@ -71,8 +74,14 @@ def lin(tour, cost, option):
             longest = longEdges(nodeArray, added)        
             # print("--Longest edges: {}".format(stringify(longest)))
 
+            """ DEBUG CROSSES """
+            # print("Scan {} deletes edge {}\n".format(scan, longest[scan//10]))
+            # if scan == 60:
+            #     delay = 1000
+            """ DEBUG CROSSES """
+
             #remove edges
-            nodeArray, nodeA, nodeB, removed, lines, gainSum = removeEdge(nodeArray, longest[i], removed, lines, gainSum)
+            nodeArray, nodeA, nodeB, removed, lines, gainSum = removeEdge(nodeArray, longest[scan//10], removed, lines, gainSum)
 
             #advance to next step
             if option == "step":
@@ -105,29 +114,38 @@ def lin(tour, cost, option):
 
     """ STEP THREE """
     def step3():
-        nonlocal i, oldConfigs, nodeArray, added, lines, gainSum, improved
+        nonlocal scan, oldConfigs, nodeArray, added, lines, gainSum, improved
         # print("<<< STEP 3 >>>")
 
         #find 5 candidates and add edge if possible
-        candidates = findCandidates(nodeArray, nodeA, nodeB, removed)
-        oldConfigs, nodeArray, added, lines, gainSum, complete = addEdge(nodeArray, nodeA, added, lines, gainSum, candidates, 0)
+        if scan % 10 < 5:
+            candidates = findCandidates(nodeArray, nodeA, nodeB, removed)
+            cutoff = scan % 5
+            candidates = candidates[cutoff:]
+            # if scan >= 60:
+            #     print(candidates)
+            oldConfigs, nodeArray, added, lines, gainSum, complete = addEdge(nodeArray, nodeA, added, lines, gainSum, candidates, 0)
 
         #try other node if previous attempt unsuccessful (could not find feasible nodeA candidates)
-        if complete:
+        elif scan % 10 < 10:
             candidates = findCandidates(nodeArray, nodeB, nodeA, removed)
+            cutoff = scan % 5
+            candidates = candidates[cutoff:]
+            # if scan >= 60:
+            #     print(candidates)
             oldConfigs, nodeArray, added, lines, gainSum, complete = addEdge(nodeArray, nodeB, added, lines, gainSum, candidates, 1)
 
         #check for completion and improvement
         if complete and improved: #scan complete, improvement made. Cease sweep and restart heuristic with best tour
             # print("-NEW BEST TOUR: {}\n".format(stringify(best)))
-            i = 0
+            scan = 0
             if option == "step":
                 button.configure(text = "Show Difference", command = step10)
             else:
                 sv.root.after(delay, step10)
         elif complete and not improved:#scan complete, no improvement made. Continue sweep with new scan
             # print("-UNCHANGED BEST TOUR: {}\n".format(stringify(best)))
-            i += 1
+            scan += 1
             if option == "step":
                 button.configure(text = "Show Difference", command = step10)
             else:
@@ -217,7 +235,7 @@ def lin(tour, cost, option):
 
     """ STEP EIGHT """
     def step8():
-        nonlocal oldConfigs, nodeArray, added, lines, gainSum, i, scanStart, improved
+        nonlocal oldConfigs, nodeArray, added, lines, gainSum, scan, scanStart, improved
         # print("<<< STEP 8 >>>")
 
         #define the head and tail nodes of the tour
@@ -233,14 +251,14 @@ def lin(tour, cost, option):
         #check for completion and improvement
         if complete and improved: #scan complete, improvement made. Cease sweep and restart heuristic with best known tour
             # print("-NEW BEST TOUR: {}\n".format(stringify(best)))
-            i = 0
+            scan = 0
             if option == "step":
                 button.configure(text = "Show Difference", command = step10)
             else:
                 sv.root.after(delay, step10)
         elif complete and not improved:#scan complete, no improvement made. Continue sweep with new scan
             # print("-UNCHANGED BEST TOUR: {}\n".format(stringify(best)))
-            i += 1
+            scan += 1
             if option == "step":
                 button.configure(text = "Show Difference", command = step10)
             else:

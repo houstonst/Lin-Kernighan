@@ -26,7 +26,7 @@ def main():
     import staticVars as sv
     from fi import farthestInsertion
     from nn import nearestNeighbor
-    from lkUtils import calculate
+    from lkUtils import calculate, stringify
     from rand import randomTour
 
     #form GUI and weighted graph
@@ -41,7 +41,7 @@ def main():
     elif algo == "nearest":
         tour, cost = nearestNeighbor(sv.rawCoords, sv.guiCoords, sv.cityNames, sv.height, sv.width, "2")
     elif algo == "fixed":
-        tour = [3,0,2,5,1,4,3] #fixed tour for 6.csv
+        tour = [7,8,20,10,24,9,19,21,25,5,11,0,6,12,1,17,2,13,23,14,4,16,18,3,15,22,7] #fixed tour for 26.csv
         cost = calculate(tour)
         print("-Initial Cost: {}".format(cost))
         print("-Initial Tour: {}\n".format(stringify(tour)))

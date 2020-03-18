@@ -28,7 +28,7 @@ def longEdges(scanStart, added):
             flat_wg += [[edge, cost]]
     flat_wg.sort(key = lambda c:c[1], reverse = True)
     for [edge, cost] in flat_wg:
-        if inTour(scanStart, edge) and not inSet(added, edge) and len(longest) < 5:
+        if inTour(scanStart, edge) and not inSet(added, edge) and len(longest) < 48:
             longest += [edge]
     return longest
     
@@ -75,6 +75,9 @@ def findCandidates(path, node, unused, removed):
     for i in range(len(nodeSublist)):
         if i != path[0] and i != node and i != prevNode and i != nextNode and not inSet(removed, (node, i)): #checks if: recreating tour, self-directed, adjacent in path, already removed
             candidates += [[(node, i), nodeSublist[i]]]
+        else:
+            # print(i)
+            pass
     
     try: #candidates populated correctly
         candidates.sort(key = lambda c:c[1])
