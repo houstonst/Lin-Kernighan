@@ -3,26 +3,29 @@ from euclidean import *
 
 def main():
     #accept input
-    print("-Enter a .csv or .txt file [example.csv or example.txt]:")
-    file = "./tests/" + input()
+#     print("-Enter a .csv or .txt file [example.csv or example.txt]:")
+#     file = "./tests/" + input()
 
-    print("\n-Pick a path generation algorithm (random by default):")
-    print("""--farthest: Farthest Insertion
---nearest: Nearest Neighbor
---fixed: Fixed Tour defined in code""")
-    algo = input()
+#     print("\n-Pick a path generation algorithm (random by default):")
+#     print("""--farthest: Farthest Insertion
+# --nearest: Nearest Neighbor
+# --fixed: Fixed Tour defined in code""")
+#     algo = input()
 
-    print("\n-Pick to run in step mode, at pace, or fast as possible:")
-    print("""--step
---slow
---medium
---fast
---max""")
-    option = input()
-    print("\n")
+#     print("\n-Pick to run in step mode, at pace, or fast as possible:")
+#     print("""--step
+# --slow
+# --medium
+# --fast
+# --max""")
+    # option = input()
+    # print("\n")
+    file = "./tests/6.csv"
+    algo = "farthest"
+    option = "step"
 
     #import after accepting input or else GUI runs annoyingly
-    from lk import lin
+    from revision import lin
     import staticVars as sv
     from fi import farthestInsertion
     from nn import nearestNeighbor
