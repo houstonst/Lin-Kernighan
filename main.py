@@ -20,8 +20,8 @@ def main():
 # --max""")
     # option = input()
     # print("\n")
-    file = "./tests/6.csv"
-    algo = "farthest"
+    file = "./tests/14.csv"
+    algo = "fixed"
     option = "step"
 
     #import after accepting input or else GUI runs annoyingly
@@ -44,7 +44,7 @@ def main():
     elif algo == "nearest":
         tour, cost = nearestNeighbor(sv.rawCoords, sv.guiCoords, sv.cityNames, sv.height, sv.width, "2")
     elif algo == "fixed":
-        tour = [7,8,20,10,24,9,19,21,25,5,11,0,6,12,1,17,2,13,23,14,4,16,18,3,15,22,7] #fixed tour for 26.csv
+        tour = [5,3,13,8,10,1,11,9,12,2,7,0,6,4,5] #14
         cost = calculate(tour)
         print("-Initial Cost: {}".format(cost))
         print("-Initial Tour: {}\n".format(stringify(tour)))

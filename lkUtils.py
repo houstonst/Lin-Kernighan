@@ -32,7 +32,7 @@ def around(nodeArray, node):
 
 
 #remove an edge from a tour
-def removeFromArray(nodeArray, edge):
+def removeUtil(nodeArray, edge):
     #destroy circuit
     path = nodeArray
     path.remove(path[0])
