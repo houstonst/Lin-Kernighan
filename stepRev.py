@@ -9,7 +9,7 @@ def findCandidates(vert, bFactor, node):
     # sv.wndw.create_oval((unusedX-3, unusedY-3, unusedX + 3, unusedY + 3), fill = "red")
 
     #find candidates
-    print("-Find specified number of candidates from node {}".format(node))
+    # print("-Find specified number of candidates from node {}".format(node))
     path = vert.array
     candidates = []
     nodeSublist = sv.wg[node]
@@ -21,9 +21,9 @@ def findCandidates(vert, bFactor, node):
     try: #candidates populated correctly
         candidates.sort(key = lambda c:c[1])
         candidates = candidates[:bFactor]
-        print("--Candidates: {}\n".format(stringify(candidates)))
+        # print("--Candidates: {}\n".format(stringify(candidates)))
     except: #no candidates exist
-        print("--No existing candidates\n")
+        # print("--No existing candidates\n")
         pass
 
     return candidates
@@ -66,7 +66,7 @@ def checkTour(vert):
 def deltaOps(vert, candidate, reverse):
     edgeAdded = addEdge(vert, candidate, reverse)
     if edgeAdded:
-        print("Edge {} added for gain-sum {}".format(candidate[0], vert.gainSum))
+        # print("Edge {} added for gain-sum {}".format(candidate[0], vert.gainSum))
         breakDelta(vert)
         checkedTour, checkedCost = checkTour(vert)
         return checkedTour, checkedCost

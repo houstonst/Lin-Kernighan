@@ -3,14 +3,14 @@ from euclidean import *
 
 def main():
     #accept input
-#     print("-Enter a .csv or .txt file [example.csv or example.txt]:")
-#     file = "./tests/" + input()
+    print("-Enter a .csv or .txt file [example.csv or example.txt]:")
+    file = "./tests/" + input()
 
-#     print("\n-Pick a path generation algorithm (random by default):")
-#     print("""--farthest: Farthest Insertion
-# --nearest: Nearest Neighbor
-# --fixed: Fixed Tour defined in code""")
-#     algo = input()
+    print("\n-Pick a path generation algorithm (random by default):")
+    print("""--farthest: Farthest Insertion
+--nearest: Nearest Neighbor
+--fixed: Fixed Tour defined in code""")
+    algo = input()
 
 #     print("\n-Pick to run in step mode, at pace, or fast as possible:")
 #     print("""--step
@@ -20,8 +20,6 @@ def main():
 # --max""")
     # option = input()
     # print("\n")
-    file = "./tests/14.csv"
-    algo = "fixed"
     option = "step"
 
     #import after accepting input or else GUI runs annoyingly
