@@ -1,11 +1,12 @@
 from tkinter import *
-from win32.win32api import GetSystemMetrics
+from screeninfo import get_monitors
 
 """ ONLY STORE STATIC VARIABLES """
 #GUI variables
 root = Tk()
-height = GetSystemMetrics(1) - 200
-width = GetSystemMetrics(0) - 200
+monitors = get_monitors()
+height = monitors[0].height- 200
+width = height
 root.title("Lin-Kernighan")
 root.iconbitmap('./graphics/favicon.ico')
 wndw = Canvas(root, width = width, height = height)

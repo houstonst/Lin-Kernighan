@@ -49,7 +49,7 @@ def nearestNeighbor(initCoords, graph, nameArray, height, width, option):
   i = 1
   wg = weightedGraph(initCoords)
 
-  while len(paths) < 5: #build paths
+  while len(paths) < 1: #build paths
     temp = random.randrange(len(graph))
     if [temp] not in paths:
       paths += [[temp]]
@@ -103,8 +103,4 @@ def nearestNeighbor(initCoords, graph, nameArray, height, width, option):
   
   else:
     path, cost = stepper()
-
-    print("-Initial Cost: {}".format(cost))
-    print("-Initial Tour: {}\n".format(stringify(path)))
-
     return path, cost

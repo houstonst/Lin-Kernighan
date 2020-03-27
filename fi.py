@@ -173,6 +173,4 @@ def farthestInsertion(initCoords, graph, nameArray, height, width, option):
   else:
     stepper()
 
-  print("-Initial Cost: {}".format(cost))
-  print("-Initial Tour: {}\n".format(stringify(path)))
   return path, cost

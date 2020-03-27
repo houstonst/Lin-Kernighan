@@ -2,38 +2,6 @@ from lkUtils import *
 from stepRev import *
 import copy
 
-#def extend(path, candidate):
-    #form delta path
-    #check tour
-    #break delta path
-    #find closest candidate
-    #return candidates
-
-
-#def scan(edge): #level0
-    #remove edge
-    #for head, tail in edge: #level1 nodes
-        #find 5 candidates
-        #for each candidate: #level2 nodes
-            #form delta path
-            #check resulting tour
-            #break delta path
-            #find 5 candidates
-            #for each candidate: #level3 nodes
-                #form delta path
-                #check tour
-                #break delta path
-                #find closest candidate #level4->N nodes
-                #while(candidateExists): 
-                    #closestCandidate = extend(path, candidate)
-                #completed level4->N
-            #completed level3
-        #completed level2
-    #completed level1
-#completed level0
-
-"""--------------------------DEPRECATED------------------------------"""
-
 def sweep(best):
     # print("<<<< Sweep with tour: {}, cost: {} >>>>".format(stringify(best.array), best.cost))
     for i in range(len(best.array)-1):
@@ -78,7 +46,7 @@ def scan(best, edge):
 
     #scan from head
     # print("<< Head level 2 >>")
-    level2headVerts = expand(best, [level1vert], 10, -1, False)
+    level2headVerts = expand(best, [level1vert], 5, -1, False)
     # print("<< Head level 3 >>")
     level3headVerts = expand(best, level2headVerts, 5, -1, False)
     # print("<< Head level 4 >>")
@@ -90,8 +58,6 @@ def scan(best, edge):
         i += 1
     # print("<< HEAD COMPLETE >>")
 
-    # scanOriginalBest.info()
-    # best.info()
     if best.cost < scanOriginalBest.cost:
         improved = True
 

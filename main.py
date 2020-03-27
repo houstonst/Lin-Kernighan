@@ -1,25 +1,33 @@
+import time, os
 from reader import *
 from euclidean import *
 
 def main():
+    #clear the console
+    clear = lambda: os.system('cls')
+    clear()
+
     #accept input
-    print("-Enter a .csv or .txt file [example.csv or example.txt]:")
+    print("Enter a .csv or .txt file [example.csv or example.txt]. Alternatively, enter 'test' in order to benchmark:\n")
     file = "./tests/" + input()
+    clear()
 
-    print("\n-Pick a path generation algorithm (random by default):")
-    print("""--farthest: Farthest Insertion
---nearest: Nearest Neighbor
---fixed: Fixed Tour defined in code""")
+
+    print("Pick a path generation algorithm (random by default):")
+    print("""-farthest: Farthest Insertion
+-nearest: Nearest Neighbor
+-fixed: Fixed Tour defined in code\n""")
     algo = input()
+    clear()
 
-#     print("\n-Pick to run in step mode, at pace, or fast as possible:")
-#     print("""--step
-# --slow
-# --medium
+#     print("Pick to run in step mode, at pace, or fast as possible:")
+#     print("""-step
+# -slow
+# -medium
 # --fast
-# --max""")
+# -max"\n"")
     # option = input()
-    # print("\n")
+    # clear()
     option = "step"
 
     #import after accepting input or else GUI runs annoyingly
@@ -35,6 +43,7 @@ def main():
     sv.wg = weightedGraph(sv.rawCoords)
 
     #create initial tour
+    start = time.time()
     tour = None
     cost = None
     if algo == "farthest":
@@ -44,13 +53,18 @@ def main():
     elif algo == "fixed":
         tour = [5,3,13,8,10,1,11,9,12,2,7,0,6,4,5] #14
         cost = calculate(tour)
-        print("-Initial Cost: {}".format(cost))
-        print("-Initial Tour: {}\n".format(stringify(tour)))
     else:
         tour, cost = randomTour(sv.rawCoords, sv.cityNames)
+    
+    #print tour info
+    end = time.time()
+    runtime = end - start
+    print("Initial Cost: {} units".format(round(cost)))
+    print("Tour generation runtime: {} sec\n".format(round(runtime)))
 
     #run lin-kernighan
-    lin(tour, cost, option)
+    print("<<< RUN LIN-KERNIGHAN >>>")
+    lin(tour, cost, runtime, option)
 
 if __name__ == "__main__":
     main()
