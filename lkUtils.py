@@ -1,4 +1,5 @@
 import staticVars as sv
+import time
 
 #find the node's adjacencies in a path or tour
 def around(nodeArray, node):
@@ -100,3 +101,10 @@ def addLines(nodeArray, lines, width, color):
       lines.update({(nxt, node): a})
 
     return lines
+
+#suspend execution
+def sleeper(seconds):
+    for i in range(seconds, 0, -1):
+        print(i)
+        time.sleep(1)
+    print(0)

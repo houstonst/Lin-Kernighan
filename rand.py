@@ -2,8 +2,9 @@ from lkUtils import stringify
 import random
 from euclidean import *
 
-def randomTour(graph, nameArray):
-  print("\n<<< GENERATE RANDOM TOUR >>>")
+def randomTour(graph, nameArray, printData):
+  if printData:
+    print("\n<<< GENERATE RANDOM TOUR >>>")
   path = []
   cost = 0.0
   wg = weightedGraph(graph)

@@ -2,12 +2,12 @@ from lkUtils import *
 from stepRev import *
 import copy
 
-def sweep(best):
+def sweep(best, solmax):
     # print("<<<< Sweep with tour: {}, cost: {} >>>>".format(stringify(best.array), best.cost))
     for i in range(len(best.array)-1):
         edge = (best.array[i], best.array[i+1])
         # print("\n<<< Scan {} >>>".format(i))
-        improved = scan(best, edge)
+        improved = scan(best, edge, solmax)
         if improved:
             return best
     return False
@@ -38,7 +38,7 @@ def expand(best, verts, bFactor, index, reverse):
 
     return resultingVerts
 
-def scan(best, edge):
+def scan(best, edge, solmax):
     improved = False
     scanOriginalBest = copy.deepcopy(best)
     # print("-Scanning after removing edge {}\n".format(edge))
@@ -46,9 +46,9 @@ def scan(best, edge):
 
     #scan from head
     # print("<< Head level 2 >>")
-    level2headVerts = expand(best, [level1vert], 5, -1, False)
+    level2headVerts = expand(best, [level1vert], solmax, -1, False)
     # print("<< Head level 3 >>")
-    level3headVerts = expand(best, level2headVerts, 5, -1, False)
+    level3headVerts = expand(best, level2headVerts, solmax, -1, False)
     # print("<< Head level 4 >>")
     levelNheadVerts = expand(best, level3headVerts, 1, -1, False)
     i = 5
@@ -64,9 +64,9 @@ def scan(best, edge):
     else:
         #scan from tail
         # print("\n<< Tail level 2 >>")
-        level2tailVerts = expand(best, [level1vert], 5, 0, True)
+        level2tailVerts = expand(best, [level1vert], solmax, 0, True)
         # print("< Tail level 3 >")
-        level3tailVerts = expand(best, level2tailVerts, 5, -1, False)
+        level3tailVerts = expand(best, level2tailVerts, solmax, -1, False)
         # print("< Tail level 4 >")
         levelNtailVerts = expand(best, level3tailVerts, 1, -1, False)
         i = 5

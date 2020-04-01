@@ -126,8 +126,9 @@ def step(initCoords, graph, path, lineList, cost, itr, wndw, option):
     else:
       print("error")
 
-def farthestInsertion(initCoords, graph, nameArray, height, width, option):
-  print("\n<<< RUN FARTHEST INSERTION >>>")
+def farthestInsertion(initCoords, graph, nameArray, height, width, option, printData):
+  if printData:
+    print("\n<<< RUN FARTHEST INSERTION >>>")
   if option == "1":
     # TKINTER #
     root = Tk()

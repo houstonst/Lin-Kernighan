@@ -12,9 +12,6 @@ root.iconbitmap('./graphics/favicon.ico')
 wndw = Canvas(root, width = width, height = height)
 wndw.pack(expand = YES, fill=BOTH)
 
-#GUI option
-option = "1" #1: GUI; 2: w/o GUI
-
 #weighted graph
 wg = [] #initially empty. Modified by main.py
 

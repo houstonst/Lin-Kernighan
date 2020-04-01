@@ -26,8 +26,9 @@ def step(initCoords, graph, paths, iterations, i, wndw, option):
   
   return paths
 
-def nearestNeighbor(initCoords, graph, nameArray, height, width, option):
-  print("\n<<< RUN NEAREST NEIGHBOR >>>")
+def nearestNeighbor(initCoords, graph, nameArray, height, width, option, printData):
+  if printData:
+    print("\n<<< RUN NEAREST NEIGHBOR >>>")
   if option == "1":
     # TKINTER #
     root = Tk()
@@ -50,7 +51,8 @@ def nearestNeighbor(initCoords, graph, nameArray, height, width, option):
   wg = weightedGraph(initCoords)
 
   while len(paths) < 1: #build paths
-    temp = random.randrange(len(graph))
+    # temp = random.randrange(len(graph))
+    temp = 0
     if [temp] not in paths:
       paths += [[temp]]
 
@@ -68,7 +70,7 @@ def nearestNeighbor(initCoords, graph, nameArray, height, width, option):
             cost += wg[path[i]][path[i+1]]
           if cost < bestPath[1]:
             bestPath = [path, cost]
-
+        
         print("Nearest Neighbor Tour: {}, Cost: {}".format(bestPath[0], bestPath[1]))
         return path, cost, 0
     elif option == "2":
