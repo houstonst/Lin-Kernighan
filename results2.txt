@@ -1,0 +1,4994 @@
+<<< 1 iteration cap >>>
+-Running iteration 0
+LK Best Cost: 21840 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146121 units
+Reduced by: 87%
+--Iteration cost: 21839.68340211166
+-Best Cost: 21839.68340211166
+
+<<< 10 iteration cap >>>
+-Running iteration 0
+LK Best Cost: 23629 units
+Lin-Kernighan runtime: 21 sec
+Total runtime: 21 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 159630 units
+Reduced by: 87%
+--Iteration cost: 23629.39795062147
+-Running iteration 1
+LK Best Cost: 22753 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 156810 units
+Reduced by: 87%
+--Iteration cost: 22752.83939943789
+-Running iteration 2
+LK Best Cost: 21881 units
+Lin-Kernighan runtime: 21 sec
+Total runtime: 21 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155532 units
+Reduced by: 88%
+--Iteration cost: 21880.810011148573
+-Running iteration 3
+LK Best Cost: 23209 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 135133 units
+Reduced by: 85%
+--Iteration cost: 23208.595009663328
+-Running iteration 4
+LK Best Cost: 23071 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 138463 units
+Reduced by: 86%
+--Iteration cost: 23070.958058303575
+-Running iteration 5
+LK Best Cost: 21696 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 143119 units
+Reduced by: 87%
+--Iteration cost: 21695.712143942957
+-Running iteration 6
+LK Best Cost: 22773 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 137159 units
+Reduced by: 86%
+--Iteration cost: 22772.948261509388
+-Running iteration 7
+LK Best Cost: 22031 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151738 units
+Reduced by: 87%
+--Iteration cost: 22031.456808533076
+-Running iteration 8
+LK Best Cost: 22112 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 152285 units
+Reduced by: 87%
+--Iteration cost: 22112.19221884915
+-Running iteration 9
+LK Best Cost: 21619 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 162209 units
+Reduced by: 88%
+--Iteration cost: 21619.42750258842
+-Best Cost: 21619.42750258842
+
+<<< 20 iteration cap >>>
+-Running iteration 0
+LK Best Cost: 22370 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 133508 units
+Reduced by: 86%
+--Iteration cost: 22370.453685692875
+-Running iteration 1
+LK Best Cost: 24410 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 145242 units
+Reduced by: 86%
+--Iteration cost: 24410.40923378742
+-Running iteration 2
+LK Best Cost: 23461 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 148843 units
+Reduced by: 86%
+--Iteration cost: 23461.368555437624
+-Running iteration 3
+LK Best Cost: 21883 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 156845 units
+Reduced by: 88%
+--Iteration cost: 21882.544534916877
+-Running iteration 4
+LK Best Cost: 24318 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149076 units
+Reduced by: 86%
+--Iteration cost: 24318.328860488473
+-Running iteration 5
+LK Best Cost: 24002 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149973 units
+Reduced by: 86%
+--Iteration cost: 24002.464645235017
+-Running iteration 6
+LK Best Cost: 21501 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 154712 units
+Reduced by: 88%
+--Iteration cost: 21501.480867665232
+-Running iteration 7
+LK Best Cost: 22062 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150039 units
+Reduced by: 87%
+--Iteration cost: 22062.4205374579
+-Running iteration 8
+LK Best Cost: 22337 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 148050 units
+Reduced by: 87%
+--Iteration cost: 22337.404828498602
+-Running iteration 9
+LK Best Cost: 22146 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149747 units
+Reduced by: 87%
+--Iteration cost: 22146.00726783847
+-Running iteration 10
+LK Best Cost: 24027 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 140198 units
+Reduced by: 85%
+--Iteration cost: 24026.893211385403
+-Running iteration 11
+LK Best Cost: 21888 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155278 units
+Reduced by: 88%
+--Iteration cost: 21888.383420462043
+-Running iteration 12
+LK Best Cost: 22710 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153730 units
+Reduced by: 87%
+--Iteration cost: 22709.722679253646
+-Running iteration 13
+LK Best Cost: 22837 units
+Lin-Kernighan runtime: 22 sec
+Total runtime: 22 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 157858 units
+Reduced by: 87%
+--Iteration cost: 22837.46448871535
+-Running iteration 14
+LK Best Cost: 21656 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155918 units
+Reduced by: 88%
+--Iteration cost: 21655.59963568362
+-Running iteration 15
+LK Best Cost: 23626 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146537 units
+Reduced by: 86%
+--Iteration cost: 23625.60451218894
+-Running iteration 16
+LK Best Cost: 21809 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 135858 units
+Reduced by: 86%
+--Iteration cost: 21809.132953686876
+-Running iteration 17
+LK Best Cost: 22202 units
+Lin-Kernighan runtime: 21 sec
+Total runtime: 21 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 158369 units
+Reduced by: 88%
+--Iteration cost: 22202.196008014813
+-Running iteration 18
+LK Best Cost: 21455 units
+Lin-Kernighan runtime: 22 sec
+Total runtime: 22 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 158926 units
+Reduced by: 88%
+--Iteration cost: 21454.71341348528
+-Running iteration 19
+LK Best Cost: 21572 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 148895 units
+Reduced by: 87%
+--Iteration cost: 21571.777102901055
+-Best Cost: 21454.71341348528
+
+<<< 30 iteration cap >>>
+-Running iteration 0
+LK Best Cost: 22341 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 137410 units
+Reduced by: 86%
+--Iteration cost: 22341.249093624818
+-Running iteration 1
+LK Best Cost: 22276 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 138770 units
+Reduced by: 86%
+--Iteration cost: 22275.68484751293
+-Running iteration 2
+LK Best Cost: 22090 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 137028 units
+Reduced by: 86%
+--Iteration cost: 22090.4361229841
+-Running iteration 3
+LK Best Cost: 22230 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146017 units
+Reduced by: 87%
+--Iteration cost: 22229.761682569526
+-Running iteration 4
+LK Best Cost: 22139 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147713 units
+Reduced by: 87%
+--Iteration cost: 22139.347235893005
+-Running iteration 5
+LK Best Cost: 22081 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146879 units
+Reduced by: 87%
+--Iteration cost: 22080.70949163199
+-Running iteration 6
+LK Best Cost: 22944 units
+Lin-Kernighan runtime: 21 sec
+Total runtime: 21 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155553 units
+Reduced by: 87%
+--Iteration cost: 22944.056118401833
+-Running iteration 7
+LK Best Cost: 21487 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150936 units
+Reduced by: 88%
+--Iteration cost: 21487.339925336655
+-Running iteration 8
+LK Best Cost: 23530 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146419 units
+Reduced by: 86%
+--Iteration cost: 23529.740818091697
+-Running iteration 9
+LK Best Cost: 22821 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151841 units
+Reduced by: 87%
+--Iteration cost: 22820.51215566382
+-Running iteration 10
+LK Best Cost: 22992 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146123 units
+Reduced by: 86%
+--Iteration cost: 22991.998463425323
+-Running iteration 11
+LK Best Cost: 22105 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153093 units
+Reduced by: 87%
+--Iteration cost: 22104.86838976307
+-Running iteration 12
+LK Best Cost: 22012 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 141596 units
+Reduced by: 87%
+--Iteration cost: 22012.375438234503
+-Running iteration 13
+LK Best Cost: 22181 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149145 units
+Reduced by: 87%
+--Iteration cost: 22180.908417508792
+-Running iteration 14
+LK Best Cost: 21807 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 145456 units
+Reduced by: 87%
+--Iteration cost: 21806.73728202353
+-Running iteration 15
+LK Best Cost: 22816 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 156997 units
+Reduced by: 87%
+--Iteration cost: 22815.90574134008
+-Running iteration 16
+LK Best Cost: 22245 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146239 units
+Reduced by: 87%
+--Iteration cost: 22244.58437158337
+-Running iteration 17
+LK Best Cost: 21645 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144351 units
+Reduced by: 87%
+--Iteration cost: 21645.188684131062
+-Running iteration 18
+LK Best Cost: 21884 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 158288 units
+Reduced by: 88%
+--Iteration cost: 21883.50104375072
+-Running iteration 19
+LK Best Cost: 21775 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147101 units
+Reduced by: 87%
+--Iteration cost: 21775.217991979294
+-Running iteration 20
+LK Best Cost: 22126 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 162464 units
+Reduced by: 88%
+--Iteration cost: 22125.845887475705
+-Running iteration 21
+LK Best Cost: 22225 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150142 units
+Reduced by: 87%
+--Iteration cost: 22224.72227453318
+-Running iteration 22
+LK Best Cost: 22031 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 160993 units
+Reduced by: 88%
+--Iteration cost: 22031.45680853307
+-Running iteration 23
+LK Best Cost: 21807 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151598 units
+Reduced by: 87%
+--Iteration cost: 21806.737282023525
+-Running iteration 24
+LK Best Cost: 22007 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 160683 units
+Reduced by: 88%
+--Iteration cost: 22006.742489949316
+-Running iteration 25
+LK Best Cost: 21378 units
+Lin-Kernighan runtime: 21 sec
+Total runtime: 21 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 165403 units
+Reduced by: 89%
+--Iteration cost: 21377.51172249954
+-Running iteration 26
+LK Best Cost: 22901 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 152106 units
+Reduced by: 87%
+--Iteration cost: 22901.23549164033
+-Running iteration 27
+LK Best Cost: 21970 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 142501 units
+Reduced by: 87%
+--Iteration cost: 21969.95015505242
+-Running iteration 28
+LK Best Cost: 23305 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 140453 units
+Reduced by: 86%
+--Iteration cost: 23305.383325526305
+-Running iteration 29
+LK Best Cost: 22521 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 137241 units
+Reduced by: 86%
+--Iteration cost: 22521.423976537728
+-Best Cost: 21377.51172249954
+
+<<< 40 iteration cap >>>
+-Running iteration 0
+LK Best Cost: 21574 units
+Lin-Kernighan runtime: 24 sec
+Total runtime: 24 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 172774 units
+Reduced by: 89%
+--Iteration cost: 21574.044352030618
+-Running iteration 1
+LK Best Cost: 21836 units
+Lin-Kernighan runtime: 21 sec
+Total runtime: 21 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 173270 units
+Reduced by: 89%
+--Iteration cost: 21835.583730715563
+-Running iteration 2
+LK Best Cost: 21467 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 157665 units
+Reduced by: 88%
+--Iteration cost: 21466.578963049426
+-Running iteration 3
+LK Best Cost: 21736 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 156318 units
+Reduced by: 88%
+--Iteration cost: 21736.136117410777
+-Running iteration 4
+LK Best Cost: 21938 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 154089 units
+Reduced by: 88%
+--Iteration cost: 21938.005313433674
+-Running iteration 5
+LK Best Cost: 21514 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 156461 units
+Reduced by: 88%
+--Iteration cost: 21514.321493049993
+-Running iteration 6
+LK Best Cost: 21898 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 157341 units
+Reduced by: 88%
+--Iteration cost: 21898.024974727778
+-Running iteration 7
+LK Best Cost: 22198 units
+Lin-Kernighan runtime: 14 sec
+Total runtime: 14 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 134171 units
+Reduced by: 86%
+--Iteration cost: 22197.921497256575
+-Running iteration 8
+LK Best Cost: 21796 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 143233 units
+Reduced by: 87%
+--Iteration cost: 21796.368206876818
+-Running iteration 9
+LK Best Cost: 23587 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147366 units
+Reduced by: 86%
+--Iteration cost: 23587.455762082158
+-Running iteration 10
+LK Best Cost: 21715 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 148041 units
+Reduced by: 87%
+--Iteration cost: 21714.912247858247
+-Running iteration 11
+LK Best Cost: 22482 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 142773 units
+Reduced by: 86%
+--Iteration cost: 22481.673772713282
+-Running iteration 12
+LK Best Cost: 21839 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 152420 units
+Reduced by: 87%
+--Iteration cost: 21839.34985748443
+-Running iteration 13
+LK Best Cost: 22212 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153150 units
+Reduced by: 87%
+--Iteration cost: 22211.59563803331
+-Running iteration 14
+LK Best Cost: 21938 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 137112 units
+Reduced by: 86%
+--Iteration cost: 21937.560118856785
+-Running iteration 15
+LK Best Cost: 22007 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 159383 units
+Reduced by: 88%
+--Iteration cost: 22006.74248994932
+-Running iteration 16
+LK Best Cost: 22010 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 142940 units
+Reduced by: 87%
+--Iteration cost: 22010.019175885238
+-Running iteration 17
+LK Best Cost: 23368 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153861 units
+Reduced by: 87%
+--Iteration cost: 23367.927134312788
+-Running iteration 18
+LK Best Cost: 21808 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155431 units
+Reduced by: 88%
+--Iteration cost: 21808.394908011025
+-Running iteration 19
+LK Best Cost: 22057 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151531 units
+Reduced by: 87%
+--Iteration cost: 22057.439569619644
+-Running iteration 20
+LK Best Cost: 22834 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151104 units
+Reduced by: 87%
+--Iteration cost: 22834.354870199622
+-Running iteration 21
+LK Best Cost: 22757 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147580 units
+Reduced by: 87%
+--Iteration cost: 22756.866440596954
+-Running iteration 22
+LK Best Cost: 22268 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144652 units
+Reduced by: 87%
+--Iteration cost: 22267.500253539554
+-Running iteration 23
+LK Best Cost: 21713 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147003 units
+Reduced by: 87%
+--Iteration cost: 21713.27430300269
+-Running iteration 24
+LK Best Cost: 21384 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 145264 units
+Reduced by: 87%
+--Iteration cost: 21383.56908138484
+-Running iteration 25
+LK Best Cost: 22398 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147468 units
+Reduced by: 87%
+--Iteration cost: 22398.157339240483
+-Running iteration 26
+LK Best Cost: 21885 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 142218 units
+Reduced by: 87%
+--Iteration cost: 21884.91267977866
+-Running iteration 27
+LK Best Cost: 21942 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147518 units
+Reduced by: 87%
+--Iteration cost: 21942.084020561597
+-Running iteration 28
+LK Best Cost: 21588 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 154607 units
+Reduced by: 88%
+--Iteration cost: 21588.314659240914
+-Running iteration 29
+LK Best Cost: 21455 units
+Lin-Kernighan runtime: 22 sec
+Total runtime: 22 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 166537 units
+Reduced by: 89%
+--Iteration cost: 21454.713413485257
+-Running iteration 30
+LK Best Cost: 21384 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 134817 units
+Reduced by: 86%
+--Iteration cost: 21383.56908138485
+-Running iteration 31
+LK Best Cost: 21904 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 142225 units
+Reduced by: 87%
+--Iteration cost: 21904.290645061017
+-Running iteration 32
+LK Best Cost: 22079 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153485 units
+Reduced by: 87%
+--Iteration cost: 22078.709352294572
+-Running iteration 33
+LK Best Cost: 21958 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 141166 units
+Reduced by: 87%
+--Iteration cost: 21958.324261008656
+-Running iteration 34
+LK Best Cost: 21963 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144056 units
+Reduced by: 87%
+--Iteration cost: 21962.85500037
+-Running iteration 35
+LK Best Cost: 21768 units
+Lin-Kernighan runtime: 14 sec
+Total runtime: 14 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 135627 units
+Reduced by: 86%
+--Iteration cost: 21767.812984877226
+-Running iteration 36
+LK Best Cost: 21772 units
+Lin-Kernighan runtime: 14 sec
+Total runtime: 14 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 136312 units
+Reduced by: 86%
+--Iteration cost: 21772.37972972421
+-Running iteration 37
+LK Best Cost: 21645 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150230 units
+Reduced by: 87%
+--Iteration cost: 21645.188684131055
+-Running iteration 38
+LK Best Cost: 21881 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146138 units
+Reduced by: 87%
+--Iteration cost: 21880.810011148573
+-Running iteration 39
+LK Best Cost: 21719 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 148828 units
+Reduced by: 87%
+--Iteration cost: 21718.907251287877
+-Best Cost: 21377.51172249954
+
+<<< 50 iteration cap >>>
+-Running iteration 0
+LK Best Cost: 23626 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 152543 units
+Reduced by: 87%
+--Iteration cost: 23625.58442324722
+-Running iteration 1
+LK Best Cost: 22316 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151598 units
+Reduced by: 87%
+--Iteration cost: 22316.48116221139
+-Running iteration 2
+LK Best Cost: 22274 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144414 units
+Reduced by: 87%
+--Iteration cost: 22274.29684894908
+-Running iteration 3
+LK Best Cost: 22398 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144445 units
+Reduced by: 87%
+--Iteration cost: 22398.04227433505
+-Running iteration 4
+LK Best Cost: 23604 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 140027 units
+Reduced by: 86%
+--Iteration cost: 23603.67915249827
+-Running iteration 5
+LK Best Cost: 21686 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 154050 units
+Reduced by: 88%
+--Iteration cost: 21686.4782651701
+-Running iteration 6
+LK Best Cost: 23397 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150533 units
+Reduced by: 87%
+--Iteration cost: 23397.3042404822
+-Running iteration 7
+LK Best Cost: 21705 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155748 units
+Reduced by: 88%
+--Iteration cost: 21704.728169775768
+-Running iteration 8
+LK Best Cost: 23722 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146516 units
+Reduced by: 86%
+--Iteration cost: 23721.81482601447
+-Running iteration 9
+LK Best Cost: 22957 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 156632 units
+Reduced by: 87%
+--Iteration cost: 22957.4259533112
+-Running iteration 10
+LK Best Cost: 21575 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 152085 units
+Reduced by: 88%
+--Iteration cost: 21574.89244889523
+-Running iteration 11
+LK Best Cost: 22276 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 143738 units
+Reduced by: 87%
+--Iteration cost: 22276.32053767498
+-Running iteration 12
+LK Best Cost: 21530 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 148663 units
+Reduced by: 87%
+--Iteration cost: 21529.746314449774
+-Running iteration 13
+LK Best Cost: 21675 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153000 units
+Reduced by: 88%
+--Iteration cost: 21675.302744563145
+-Running iteration 14
+LK Best Cost: 22095 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149399 units
+Reduced by: 87%
+--Iteration cost: 22094.978452185704
+-Running iteration 15
+LK Best Cost: 21659 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146057 units
+Reduced by: 87%
+--Iteration cost: 21658.903447665372
+-Running iteration 16
+LK Best Cost: 22871 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 158748 units
+Reduced by: 87%
+--Iteration cost: 22870.982066399727
+-Running iteration 17
+LK Best Cost: 22092 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 142978 units
+Reduced by: 87%
+--Iteration cost: 22091.668703082552
+-Running iteration 18
+LK Best Cost: 21958 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 145093 units
+Reduced by: 87%
+--Iteration cost: 21958.324261008667
+-Running iteration 19
+LK Best Cost: 21881 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 158218 units
+Reduced by: 88%
+--Iteration cost: 21880.81001114857
+-Running iteration 20
+LK Best Cost: 21890 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150017 units
+Reduced by: 87%
+--Iteration cost: 21890.427212723273
+-Running iteration 21
+LK Best Cost: 24122 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 158173 units
+Reduced by: 87%
+--Iteration cost: 24122.281238108113
+-Running iteration 22
+LK Best Cost: 21498 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144915 units
+Reduced by: 87%
+--Iteration cost: 21497.897730249362
+-Running iteration 23
+LK Best Cost: 22034 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151595 units
+Reduced by: 87%
+--Iteration cost: 22033.724057662646
+-Running iteration 24
+LK Best Cost: 21795 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149477 units
+Reduced by: 87%
+--Iteration cost: 21794.686977379653
+-Running iteration 25
+LK Best Cost: 21626 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 143190 units
+Reduced by: 87%
+--Iteration cost: 21626.471770419215
+-Running iteration 26
+LK Best Cost: 22816 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 156409 units
+Reduced by: 87%
+--Iteration cost: 22815.90574134007
+-Running iteration 27
+LK Best Cost: 21992 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155839 units
+Reduced by: 88%
+--Iteration cost: 21991.73938616697
+-Running iteration 28
+LK Best Cost: 22266 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 142792 units
+Reduced by: 87%
+--Iteration cost: 22265.977822296492
+-Running iteration 29
+LK Best Cost: 21493 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 160523 units
+Reduced by: 88%
+--Iteration cost: 21492.58839301205
+-Running iteration 30
+LK Best Cost: 21881 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155853 units
+Reduced by: 88%
+--Iteration cost: 21880.810011148573
+-Running iteration 31
+LK Best Cost: 22288 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150788 units
+Reduced by: 87%
+--Iteration cost: 22288.099014540236
+-Running iteration 32
+LK Best Cost: 22150 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 136684 units
+Reduced by: 86%
+--Iteration cost: 22149.65539656488
+-Running iteration 33
+LK Best Cost: 21825 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153704 units
+Reduced by: 88%
+--Iteration cost: 21824.77309523462
+-Running iteration 34
+LK Best Cost: 22665 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144526 units
+Reduced by: 86%
+--Iteration cost: 22664.9180435871
+-Running iteration 35
+LK Best Cost: 21442 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 152466 units
+Reduced by: 88%
+--Iteration cost: 21442.222920963166
+-Running iteration 36
+LK Best Cost: 21878 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 156052 units
+Reduced by: 88%
+--Iteration cost: 21877.881614123955
+-Running iteration 37
+LK Best Cost: 21472 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 145448 units
+Reduced by: 87%
+--Iteration cost: 21472.46110242575
+-Running iteration 38
+LK Best Cost: 22827 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149960 units
+Reduced by: 87%
+--Iteration cost: 22827.162643264382
+-Running iteration 39
+LK Best Cost: 21710 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147087 units
+Reduced by: 87%
+--Iteration cost: 21709.946372690265
+-Running iteration 40
+LK Best Cost: 22590 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 162375 units
+Reduced by: 88%
+--Iteration cost: 22590.485890645905
+-Running iteration 41
+LK Best Cost: 21809 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153453 units
+Reduced by: 88%
+--Iteration cost: 21809.132953686883
+-Running iteration 42
+LK Best Cost: 21890 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151956 units
+Reduced by: 87%
+--Iteration cost: 21889.823266346968
+-Running iteration 43
+LK Best Cost: 22250 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 141591 units
+Reduced by: 86%
+--Iteration cost: 22250.032675370883
+-Running iteration 44
+LK Best Cost: 23284 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 152439 units
+Reduced by: 87%
+--Iteration cost: 23283.715220487335
+-Running iteration 45
+LK Best Cost: 21455 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151048 units
+Reduced by: 88%
+--Iteration cost: 21454.71341348527
+-Running iteration 46
+LK Best Cost: 21659 units
+Lin-Kernighan runtime: 22 sec
+Total runtime: 22 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 171239 units
+Reduced by: 89%
+--Iteration cost: 21659.45899134134
+-Running iteration 47
+LK Best Cost: 21529 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153714 units
+Reduced by: 88%
+--Iteration cost: 21528.75861580875
+-Running iteration 48
+LK Best Cost: 21631 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 156914 units
+Reduced by: 88%
+--Iteration cost: 21631.262565041412
+-Running iteration 49
+LK Best Cost: 21886 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150100 units
+Reduced by: 87%
+--Iteration cost: 21886.116171332484
+-Best Cost: 21377.51172249954
+
+<<< 60 iteration cap >>>
+-Running iteration 0
+LK Best Cost: 21750 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 157822 units
+Reduced by: 88%
+--Iteration cost: 21749.67068376816
+-Running iteration 1
+LK Best Cost: 22394 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147464 units
+Reduced by: 87%
+--Iteration cost: 22394.01708785576
+-Running iteration 2
+LK Best Cost: 21473 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144009 units
+Reduced by: 87%
+--Iteration cost: 21473.370373183738
+-Running iteration 3
+LK Best Cost: 22257 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 140918 units
+Reduced by: 86%
+--Iteration cost: 22257.496954923805
+-Running iteration 4
+LK Best Cost: 22233 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151262 units
+Reduced by: 87%
+--Iteration cost: 22233.287189115435
+-Running iteration 5
+LK Best Cost: 21975 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155031 units
+Reduced by: 88%
+--Iteration cost: 21974.61307584535
+-Running iteration 6
+LK Best Cost: 21868 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151319 units
+Reduced by: 87%
+--Iteration cost: 21867.512538977244
+-Running iteration 7
+LK Best Cost: 21504 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 140141 units
+Reduced by: 87%
+--Iteration cost: 21503.748116794806
+-Running iteration 8
+LK Best Cost: 23618 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146596 units
+Reduced by: 86%
+--Iteration cost: 23617.630945873083
+-Running iteration 9
+LK Best Cost: 21560 units
+Lin-Kernighan runtime: 14 sec
+Total runtime: 14 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 136991 units
+Reduced by: 86%
+--Iteration cost: 21560.31652077112
+-Running iteration 10
+LK Best Cost: 21666 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 152082 units
+Reduced by: 88%
+--Iteration cost: 21666.112892959074
+-Running iteration 11
+LK Best Cost: 21382 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 159936 units
+Reduced by: 88%
+--Iteration cost: 21381.83455761654
+-Running iteration 12
+LK Best Cost: 24299 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 143276 units
+Reduced by: 85%
+--Iteration cost: 24299.40451070777
+-Running iteration 13
+LK Best Cost: 21381 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 160458 units
+Reduced by: 88%
+--Iteration cost: 21381.301832255274
+-Running iteration 14
+LK Best Cost: 22730 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 148222 units
+Reduced by: 87%
+--Iteration cost: 22729.540720187717
+-Running iteration 15
+LK Best Cost: 22925 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150972 units
+Reduced by: 87%
+--Iteration cost: 22925.474497973795
+-Running iteration 16
+LK Best Cost: 21649 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 159150 units
+Reduced by: 88%
+--Iteration cost: 21649.096256798428
+-Running iteration 17
+LK Best Cost: 22030 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150375 units
+Reduced by: 87%
+--Iteration cost: 22029.654543276145
+-Running iteration 18
+LK Best Cost: 21883 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 152863 units
+Reduced by: 87%
+--Iteration cost: 21882.544534916877
+-Running iteration 19
+LK Best Cost: 21384 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149558 units
+Reduced by: 87%
+--Iteration cost: 21383.56908138484
+-Running iteration 20
+LK Best Cost: 21666 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146229 units
+Reduced by: 87%
+--Iteration cost: 21666.112892959085
+-Running iteration 21
+LK Best Cost: 22624 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 145509 units
+Reduced by: 87%
+--Iteration cost: 22624.051284594083
+-Running iteration 22
+LK Best Cost: 21512 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 156038 units
+Reduced by: 88%
+--Iteration cost: 21512.168037459654
+-Running iteration 23
+LK Best Cost: 21453 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153595 units
+Reduced by: 88%
+--Iteration cost: 21452.978889716953
+-Running iteration 24
+LK Best Cost: 22112 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 137166 units
+Reduced by: 86%
+--Iteration cost: 22112.072768520746
+-Running iteration 25
+LK Best Cost: 22968 units
+Lin-Kernighan runtime: 14 sec
+Total runtime: 14 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 132147 units
+Reduced by: 85%
+--Iteration cost: 22968.483967881446
+-Running iteration 26
+LK Best Cost: 21873 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150731 units
+Reduced by: 87%
+--Iteration cost: 21872.65459733951
+-Running iteration 27
+LK Best Cost: 22138 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 142942 units
+Reduced by: 87%
+--Iteration cost: 22137.820334111875
+-Running iteration 28
+LK Best Cost: 22337 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147888 units
+Reduced by: 87%
+--Iteration cost: 22337.404828498606
+-Running iteration 29
+LK Best Cost: 21948 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147689 units
+Reduced by: 87%
+--Iteration cost: 21948.434323431295
+-Running iteration 30
+LK Best Cost: 23346 units
+Lin-Kernighan runtime: 21 sec
+Total runtime: 21 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 163096 units
+Reduced by: 87%
+--Iteration cost: 23346.300801757476
+-Running iteration 31
+LK Best Cost: 22551 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149943 units
+Reduced by: 87%
+--Iteration cost: 22550.751723819707
+-Running iteration 32
+LK Best Cost: 23310 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 141105 units
+Reduced by: 86%
+--Iteration cost: 23309.760389071034
+-Running iteration 33
+LK Best Cost: 21585 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 142666 units
+Reduced by: 87%
+--Iteration cost: 21585.465825150415
+-Running iteration 34
+LK Best Cost: 22486 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144348 units
+Reduced by: 87%
+--Iteration cost: 22486.18542565701
+-Running iteration 35
+LK Best Cost: 22643 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 163129 units
+Reduced by: 88%
+--Iteration cost: 22643.11324325867
+-Running iteration 36
+LK Best Cost: 22248 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147777 units
+Reduced by: 87%
+--Iteration cost: 22247.874787799254
+-Running iteration 37
+LK Best Cost: 21465 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 138517 units
+Reduced by: 87%
+--Iteration cost: 21464.623721906835
+-Running iteration 38
+LK Best Cost: 22270 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151192 units
+Reduced by: 87%
+--Iteration cost: 22270.43373914435
+-Running iteration 39
+LK Best Cost: 21696 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 141204 units
+Reduced by: 87%
+--Iteration cost: 21695.712143942954
+-Running iteration 40
+LK Best Cost: 23848 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144795 units
+Reduced by: 86%
+--Iteration cost: 23847.989781059365
+-Running iteration 41
+LK Best Cost: 21384 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 140825 units
+Reduced by: 87%
+--Iteration cost: 21383.56908138485
+-Running iteration 42
+LK Best Cost: 22771 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150322 units
+Reduced by: 87%
+--Iteration cost: 22771.213737741076
+-Running iteration 43
+LK Best Cost: 22164 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147156 units
+Reduced by: 87%
+--Iteration cost: 22163.989674505552
+-Running iteration 44
+LK Best Cost: 21796 units
+Lin-Kernighan runtime: 14 sec
+Total runtime: 14 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 132590 units
+Reduced by: 86%
+--Iteration cost: 21796.368206876825
+-Running iteration 45
+LK Best Cost: 21957 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 145674 units
+Reduced by: 87%
+--Iteration cost: 21956.589737240352
+-Running iteration 46
+LK Best Cost: 22602 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 142032 units
+Reduced by: 86%
+--Iteration cost: 22601.535355826254
+-Running iteration 47
+LK Best Cost: 23024 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 160754 units
+Reduced by: 87%
+--Iteration cost: 23023.87480153046
+-Running iteration 48
+LK Best Cost: 22177 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144442 units
+Reduced by: 87%
+--Iteration cost: 22176.531759032518
+-Running iteration 49
+LK Best Cost: 21748 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 160520 units
+Reduced by: 88%
+--Iteration cost: 21748.387838189254
+-Running iteration 50
+LK Best Cost: 21381 units
+Lin-Kernighan runtime: 14 sec
+Total runtime: 14 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 140418 units
+Reduced by: 87%
+--Iteration cost: 21381.301832255267
+-Running iteration 51
+LK Best Cost: 22261 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 157824 units
+Reduced by: 88%
+--Iteration cost: 22261.008499955744
+-Running iteration 52
+LK Best Cost: 21952 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 141972 units
+Reduced by: 87%
+--Iteration cost: 21951.92681644742
+-Running iteration 53
+LK Best Cost: 21842 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 160379 units
+Reduced by: 88%
+--Iteration cost: 21841.932809362756
+-Running iteration 54
+LK Best Cost: 23862 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 145098 units
+Reduced by: 86%
+--Iteration cost: 23861.763936152078
+-Running iteration 55
+LK Best Cost: 21699 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 145393 units
+Reduced by: 87%
+--Iteration cost: 21698.946043724525
+-Running iteration 56
+LK Best Cost: 21382 units
+Lin-Kernighan runtime: 13 sec
+Total runtime: 13 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 128906 units
+Reduced by: 86%
+--Iteration cost: 21381.834557616537
+-Running iteration 57
+LK Best Cost: 22222 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153300 units
+Reduced by: 87%
+--Iteration cost: 22221.566997112943
+-Running iteration 58
+LK Best Cost: 21665 units
+Lin-Kernighan runtime: 13 sec
+Total runtime: 13 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 128269 units
+Reduced by: 86%
+--Iteration cost: 21665.454028560347
+-Running iteration 59
+LK Best Cost: 21514 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 156924 units
+Reduced by: 88%
+--Iteration cost: 21514.252899129988
+-Best Cost: 21377.51172249954
+
+<<< 70 iteration cap >>>
+-Running iteration 0
+LK Best Cost: 21443 units
+Lin-Kernighan runtime: 22 sec
+Total runtime: 22 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 170525 units
+Reduced by: 89%
+--Iteration cost: 21443.108567029576
+-Running iteration 1
+LK Best Cost: 22916 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 145405 units
+Reduced by: 86%
+--Iteration cost: 22916.030248549145
+-Running iteration 2
+LK Best Cost: 22790 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 161477 units
+Reduced by: 88%
+--Iteration cost: 22790.44618120941
+-Running iteration 3
+LK Best Cost: 21953 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144090 units
+Reduced by: 87%
+--Iteration cost: 21952.91085208284
+-Running iteration 4
+LK Best Cost: 22016 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146689 units
+Reduced by: 87%
+--Iteration cost: 22016.243663216293
+-Running iteration 5
+LK Best Cost: 23584 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150649 units
+Reduced by: 86%
+--Iteration cost: 23583.783149710736
+-Running iteration 6
+LK Best Cost: 21455 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 140876 units
+Reduced by: 87%
+--Iteration cost: 21454.713413485275
+-Running iteration 7
+LK Best Cost: 21459 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 159007 units
+Reduced by: 88%
+--Iteration cost: 21459.348807476625
+-Running iteration 8
+LK Best Cost: 23885 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149771 units
+Reduced by: 86%
+--Iteration cost: 23884.96116019442
+-Running iteration 9
+LK Best Cost: 23281 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 159764 units
+Reduced by: 87%
+--Iteration cost: 23281.100794387778
+-Running iteration 10
+LK Best Cost: 21853 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144187 units
+Reduced by: 87%
+--Iteration cost: 21853.08027219827
+-Running iteration 11
+LK Best Cost: 21459 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144180 units
+Reduced by: 87%
+--Iteration cost: 21459.348807476625
+-Running iteration 12
+LK Best Cost: 22150 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 141831 units
+Reduced by: 86%
+--Iteration cost: 22149.81643844563
+-Running iteration 13
+LK Best Cost: 21632 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 138620 units
+Reduced by: 87%
+--Iteration cost: 21631.532828702544
+-Running iteration 14
+LK Best Cost: 21738 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 135411 units
+Reduced by: 86%
+--Iteration cost: 21738.384727644265
+-Running iteration 15
+LK Best Cost: 21909 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 160674 units
+Reduced by: 88%
+--Iteration cost: 21909.441192716484
+-Running iteration 16
+LK Best Cost: 21487 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 137052 units
+Reduced by: 86%
+--Iteration cost: 21487.339925336644
+-Running iteration 17
+LK Best Cost: 21544 units
+Lin-Kernighan runtime: 21 sec
+Total runtime: 21 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 165258 units
+Reduced by: 88%
+--Iteration cost: 21543.605434526173
+-Running iteration 18
+LK Best Cost: 21962 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151526 units
+Reduced by: 87%
+--Iteration cost: 21961.916291741592
+-Running iteration 19
+LK Best Cost: 21767 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 141361 units
+Reduced by: 87%
+--Iteration cost: 21766.8861964404
+-Running iteration 20
+LK Best Cost: 21883 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 157948 units
+Reduced by: 88%
+--Iteration cost: 21882.544534916873
+-Running iteration 21
+LK Best Cost: 23252 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 143744 units
+Reduced by: 86%
+--Iteration cost: 23252.027601036873
+-Running iteration 22
+LK Best Cost: 22325 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 145163 units
+Reduced by: 87%
+--Iteration cost: 22324.764279005994
+-Running iteration 23
+LK Best Cost: 21719 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147414 units
+Reduced by: 87%
+--Iteration cost: 21719.23388645452
+-Running iteration 24
+LK Best Cost: 22921 units
+Lin-Kernighan runtime: 14 sec
+Total runtime: 14 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 133115 units
+Reduced by: 85%
+--Iteration cost: 22921.237010180488
+-Running iteration 25
+LK Best Cost: 22272 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144532 units
+Reduced by: 87%
+--Iteration cost: 22272.168262912655
+-Running iteration 26
+LK Best Cost: 22209 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 158218 units
+Reduced by: 88%
+--Iteration cost: 22208.619447234512
+-Running iteration 27
+LK Best Cost: 22352 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 145630 units
+Reduced by: 87%
+--Iteration cost: 22352.452476148028
+-Running iteration 28
+LK Best Cost: 21853 units
+Lin-Kernighan runtime: 21 sec
+Total runtime: 21 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149437 units
+Reduced by: 87%
+--Iteration cost: 21852.92929923616
+-Running iteration 29
+LK Best Cost: 21645 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 135774 units
+Reduced by: 86%
+--Iteration cost: 21645.10846006978
+-Running iteration 30
+LK Best Cost: 21824 units
+Lin-Kernighan runtime: 25 sec
+Total runtime: 25 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155249 units
+Reduced by: 88%
+--Iteration cost: 21823.747557676408
+-Running iteration 31
+LK Best Cost: 22700 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 142298 units
+Reduced by: 86%
+--Iteration cost: 22699.999384344268
+-Running iteration 32
+LK Best Cost: 21922 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 135687 units
+Reduced by: 86%
+--Iteration cost: 21922.466607939758
+-Running iteration 33
+LK Best Cost: 21975 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 135998 units
+Reduced by: 86%
+--Iteration cost: 21974.613075845344
+-Running iteration 34
+LK Best Cost: 21796 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149168 units
+Reduced by: 87%
+--Iteration cost: 21795.67447018376
+-Running iteration 35
+LK Best Cost: 22244 units
+Lin-Kernighan runtime: 23 sec
+Total runtime: 23 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155177 units
+Reduced by: 87%
+--Iteration cost: 22243.57729359078
+-Running iteration 36
+LK Best Cost: 21660 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 131991 units
+Reduced by: 86%
+--Iteration cost: 21660.40844315065
+-Running iteration 37
+LK Best Cost: 21530 units
+Lin-Kernighan runtime: 26 sec
+Total runtime: 26 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 161089 units
+Reduced by: 88%
+--Iteration cost: 21530.49313957704
+-Running iteration 38
+LK Best Cost: 22012 units
+Lin-Kernighan runtime: 22 sec
+Total runtime: 22 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147932 units
+Reduced by: 87%
+--Iteration cost: 22012.286425014823
+-Running iteration 39
+LK Best Cost: 22140 units
+Lin-Kernighan runtime: 24 sec
+Total runtime: 24 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153284 units
+Reduced by: 87%
+--Iteration cost: 22140.284239282984
+-Running iteration 40
+LK Best Cost: 21512 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 139972 units
+Reduced by: 87%
+--Iteration cost: 21512.054243920415
+-Running iteration 41
+LK Best Cost: 21890 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 138002 units
+Reduced by: 86%
+--Iteration cost: 21889.50458310642
+-Running iteration 42
+LK Best Cost: 21881 units
+Lin-Kernighan runtime: 21 sec
+Total runtime: 21 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149702 units
+Reduced by: 87%
+--Iteration cost: 21881.257490095268
+-Running iteration 43
+LK Best Cost: 21856 units
+Lin-Kernighan runtime: 22 sec
+Total runtime: 22 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 148450 units
+Reduced by: 87%
+--Iteration cost: 21856.122822784975
+-Running iteration 44
+LK Best Cost: 22280 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 138796 units
+Reduced by: 86%
+--Iteration cost: 22279.546136244924
+-Running iteration 45
+LK Best Cost: 21809 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147038 units
+Reduced by: 87%
+--Iteration cost: 21809.132953686883
+-Running iteration 46
+LK Best Cost: 21579 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 157688 units
+Reduced by: 88%
+--Iteration cost: 21578.911368517704
+-Running iteration 47
+LK Best Cost: 21848 units
+Lin-Kernighan runtime: 22 sec
+Total runtime: 22 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 170591 units
+Reduced by: 89%
+--Iteration cost: 21848.39258167713
+-Running iteration 48
+LK Best Cost: 22297 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 160499 units
+Reduced by: 88%
+--Iteration cost: 22297.47664534269
+-Running iteration 49
+LK Best Cost: 23441 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151187 units
+Reduced by: 87%
+--Iteration cost: 23440.608809370577
+-Running iteration 50
+LK Best Cost: 22212 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150982 units
+Reduced by: 87%
+--Iteration cost: 22212.29833239203
+-Running iteration 51
+LK Best Cost: 22514 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144823 units
+Reduced by: 87%
+--Iteration cost: 22514.32341209536
+-Running iteration 52
+LK Best Cost: 22786 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144617 units
+Reduced by: 86%
+--Iteration cost: 22785.7679366039
+-Running iteration 53
+LK Best Cost: 21736 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 152075 units
+Reduced by: 87%
+--Iteration cost: 21736.117478514694
+-Running iteration 54
+LK Best Cost: 21872 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 141433 units
+Reduced by: 87%
+--Iteration cost: 21872.21070721183
+-Running iteration 55
+LK Best Cost: 21897 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 154376 units
+Reduced by: 88%
+--Iteration cost: 21896.598366141312
+-Running iteration 56
+LK Best Cost: 22600 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 162028 units
+Reduced by: 88%
+--Iteration cost: 22599.74329512522
+-Running iteration 57
+LK Best Cost: 22421 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 137073 units
+Reduced by: 86%
+--Iteration cost: 22421.39576169571
+-Running iteration 58
+LK Best Cost: 22420 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 154976 units
+Reduced by: 87%
+--Iteration cost: 22420.26287356883
+-Running iteration 59
+LK Best Cost: 22042 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146730 units
+Reduced by: 87%
+--Iteration cost: 22042.29790047161
+-Running iteration 60
+LK Best Cost: 22816 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 148159 units
+Reduced by: 87%
+--Iteration cost: 22815.55347947119
+-Running iteration 61
+LK Best Cost: 24061 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149418 units
+Reduced by: 86%
+--Iteration cost: 24060.68137587667
+-Running iteration 62
+LK Best Cost: 22475 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 159514 units
+Reduced by: 88%
+--Iteration cost: 22474.60941203932
+-Running iteration 63
+LK Best Cost: 21881 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155377 units
+Reduced by: 88%
+--Iteration cost: 21880.810011148584
+-Running iteration 64
+LK Best Cost: 21783 units
+Lin-Kernighan runtime: 14 sec
+Total runtime: 14 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 134820 units
+Reduced by: 86%
+--Iteration cost: 21782.78403696246
+-Running iteration 65
+LK Best Cost: 21530 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 148220 units
+Reduced by: 87%
+--Iteration cost: 21530.49313957705
+-Running iteration 66
+LK Best Cost: 23832 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 148932 units
+Reduced by: 86%
+--Iteration cost: 23832.428619762017
+-Running iteration 67
+LK Best Cost: 21728 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 162263 units
+Reduced by: 88%
+--Iteration cost: 21728.06608398423
+-Running iteration 68
+LK Best Cost: 21710 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150951 units
+Reduced by: 87%
+--Iteration cost: 21709.94637269026
+-Running iteration 69
+LK Best Cost: 22026 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 157055 units
+Reduced by: 88%
+--Iteration cost: 22026.21105926646
+-Best Cost: 21377.51172249954
+
+<<< 80 iteration cap >>>
+-Running iteration 0
+LK Best Cost: 22308 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 152664 units
+Reduced by: 87%
+--Iteration cost: 22308.424806503393
+-Running iteration 1
+LK Best Cost: 21797 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 156063 units
+Reduced by: 88%
+--Iteration cost: 21796.743864762346
+-Running iteration 2
+LK Best Cost: 22625 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151639 units
+Reduced by: 87%
+--Iteration cost: 22624.641625323216
+-Running iteration 3
+LK Best Cost: 22611 units
+Lin-Kernighan runtime: 14 sec
+Total runtime: 14 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 134506 units
+Reduced by: 86%
+--Iteration cost: 22610.79082970859
+-Running iteration 4
+LK Best Cost: 22992 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 140831 units
+Reduced by: 86%
+--Iteration cost: 22991.757446764645
+-Running iteration 5
+LK Best Cost: 21553 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150081 units
+Reduced by: 87%
+--Iteration cost: 21553.06018918923
+-Running iteration 6
+LK Best Cost: 21650 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 143270 units
+Reduced by: 87%
+--Iteration cost: 21649.8240781224
+-Running iteration 7
+LK Best Cost: 21883 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 135688 units
+Reduced by: 86%
+--Iteration cost: 21882.544534916884
+-Running iteration 8
+LK Best Cost: 21882 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155476 units
+Reduced by: 88%
+--Iteration cost: 21881.766519982422
+-Running iteration 9
+LK Best Cost: 21946 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144806 units
+Reduced by: 87%
+--Iteration cost: 21946.48771024214
+-Running iteration 10
+LK Best Cost: 21721 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149940 units
+Reduced by: 87%
+--Iteration cost: 21720.968410222828
+-Running iteration 11
+LK Best Cost: 22164 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 157168 units
+Reduced by: 88%
+--Iteration cost: 22163.9485999463
+-Running iteration 12
+LK Best Cost: 21809 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 139853 units
+Reduced by: 87%
+--Iteration cost: 21809.132953686883
+-Running iteration 13
+LK Best Cost: 22132 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153625 units
+Reduced by: 87%
+--Iteration cost: 22132.439133882304
+-Running iteration 14
+LK Best Cost: 21707 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144224 units
+Reduced by: 87%
+--Iteration cost: 21707.39958748796
+-Running iteration 15
+LK Best Cost: 22358 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147098 units
+Reduced by: 87%
+--Iteration cost: 22357.643125420895
+-Running iteration 16
+LK Best Cost: 22209 units
+Lin-Kernighan runtime: 14 sec
+Total runtime: 14 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 131659 units
+Reduced by: 86%
+--Iteration cost: 22208.964666212298
+-Running iteration 17
+LK Best Cost: 21641 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 158513 units
+Reduced by: 88%
+--Iteration cost: 21641.032875206547
+-Running iteration 18
+LK Best Cost: 22036 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 142347 units
+Reduced by: 87%
+--Iteration cost: 22036.184301530684
+-Running iteration 19
+LK Best Cost: 23150 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149689 units
+Reduced by: 87%
+--Iteration cost: 23149.769137434283
+-Running iteration 20
+LK Best Cost: 21962 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 139851 units
+Reduced by: 86%
+--Iteration cost: 21962.174111538945
+-Running iteration 21
+LK Best Cost: 21529 units
+Lin-Kernighan runtime: 12 sec
+Total runtime: 12 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 123935 units
+Reduced by: 85%
+--Iteration cost: 21528.758615808747
+-Running iteration 22
+LK Best Cost: 21883 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 140429 units
+Reduced by: 87%
+--Iteration cost: 21882.544534916877
+-Running iteration 23
+LK Best Cost: 22336 units
+Lin-Kernighan runtime: 14 sec
+Total runtime: 14 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 130183 units
+Reduced by: 85%
+--Iteration cost: 22336.185176409715
+-Running iteration 24
+LK Best Cost: 21711 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 136618 units
+Reduced by: 86%
+--Iteration cost: 21711.248991617605
+-Running iteration 25
+LK Best Cost: 21900 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151829 units
+Reduced by: 87%
+--Iteration cost: 21899.65625810345
+-Running iteration 26
+LK Best Cost: 22319 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 157461 units
+Reduced by: 88%
+--Iteration cost: 22318.545369722353
+-Running iteration 27
+LK Best Cost: 22169 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 135434 units
+Reduced by: 86%
+--Iteration cost: 22168.85918651462
+-Running iteration 28
+LK Best Cost: 22196 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151345 units
+Reduced by: 87%
+--Iteration cost: 22195.94041344841
+-Running iteration 29
+LK Best Cost: 23101 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 152309 units
+Reduced by: 87%
+--Iteration cost: 23100.550017701866
+-Running iteration 30
+LK Best Cost: 21769 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146592 units
+Reduced by: 87%
+--Iteration cost: 21769.386639163484
+-Running iteration 31
+LK Best Cost: 23252 units
+Lin-Kernighan runtime: 13 sec
+Total runtime: 13 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 130047 units
+Reduced by: 85%
+--Iteration cost: 23251.88047161374
+-Running iteration 32
+LK Best Cost: 22062 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149210 units
+Reduced by: 87%
+--Iteration cost: 22062.420537457896
+-Running iteration 33
+LK Best Cost: 23441 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 141485 units
+Reduced by: 86%
+--Iteration cost: 23440.504475384358
+-Running iteration 34
+LK Best Cost: 21547 units
+Lin-Kernighan runtime: 21 sec
+Total runtime: 21 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 165289 units
+Reduced by: 88%
+--Iteration cost: 21547.062784317288
+-Running iteration 35
+LK Best Cost: 22905 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146221 units
+Reduced by: 86%
+--Iteration cost: 22904.94871284641
+-Running iteration 36
+LK Best Cost: 22787 units
+Lin-Kernighan runtime: 221 sec
+Total runtime: 221 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 148256 units
+Reduced by: 87%
+--Iteration cost: 22786.862693252988
+-Running iteration 37
+LK Best Cost: 21566 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 156659 units
+Reduced by: 88%
+--Iteration cost: 21565.99997424205
+-Running iteration 38
+LK Best Cost: 21833 units
+Lin-Kernighan runtime: 14 sec
+Total runtime: 14 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 137338 units
+Reduced by: 86%
+--Iteration cost: 21832.746264557798
+-Running iteration 39
+LK Best Cost: 22509 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147658 units
+Reduced by: 87%
+--Iteration cost: 22509.39530573445
+-Running iteration 40
+LK Best Cost: 21476 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 145436 units
+Reduced by: 87%
+--Iteration cost: 21475.63762231331
+-Running iteration 41
+LK Best Cost: 23382 units
+Lin-Kernighan runtime: 22 sec
+Total runtime: 22 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 172513 units
+Reduced by: 88%
+--Iteration cost: 23381.905464044325
+-Running iteration 42
+LK Best Cost: 22016 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 154289 units
+Reduced by: 88%
+--Iteration cost: 22016.304838616477
+-Running iteration 43
+LK Best Cost: 21781 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 156013 units
+Reduced by: 88%
+--Iteration cost: 21781.002723840134
+-Running iteration 44
+LK Best Cost: 22357 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 141125 units
+Reduced by: 86%
+--Iteration cost: 22357.115718835536
+-Running iteration 45
+LK Best Cost: 22782 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146046 units
+Reduced by: 87%
+--Iteration cost: 22781.604965895873
+-Running iteration 46
+LK Best Cost: 22338 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155239 units
+Reduced by: 87%
+--Iteration cost: 22337.54852830161
+-Running iteration 47
+LK Best Cost: 21768 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150772 units
+Reduced by: 87%
+--Iteration cost: 21768.109292016798
+-Running iteration 48
+LK Best Cost: 21843 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 148080 units
+Reduced by: 87%
+--Iteration cost: 21842.636202135156
+-Running iteration 49
+LK Best Cost: 22232 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153761 units
+Reduced by: 87%
+--Iteration cost: 22232.216598897234
+-Running iteration 50
+LK Best Cost: 21811 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 142592 units
+Reduced by: 87%
+--Iteration cost: 21811.40020281645
+-Running iteration 51
+LK Best Cost: 22079 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 154306 units
+Reduced by: 87%
+--Iteration cost: 22079.450121279664
+-Running iteration 52
+LK Best Cost: 23414 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 138522 units
+Reduced by: 86%
+--Iteration cost: 23414.313316898435
+-Running iteration 53
+LK Best Cost: 21927 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 162275 units
+Reduced by: 88%
+--Iteration cost: 21926.79634174945
+-Running iteration 54
+LK Best Cost: 22459 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 138142 units
+Reduced by: 86%
+--Iteration cost: 22459.334934194325
+-Running iteration 55
+LK Best Cost: 21384 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149001 units
+Reduced by: 87%
+--Iteration cost: 21383.569081384845
+-Running iteration 56
+LK Best Cost: 22520 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 138399 units
+Reduced by: 86%
+--Iteration cost: 22520.10521895078
+-Running iteration 57
+LK Best Cost: 23411 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 158038 units
+Reduced by: 87%
+--Iteration cost: 23411.293710393296
+-Running iteration 58
+LK Best Cost: 22045 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153719 units
+Reduced by: 87%
+--Iteration cost: 22044.96259995049
+-Running iteration 59
+LK Best Cost: 23937 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 135835 units
+Reduced by: 85%
+--Iteration cost: 23936.860372940253
+-Running iteration 60
+LK Best Cost: 21987 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 148070 units
+Reduced by: 87%
+--Iteration cost: 21986.640811366116
+-Running iteration 61
+LK Best Cost: 21735 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153818 units
+Reduced by: 88%
+--Iteration cost: 21735.253581035195
+-Running iteration 62
+LK Best Cost: 22398 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144008 units
+Reduced by: 87%
+--Iteration cost: 22397.590706524934
+-Running iteration 63
+LK Best Cost: 22844 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 138454 units
+Reduced by: 86%
+--Iteration cost: 22844.09259360982
+-Running iteration 64
+LK Best Cost: 21530 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 143448 units
+Reduced by: 87%
+--Iteration cost: 21530.493139577047
+-Running iteration 65
+LK Best Cost: 21620 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 156265 units
+Reduced by: 88%
+--Iteration cost: 21619.60895451656
+-Running iteration 66
+LK Best Cost: 21887 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153061 units
+Reduced by: 87%
+--Iteration cost: 21887.17992890824
+-Running iteration 67
+LK Best Cost: 21645 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 143822 units
+Reduced by: 87%
+--Iteration cost: 21645.18868413105
+-Running iteration 68
+LK Best Cost: 21915 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 156632 units
+Reduced by: 88%
+--Iteration cost: 21915.49647926569
+-Running iteration 69
+LK Best Cost: 21457 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 156408 units
+Reduced by: 88%
+--Iteration cost: 21457.081558347054
+-Running iteration 70
+LK Best Cost: 21836 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 152117 units
+Reduced by: 87%
+--Iteration cost: 21835.583730715563
+-Running iteration 71
+LK Best Cost: 21906 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 145514 units
+Reduced by: 87%
+--Iteration cost: 21906.294923203284
+-Running iteration 72
+LK Best Cost: 22396 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149554 units
+Reduced by: 87%
+--Iteration cost: 22395.908611106428
+-Running iteration 73
+LK Best Cost: 21887 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 142585 units
+Reduced by: 87%
+--Iteration cost: 21887.179928908237
+-Running iteration 74
+LK Best Cost: 21645 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155464 units
+Reduced by: 88%
+--Iteration cost: 21645.188684131044
+-Running iteration 75
+LK Best Cost: 22699 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147609 units
+Reduced by: 87%
+--Iteration cost: 22698.859936020723
+-Running iteration 76
+LK Best Cost: 22429 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 148251 units
+Reduced by: 87%
+--Iteration cost: 22428.766073879768
+-Running iteration 77
+LK Best Cost: 22141 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151424 units
+Reduced by: 87%
+--Iteration cost: 22140.885318605262
+-Running iteration 78
+LK Best Cost: 23284 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151875 units
+Reduced by: 87%
+--Iteration cost: 23283.790784517892
+-Running iteration 79
+LK Best Cost: 23402 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 154045 units
+Reduced by: 87%
+--Iteration cost: 23401.641016549038
+-Best Cost: 21377.51172249954
+
+<<< 90 iteration cap >>>
+-Running iteration 0
+LK Best Cost: 25098 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150965 units
+Reduced by: 86%
+--Iteration cost: 25098.074439656142
+-Running iteration 1
+LK Best Cost: 21717 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155039 units
+Reduced by: 88%
+--Iteration cost: 21717.289525065313
+-Running iteration 2
+LK Best Cost: 22722 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150697 units
+Reduced by: 87%
+--Iteration cost: 22721.588836350908
+-Running iteration 3
+LK Best Cost: 21428 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146819 units
+Reduced by: 87%
+--Iteration cost: 21427.601495013547
+-Running iteration 4
+LK Best Cost: 21954 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144895 units
+Reduced by: 87%
+--Iteration cost: 21953.66134021573
+-Running iteration 5
+LK Best Cost: 21833 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155682 units
+Reduced by: 88%
+--Iteration cost: 21832.7462645578
+-Running iteration 6
+LK Best Cost: 21970 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 137886 units
+Reduced by: 86%
+--Iteration cost: 21969.702032189478
+-Running iteration 7
+LK Best Cost: 23145 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153195 units
+Reduced by: 87%
+--Iteration cost: 23144.777250149495
+-Running iteration 8
+LK Best Cost: 21675 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 138934 units
+Reduced by: 87%
+--Iteration cost: 21675.302744563156
+-Running iteration 9
+LK Best Cost: 21993 units
+Lin-Kernighan runtime: 53 sec
+Total runtime: 53 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 143816 units
+Reduced by: 87%
+--Iteration cost: 21992.5070938001
+-Running iteration 10
+LK Best Cost: 21811 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 140525 units
+Reduced by: 87%
+--Iteration cost: 21811.400202816454
+-Running iteration 11
+LK Best Cost: 22238 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 143296 units
+Reduced by: 87%
+--Iteration cost: 22238.211056725737
+-Running iteration 12
+LK Best Cost: 22882 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 162476 units
+Reduced by: 88%
+--Iteration cost: 22881.999655767464
+-Running iteration 13
+LK Best Cost: 21677 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149969 units
+Reduced by: 87%
+--Iteration cost: 21677.037268331464
+-Running iteration 14
+LK Best Cost: 22472 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147134 units
+Reduced by: 87%
+--Iteration cost: 22471.713531290046
+-Running iteration 15
+LK Best Cost: 22614 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 140216 units
+Reduced by: 86%
+--Iteration cost: 22613.683113802057
+-Running iteration 16
+LK Best Cost: 21489 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149734 units
+Reduced by: 87%
+--Iteration cost: 21488.925136771406
+-Running iteration 17
+LK Best Cost: 21889 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 154757 units
+Reduced by: 88%
+--Iteration cost: 21888.514911552353
+-Running iteration 18
+LK Best Cost: 21691 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 157927 units
+Reduced by: 88%
+--Iteration cost: 21690.57183468885
+-Running iteration 19
+LK Best Cost: 21721 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 142070 units
+Reduced by: 87%
+--Iteration cost: 21720.968410222824
+-Running iteration 20
+LK Best Cost: 21792 units
+Lin-Kernighan runtime: 21 sec
+Total runtime: 21 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 167928 units
+Reduced by: 89%
+--Iteration cost: 21792.355992161232
+-Running iteration 21
+LK Best Cost: 21784 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 136992 units
+Reduced by: 86%
+--Iteration cost: 21784.418635103117
+-Running iteration 22
+LK Best Cost: 22452 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 143975 units
+Reduced by: 87%
+--Iteration cost: 22452.061197774336
+-Running iteration 23
+LK Best Cost: 22500 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 138264 units
+Reduced by: 86%
+--Iteration cost: 22500.288267513057
+-Running iteration 24
+LK Best Cost: 23706 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144977 units
+Reduced by: 86%
+--Iteration cost: 23705.82536588377
+-Running iteration 25
+LK Best Cost: 23163 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146000 units
+Reduced by: 86%
+--Iteration cost: 23163.45222765933
+-Running iteration 26
+LK Best Cost: 21637 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 159593 units
+Reduced by: 88%
+--Iteration cost: 21637.240651754662
+-Running iteration 27
+LK Best Cost: 21659 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 138510 units
+Reduced by: 86%
+--Iteration cost: 21659.45899134134
+-Running iteration 28
+LK Best Cost: 22171 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147560 units
+Reduced by: 87%
+--Iteration cost: 22170.616068075382
+-Running iteration 29
+LK Best Cost: 21464 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 160906 units
+Reduced by: 88%
+--Iteration cost: 21463.667213073
+-Running iteration 30
+LK Best Cost: 22162 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 142902 units
+Reduced by: 87%
+--Iteration cost: 22161.68057355769
+-Running iteration 31
+LK Best Cost: 22207 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 141394 units
+Reduced by: 86%
+--Iteration cost: 22207.230142444005
+-Running iteration 32
+LK Best Cost: 22302 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 141507 units
+Reduced by: 86%
+--Iteration cost: 22301.773976125845
+-Running iteration 33
+LK Best Cost: 22203 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147444 units
+Reduced by: 87%
+--Iteration cost: 22202.702692175244
+-Running iteration 34
+LK Best Cost: 23889 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 161787 units
+Reduced by: 87%
+--Iteration cost: 23888.578671595125
+-Running iteration 35
+LK Best Cost: 22491 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 162199 units
+Reduced by: 88%
+--Iteration cost: 22491.362877914442
+-Running iteration 36
+LK Best Cost: 22407 units
+Lin-Kernighan runtime: 22 sec
+Total runtime: 22 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 172816 units
+Reduced by: 89%
+--Iteration cost: 22407.021662000436
+-Running iteration 37
+LK Best Cost: 21606 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 140786 units
+Reduced by: 87%
+--Iteration cost: 21605.89293623104
+-Running iteration 38
+LK Best Cost: 21692 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 143011 units
+Reduced by: 87%
+--Iteration cost: 21691.666363095963
+-Running iteration 39
+LK Best Cost: 22731 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150682 units
+Reduced by: 87%
+--Iteration cost: 22730.906695564685
+-Running iteration 40
+LK Best Cost: 21941 units
+Lin-Kernighan runtime: 22 sec
+Total runtime: 22 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 169937 units
+Reduced by: 89%
+--Iteration cost: 21941.23110613407
+-Running iteration 41
+LK Best Cost: 23953 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 135699 units
+Reduced by: 85%
+--Iteration cost: 23952.787846941934
+-Running iteration 42
+LK Best Cost: 21851 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 142189 units
+Reduced by: 87%
+--Iteration cost: 21850.813023068702
+-Running iteration 43
+LK Best Cost: 21395 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 140783 units
+Reduced by: 87%
+--Iteration cost: 21395.36912397393
+-Running iteration 44
+LK Best Cost: 22489 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 158049 units
+Reduced by: 88%
+--Iteration cost: 22489.03849443535
+-Running iteration 45
+LK Best Cost: 21915 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 157379 units
+Reduced by: 88%
+--Iteration cost: 21914.582744927986
+-Running iteration 46
+LK Best Cost: 21645 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 142224 units
+Reduced by: 87%
+--Iteration cost: 21645.188684131055
+-Running iteration 47
+LK Best Cost: 23420 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153959 units
+Reduced by: 87%
+--Iteration cost: 23420.1268797539
+-Running iteration 48
+LK Best Cost: 22178 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 136428 units
+Reduced by: 86%
+--Iteration cost: 22177.926426330625
+-Running iteration 49
+LK Best Cost: 22004 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151881 units
+Reduced by: 87%
+--Iteration cost: 22004.388500306588
+-Running iteration 50
+LK Best Cost: 23589 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 135989 units
+Reduced by: 85%
+--Iteration cost: 23589.117014981864
+-Running iteration 51
+LK Best Cost: 24534 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 130156 units
+Reduced by: 84%
+--Iteration cost: 24533.619726930156
+-Running iteration 52
+LK Best Cost: 22351 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 145856 units
+Reduced by: 87%
+--Iteration cost: 22350.83714005233
+-Running iteration 53
+LK Best Cost: 21881 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144793 units
+Reduced by: 87%
+--Iteration cost: 21880.810011148584
+-Running iteration 54
+LK Best Cost: 21801 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 154186 units
+Reduced by: 88%
+--Iteration cost: 21801.058404784864
+-Running iteration 55
+LK Best Cost: 21530 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 148358 units
+Reduced by: 87%
+--Iteration cost: 21530.49313957705
+-Running iteration 56
+LK Best Cost: 23199 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 152927 units
+Reduced by: 87%
+--Iteration cost: 23199.05203716502
+-Running iteration 57
+LK Best Cost: 22461 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 148778 units
+Reduced by: 87%
+--Iteration cost: 22460.53371714992
+-Running iteration 58
+LK Best Cost: 22290 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146026 units
+Reduced by: 87%
+--Iteration cost: 22289.949431643858
+-Running iteration 59
+LK Best Cost: 22255 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 158338 units
+Reduced by: 88%
+--Iteration cost: 22255.387381919565
+-Running iteration 60
+LK Best Cost: 22014 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 138729 units
+Reduced by: 86%
+--Iteration cost: 22014.18486149587
+-Running iteration 61
+LK Best Cost: 22087 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 154024 units
+Reduced by: 87%
+--Iteration cost: 22086.77588923281
+-Running iteration 62
+LK Best Cost: 24121 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149982 units
+Reduced by: 86%
+--Iteration cost: 24121.36852134956
+-Running iteration 63
+LK Best Cost: 21883 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146606 units
+Reduced by: 87%
+--Iteration cost: 21882.544534916888
+-Running iteration 64
+LK Best Cost: 21530 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 137051 units
+Reduced by: 86%
+--Iteration cost: 21530.49313957705
+-Running iteration 65
+LK Best Cost: 21321 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 161374 units
+Reduced by: 88%
+--Iteration cost: 21320.957025960975
+-Running iteration 66
+LK Best Cost: 23197 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 156562 units
+Reduced by: 87%
+--Iteration cost: 23196.60717771852
+-Running iteration 67
+LK Best Cost: 23999 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 142328 units
+Reduced by: 86%
+--Iteration cost: 23998.762545684785
+-Running iteration 68
+LK Best Cost: 22105 units
+Lin-Kernighan runtime: 22 sec
+Total runtime: 22 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 169206 units
+Reduced by: 88%
+--Iteration cost: 22104.86838976308
+-Running iteration 69
+LK Best Cost: 23632 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 163548 units
+Reduced by: 87%
+--Iteration cost: 23631.637147986956
+-Running iteration 70
+LK Best Cost: 22411 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153755 units
+Reduced by: 87%
+--Iteration cost: 22410.537415059578
+-Running iteration 71
+LK Best Cost: 21958 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 143052 units
+Reduced by: 87%
+--Iteration cost: 21958.324261008656
+-Running iteration 72
+LK Best Cost: 22243 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 141762 units
+Reduced by: 86%
+--Iteration cost: 22243.47863255163
+-Running iteration 73
+LK Best Cost: 21876 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 138898 units
+Reduced by: 86%
+--Iteration cost: 21876.487176031573
+-Running iteration 74
+LK Best Cost: 22475 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 154036 units
+Reduced by: 87%
+--Iteration cost: 22475.38306764651
+-Running iteration 75
+LK Best Cost: 22117 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 159138 units
+Reduced by: 88%
+--Iteration cost: 22117.34706614655
+-Running iteration 76
+LK Best Cost: 22559 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147495 units
+Reduced by: 87%
+--Iteration cost: 22559.19951064359
+-Running iteration 77
+LK Best Cost: 21721 units
+Lin-Kernighan runtime: 14 sec
+Total runtime: 14 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 133712 units
+Reduced by: 86%
+--Iteration cost: 21720.968410222835
+-Running iteration 78
+LK Best Cost: 21948 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149099 units
+Reduced by: 87%
+--Iteration cost: 21947.944311814157
+-Running iteration 79
+LK Best Cost: 21861 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 148677 units
+Reduced by: 87%
+--Iteration cost: 21861.401852748713
+-Running iteration 80
+LK Best Cost: 21474 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147720 units
+Reduced by: 87%
+--Iteration cost: 21473.903098544994
+-Running iteration 81
+LK Best Cost: 21699 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153010 units
+Reduced by: 88%
+--Iteration cost: 21699.48581148906
+-Running iteration 82
+LK Best Cost: 22367 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155724 units
+Reduced by: 87%
+--Iteration cost: 22366.718194292553
+-Running iteration 83
+LK Best Cost: 21574 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 159432 units
+Reduced by: 88%
+--Iteration cost: 21574.044352030625
+-Running iteration 84
+LK Best Cost: 22870 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150706 units
+Reduced by: 87%
+--Iteration cost: 22869.90873073609
+-Running iteration 85
+LK Best Cost: 23632 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 154889 units
+Reduced by: 87%
+--Iteration cost: 23631.70692014511
+-Running iteration 86
+LK Best Cost: 23124 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 161525 units
+Reduced by: 87%
+--Iteration cost: 23124.311258543803
+-Running iteration 87
+LK Best Cost: 21529 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 143280 units
+Reduced by: 87%
+--Iteration cost: 21528.75861580874
+-Running iteration 88
+LK Best Cost: 21912 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 137405 units
+Reduced by: 86%
+--Iteration cost: 21911.853126841073
+-Running iteration 89
+LK Best Cost: 23103 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 148835 units
+Reduced by: 87%
+--Iteration cost: 23102.591708620537
+-Best Cost: 21320.957025960975
+
+<<< 100 iteration cap >>>
+-Running iteration 0
+LK Best Cost: 21455 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146569 units
+Reduced by: 87%
+--Iteration cost: 21454.71341348527
+-Running iteration 1
+LK Best Cost: 21964 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147861 units
+Reduced by: 87%
+--Iteration cost: 21964.294637644132
+-Running iteration 2
+LK Best Cost: 21527 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 156610 units
+Reduced by: 88%
+--Iteration cost: 21526.814254419536
+-Running iteration 3
+LK Best Cost: 23682 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 140867 units
+Reduced by: 86%
+--Iteration cost: 23681.796416755253
+-Running iteration 4
+LK Best Cost: 21861 units
+Lin-Kernighan runtime: 21 sec
+Total runtime: 21 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 171557 units
+Reduced by: 89%
+--Iteration cost: 21861.25054271042
+-Running iteration 5
+LK Best Cost: 22361 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144444 units
+Reduced by: 87%
+--Iteration cost: 22360.98839538551
+-Running iteration 6
+LK Best Cost: 22262 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151779 units
+Reduced by: 87%
+--Iteration cost: 22262.315007160694
+-Running iteration 7
+LK Best Cost: 21788 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153643 units
+Reduced by: 88%
+--Iteration cost: 21787.83896148043
+-Running iteration 8
+LK Best Cost: 21717 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153776 units
+Reduced by: 88%
+--Iteration cost: 21717.179496987814
+-Running iteration 9
+LK Best Cost: 21809 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 161349 units
+Reduced by: 88%
+--Iteration cost: 21809.24126844804
+-Running iteration 10
+LK Best Cost: 21530 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144628 units
+Reduced by: 87%
+--Iteration cost: 21530.49313957704
+-Running iteration 11
+LK Best Cost: 22372 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 143598 units
+Reduced by: 87%
+--Iteration cost: 22372.26675058228
+-Running iteration 12
+LK Best Cost: 21699 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146363 units
+Reduced by: 87%
+--Iteration cost: 21699.029312460636
+-Running iteration 13
+LK Best Cost: 21399 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 146286 units
+Reduced by: 87%
+--Iteration cost: 21399.491000532045
+-Running iteration 14
+LK Best Cost: 21814 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153902 units
+Reduced by: 88%
+--Iteration cost: 21814.18135604307
+-Running iteration 15
+LK Best Cost: 21675 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 141286 units
+Reduced by: 87%
+--Iteration cost: 21675.302744563152
+-Running iteration 16
+LK Best Cost: 21384 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144567 units
+Reduced by: 87%
+--Iteration cost: 21383.569081384845
+-Running iteration 17
+LK Best Cost: 22277 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 152495 units
+Reduced by: 87%
+--Iteration cost: 22277.420634135757
+-Running iteration 18
+LK Best Cost: 21658 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 162556 units
+Reduced by: 88%
+--Iteration cost: 21657.724467573033
+-Running iteration 19
+LK Best Cost: 22386 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 152465 units
+Reduced by: 87%
+--Iteration cost: 22385.66692250141
+-Running iteration 20
+LK Best Cost: 21606 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150522 units
+Reduced by: 87%
+--Iteration cost: 21606.321440058455
+-Running iteration 21
+LK Best Cost: 22047 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151957 units
+Reduced by: 87%
+--Iteration cost: 22047.049176230943
+-Running iteration 22
+LK Best Cost: 22370 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151668 units
+Reduced by: 87%
+--Iteration cost: 22369.827013072074
+-Running iteration 23
+LK Best Cost: 21838 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 140718 units
+Reduced by: 87%
+--Iteration cost: 21837.859960650134
+-Running iteration 24
+LK Best Cost: 21752 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 145839 units
+Reduced by: 87%
+--Iteration cost: 21751.521269140267
+-Running iteration 25
+LK Best Cost: 23370 units
+Lin-Kernighan runtime: 12 sec
+Total runtime: 12 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 121603 units
+Reduced by: 84%
+--Iteration cost: 23369.768328314563
+-Running iteration 26
+LK Best Cost: 23293 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 136904 units
+Reduced by: 85%
+--Iteration cost: 23293.01593621056
+-Running iteration 27
+LK Best Cost: 23488 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 142569 units
+Reduced by: 86%
+--Iteration cost: 23488.45256083613
+-Running iteration 28
+LK Best Cost: 21958 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 152169 units
+Reduced by: 87%
+--Iteration cost: 21958.32426100866
+-Running iteration 29
+LK Best Cost: 21459 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 145028 units
+Reduced by: 87%
+--Iteration cost: 21459.34880747662
+-Running iteration 30
+LK Best Cost: 21975 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 154001 units
+Reduced by: 88%
+--Iteration cost: 21974.613075845344
+-Running iteration 31
+LK Best Cost: 22694 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 140169 units
+Reduced by: 86%
+--Iteration cost: 22694.16428304687
+-Running iteration 32
+LK Best Cost: 21958 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 156308 units
+Reduced by: 88%
+--Iteration cost: 21958.324261008667
+-Running iteration 33
+LK Best Cost: 22018 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150785 units
+Reduced by: 87%
+--Iteration cost: 22017.863746653376
+-Running iteration 34
+LK Best Cost: 22002 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153048 units
+Reduced by: 87%
+--Iteration cost: 22001.79524940097
+-Running iteration 35
+LK Best Cost: 21453 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144055 units
+Reduced by: 87%
+--Iteration cost: 21452.97888971696
+-Running iteration 36
+LK Best Cost: 22922 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 152474 units
+Reduced by: 87%
+--Iteration cost: 22921.62248303844
+-Running iteration 37
+LK Best Cost: 22641 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149648 units
+Reduced by: 87%
+--Iteration cost: 22641.22675835904
+-Running iteration 38
+LK Best Cost: 22459 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149048 units
+Reduced by: 87%
+--Iteration cost: 22459.270081653736
+-Running iteration 39
+LK Best Cost: 21585 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151142 units
+Reduced by: 88%
+--Iteration cost: 21585.465825150415
+-Running iteration 40
+LK Best Cost: 22718 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153959 units
+Reduced by: 87%
+--Iteration cost: 22717.686238739774
+-Running iteration 41
+LK Best Cost: 21530 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 154785 units
+Reduced by: 88%
+--Iteration cost: 21530.49313957705
+-Running iteration 42
+LK Best Cost: 22504 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 154526 units
+Reduced by: 87%
+--Iteration cost: 22503.645721348592
+-Running iteration 43
+LK Best Cost: 22020 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 148391 units
+Reduced by: 87%
+--Iteration cost: 22019.73605796505
+-Running iteration 44
+LK Best Cost: 22244 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 159611 units
+Reduced by: 88%
+--Iteration cost: 22243.656813114107
+-Running iteration 45
+LK Best Cost: 21489 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151262 units
+Reduced by: 88%
+--Iteration cost: 21488.925136771417
+-Running iteration 46
+LK Best Cost: 22540 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 159813 units
+Reduced by: 88%
+--Iteration cost: 22539.92348229653
+-Running iteration 47
+LK Best Cost: 23085 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 163587 units
+Reduced by: 88%
+--Iteration cost: 23085.488726249376
+-Running iteration 48
+LK Best Cost: 22379 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 145638 units
+Reduced by: 87%
+--Iteration cost: 22379.131346179187
+-Running iteration 49
+LK Best Cost: 21453 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150781 units
+Reduced by: 88%
+--Iteration cost: 21452.97888971696
+-Running iteration 50
+LK Best Cost: 22227 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 140702 units
+Reduced by: 86%
+--Iteration cost: 22227.04153751627
+-Running iteration 51
+LK Best Cost: 21453 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 152820 units
+Reduced by: 88%
+--Iteration cost: 21452.978889716964
+-Running iteration 52
+LK Best Cost: 22151 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153523 units
+Reduced by: 87%
+--Iteration cost: 22151.25583918167
+-Running iteration 53
+LK Best Cost: 21656 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150646 units
+Reduced by: 87%
+--Iteration cost: 21655.59963568363
+-Running iteration 54
+LK Best Cost: 21811 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 138227 units
+Reduced by: 86%
+--Iteration cost: 21811.400202816458
+-Running iteration 55
+LK Best Cost: 21445 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 164288 units
+Reduced by: 88%
+--Iteration cost: 21444.823475907902
+-Running iteration 56
+LK Best Cost: 23434 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 132457 units
+Reduced by: 85%
+--Iteration cost: 23434.186666538764
+-Running iteration 57
+LK Best Cost: 22935 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 149992 units
+Reduced by: 87%
+--Iteration cost: 22934.71937925357
+-Running iteration 58
+LK Best Cost: 23885 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147811 units
+Reduced by: 86%
+--Iteration cost: 23885.237188042003
+-Running iteration 59
+LK Best Cost: 21710 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147835 units
+Reduced by: 87%
+--Iteration cost: 21710.458714721928
+-Running iteration 60
+LK Best Cost: 21624 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 158424 units
+Reduced by: 88%
+--Iteration cost: 21623.70608539728
+-Running iteration 61
+LK Best Cost: 21958 units
+Lin-Kernighan runtime: 1163 sec
+Total runtime: 1163 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 148587 units
+Reduced by: 87%
+--Iteration cost: 21958.324261008664
+-Running iteration 62
+LK Best Cost: 22258 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 152142 units
+Reduced by: 87%
+--Iteration cost: 22258.24239384093
+-Running iteration 63
+LK Best Cost: 23854 units
+Lin-Kernighan runtime: 34 sec
+Total runtime: 34 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155951 units
+Reduced by: 87%
+--Iteration cost: 23853.957094490845
+-Running iteration 64
+LK Best Cost: 22828 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153058 units
+Reduced by: 87%
+--Iteration cost: 22828.396230341277
+-Running iteration 65
+LK Best Cost: 21717 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151793 units
+Reduced by: 87%
+--Iteration cost: 21716.6400021583
+-Running iteration 66
+LK Best Cost: 21456 units
+Lin-Kernighan runtime: 31 sec
+Total runtime: 31 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 159565 units
+Reduced by: 88%
+--Iteration cost: 21455.669922319106
+-Running iteration 67
+LK Best Cost: 21706 units
+Lin-Kernighan runtime: 48 sec
+Total runtime: 48 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151366 units
+Reduced by: 87%
+--Iteration cost: 21705.68467860961
+-Running iteration 68
+LK Best Cost: 22765 units
+Lin-Kernighan runtime: 46 sec
+Total runtime: 46 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153338 units
+Reduced by: 87%
+--Iteration cost: 22765.306511025305
+-Running iteration 69
+LK Best Cost: 22189 units
+Lin-Kernighan runtime: 32 sec
+Total runtime: 32 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 142350 units
+Reduced by: 87%
+--Iteration cost: 22188.91741641482
+-Running iteration 70
+LK Best Cost: 21793 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153044 units
+Reduced by: 88%
+--Iteration cost: 21793.288819297635
+-Running iteration 71
+LK Best Cost: 22251 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 137214 units
+Reduced by: 86%
+--Iteration cost: 22251.14089031128
+-Running iteration 72
+LK Best Cost: 21384 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155647 units
+Reduced by: 88%
+--Iteration cost: 21383.56908138484
+-Running iteration 73
+LK Best Cost: 21375 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 145506 units
+Reduced by: 87%
+--Iteration cost: 21374.757474020233
+-Running iteration 74
+LK Best Cost: 22130 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 143195 units
+Reduced by: 87%
+--Iteration cost: 22130.362438532717
+-Running iteration 75
+LK Best Cost: 21929 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 163118 units
+Reduced by: 88%
+--Iteration cost: 21928.606319269064
+-Running iteration 76
+LK Best Cost: 24058 units
+Lin-Kernighan runtime: 20 sec
+Total runtime: 20 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 160647 units
+Reduced by: 87%
+--Iteration cost: 24058.319391607678
+-Running iteration 77
+LK Best Cost: 22029 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155241 units
+Reduced by: 88%
+--Iteration cost: 22028.73008126883
+-Running iteration 78
+LK Best Cost: 21775 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 133734 units
+Reduced by: 86%
+--Iteration cost: 21775.13106551799
+-Running iteration 79
+LK Best Cost: 21709 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 159790 units
+Reduced by: 88%
+--Iteration cost: 21708.68748486862
+-Running iteration 80
+LK Best Cost: 22007 units
+Lin-Kernighan runtime: 17 sec
+Total runtime: 17 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 147967 units
+Reduced by: 87%
+--Iteration cost: 22006.742489949316
+-Running iteration 81
+LK Best Cost: 21811 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 152802 units
+Reduced by: 88%
+--Iteration cost: 21811.40020281645
+-Running iteration 82
+LK Best Cost: 21954 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 152068 units
+Reduced by: 87%
+--Iteration cost: 21953.66134021573
+-Running iteration 83
+LK Best Cost: 22206 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 154632 units
+Reduced by: 87%
+--Iteration cost: 22206.087944789615
+-Running iteration 84
+LK Best Cost: 21530 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 150587 units
+Reduced by: 87%
+--Iteration cost: 21530.49313957705
+-Running iteration 85
+LK Best Cost: 22342 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155826 units
+Reduced by: 87%
+--Iteration cost: 22341.536183158045
+-Running iteration 86
+LK Best Cost: 21986 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 156079 units
+Reduced by: 88%
+--Iteration cost: 21986.291260255766
+-Running iteration 87
+LK Best Cost: 23703 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 138034 units
+Reduced by: 85%
+--Iteration cost: 23702.98869275029
+-Running iteration 88
+LK Best Cost: 23062 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144578 units
+Reduced by: 86%
+--Iteration cost: 23062.3730305217
+-Running iteration 89
+LK Best Cost: 21807 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 151112 units
+Reduced by: 87%
+--Iteration cost: 21806.823385655025
+-Running iteration 90
+LK Best Cost: 21514 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 155346 units
+Reduced by: 88%
+--Iteration cost: 21514.252899129995
+-Running iteration 91
+LK Best Cost: 21808 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153296 units
+Reduced by: 88%
+--Iteration cost: 21808.20326932982
+-Running iteration 92
+LK Best Cost: 21695 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 137175 units
+Reduced by: 86%
+--Iteration cost: 21695.345248253463
+-Running iteration 93
+LK Best Cost: 21931 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 136001 units
+Reduced by: 86%
+--Iteration cost: 21931.313718702615
+-Running iteration 94
+LK Best Cost: 22623 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 144991 units
+Reduced by: 87%
+--Iteration cost: 22622.589076910645
+-Running iteration 95
+LK Best Cost: 21721 units
+Lin-Kernighan runtime: 19 sec
+Total runtime: 19 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 156667 units
+Reduced by: 88%
+--Iteration cost: 21720.968410222824
+-Running iteration 96
+LK Best Cost: 21606 units
+Lin-Kernighan runtime: 16 sec
+Total runtime: 16 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 141122 units
+Reduced by: 87%
+--Iteration cost: 21605.89293623104
+-Running iteration 97
+LK Best Cost: 21944 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 154626 units
+Reduced by: 88%
+--Iteration cost: 21943.5598813536
+-Running iteration 98
+LK Best Cost: 22181 units
+Lin-Kernighan runtime: 15 sec
+Total runtime: 15 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 140635 units
+Reduced by: 86%
+--Iteration cost: 22181.247639936973
+-Running iteration 99
+LK Best Cost: 22077 units
+Lin-Kernighan runtime: 18 sec
+Total runtime: 18 sec
+
+<<< IMPROVEMENTS >>>
+Trimmed: 153548 units
+Reduced by: 87%
+--Iteration cost: 22076.834401968485
+-Best Cost: 21320.957025960975
+
+
+C:\Users\16364\Documents\git\lin-kernighan>

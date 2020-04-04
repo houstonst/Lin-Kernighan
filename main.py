@@ -2,14 +2,31 @@ import time, os
 from reader import *
 from euclidean import *
 
-# def test2():
-#     from revision import lin
-#     import staticVars as sv
-#     from lkUtils import calculate, stringify, sleeper
-#     from rand import randomTour
+def test2():
+    #import after accepting input or else GUI runs annoyingly
+    from revision import lin
+    import staticVars as sv
+    from lkUtils import calculate, stringify, sleeper
+    from rand import randomTour
+    filepath = './tests/100.csv'
 
-#     f = './tests/100.csv'
+    #form GUI and weighted graph
+    sv.cityNames, sv.rawCoords, sv.guiCoords = reader(filepath, sv.height, sv.width)
+    sv.wg = weightedGraph(sv.rawCoords)
 
+    #iterate through random tours
+    bestCost = 999999999
+    iterationList = [1, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+    for iteration in iterationList:
+        print("<<< {} iteration cap >>>".format(iteration))
+        for i in range(iteration):
+            print("-Running iteration {}".format(i))
+            randTour, randCost = randomTour(sv.rawCoords, sv.cityNames, False)
+            cost = lin(randTour, randCost, 1, 0, "test")
+            print("--Iteration cost: {}".format(cost))
+            if cost < bestCost:
+                bestCost = cost
+        print("-Best Cost: {}\n".format(bestCost))
 
 def test1():
     #import after accepting input or else GUI runs annoyingly
@@ -23,7 +40,7 @@ def test1():
     #iterate through files and run lin-kernighan
     files = ["6.csv", "11.csv", "14.csv", "26.csv", "29.csv", "48.csv", "52.csv", "76.csv", "100.csv", "105.csv", "107.csv", "120.csv", "152.txt", "195.csv", "200.txt", "225.txt", "299.txt", "318.txt", "439.txt", "575.txt"]
     algos = ["nearest", "farthest"]
-    for solmax in range (5, 10, 2):
+    for solmax in range (1, 10, 2):
         for j in range(len(files)):
             #cooldown
             if j > 6:
@@ -131,13 +148,15 @@ if __name__ == "__main__":
     clear()
 
     #accept input
-    print("Enter a .csv or .txt file [example.csv or example.txt]. Alternatively, enter 'test1' in order to benchmark:\n")
+    print("Enter a .csv or .txt file [example.csv or example.txt]. Alternatively, enter 'test1' or 'test2 in order to benchmark:\n")
     inp = input()
     clear()
 
     #run either the tests or problem solver
-    if inp == "test":
+    if inp == "test1":
         test1()
+    elif inp == "test2":
+        test2()
     else:
         filepath = "./tests/" + inp
         solve(filepath)
