@@ -1,0 +1,697 @@
+<<< TESTING 6.csv ON SOLMAX 1 >>>
+nearest:
+-- genCost: 1645.29 units | lkCost: 1526.12 units | genTime: 0.0 sec | lkTime: 0.0 sec | totTime: 0.0 sec | imp: 7.24%
+farthest:
+-- genCost: 1526.12 units | lkCost: 1526.12 units | genTime: 0.0 sec | lkTime: 0.0 sec | totTime: 0.0 sec | imp: 0.0%
+
+
+<<< TESTING 11.csv ON SOLMAX 1 >>>
+nearest:
+-- genCost: 3215.95 units | lkCost: 2896.07 units | genTime: 0.0 sec | lkTime: 0.02 sec | totTime: 0.02 sec | imp: 9.95%
+farthest:
+-- genCost: 2896.07 units | lkCost: 2896.07 units | genTime: 0.0 sec | lkTime: 0.0 sec | totTime: 0.0 sec | imp: 0.0%
+
+
+<<< TESTING 14.csv ON SOLMAX 1 >>>
+nearest:
+-- genCost: 35.31 units | lkCost: 32.41 units | genTime: 0.0 sec | lkTime: 0.02 sec | totTime: 0.02 sec | imp: 8.21%
+farthest:
+-- genCost: 33.0 units | lkCost: 32.41 units | genTime: 0.0 sec | lkTime: 0.0 sec | totTime: 0.0 sec | imp: 1.78%
+
+
+<<< TESTING 26.csv ON SOLMAX 1 >>>
+nearest:
+-- genCost: 4345.05 units | lkCost: 3897.66 units | genTime: 0.02 sec | lkTime: 0.02 sec | totTime: 0.03 sec | imp: 10.3%
+farthest:
+-- genCost: 3986.74 units | lkCost: 3811.04 units | genTime: 0.03 sec | lkTime: 0.02 sec | totTime: 0.05 sec | imp: 4.41%
+
+
+<<< TESTING 29.csv ON SOLMAX 1 >>>
+nearest:
+-- genCost: 10211.18 units | lkCost: 9120.34 units | genTime: 0.03 sec | lkTime: 0.03 sec | totTime: 0.06 sec | imp: 10.68%
+farthest:
+-- genCost: 9379.05 units | lkCost: 9197.05 units | genTime: 0.05 sec | lkTime: 0.05 sec | totTime: 0.09 sec | imp: 1.94%
+
+
+<<< TESTING 48.csv ON SOLMAX 1 >>>
+nearest:
+-- genCost: 40763.44 units | lkCost: 35158.93 units | genTime: 0.09 sec | lkTime: 0.11 sec | totTime: 0.2 sec | imp: 13.75%
+farthest:
+-- genCost: 35667.75 units | lkCost: 35083.08 units | genTime: 0.14 sec | lkTime: 0.11 sec | totTime: 0.25 sec | imp: 1.64%
+
+
+<<< TESTING 52.csv ON SOLMAX 1 >>>
+nearest:
+-- genCost: 8980.92 units | lkCost: 7973.15 units | genTime: 0.11 sec | lkTime: 0.16 sec | totTime: 0.27 sec | imp: 11.22%
+farthest:
+-- genCost: 8120.63 units | lkCost: 7544.37 units | genTime: 0.22 sec | lkTime: 0.11 sec | totTime: 0.33 sec | imp: 7.1%
+
+
+<<< TESTING 76.csv ON SOLMAX 1 >>>
+nearest:
+-- genCost: 617.85 units | lkCost: 560.67 units | genTime: 0.3 sec | lkTime: 0.33 sec | totTime: 0.62 sec | imp: 9.25%
+farthest:
+-- genCost: 583.04 units | lkCost: 563.68 units | genTime: 0.72 sec | lkTime: 0.16 sec | totTime: 0.87 sec | imp: 3.32%
+
+
+<<< TESTING 100.csv ON SOLMAX 1 >>>
+nearest:
+-- genCost: 27658.58 units | lkCost: 22641.23 units | genTime: 0.78 sec | lkTime: 0.8 sec | totTime: 1.58 sec | imp: 18.14%
+farthest:
+-- genCost: 23374.36 units | lkCost: 22940.08 units | genTime: 1.94 sec | lkTime: 0.41 sec | totTime: 2.34 sec | imp: 1.86%
+
+
+<<< TESTING 105.csv ON SOLMAX 1 >>>
+nearest:
+-- genCost: 19025.54 units | lkCost: 14762.03 units | genTime: 0.87 sec | lkTime: 0.73 sec | totTime: 1.61 sec | imp: 22.41%
+farthest:
+-- genCost: 15372.38 units | lkCost: 14587.19 units | genTime: 2.28 sec | lkTime: 0.34 sec | totTime: 2.62 sec | imp: 5.11%
+
+
+<<< TESTING 107.csv ON SOLMAX 1 >>>
+nearest:
+-- genCost: 47464.79 units | lkCost: 44907.46 units | genTime: 0.92 sec | lkTime: 0.97 sec | totTime: 1.89 sec | imp: 5.39%
+farthest:
+-- genCost: 45528.87 units | lkCost: 45316.75 units | genTime: 2.33 sec | lkTime: 0.66 sec | totTime: 2.98 sec | imp: 0.47%
+
+
+<<< TESTING 120.csv ON SOLMAX 1 >>>
+nearest:
+-- genCost: 2162.84 units | lkCost: 1660.02 units | genTime: 1.16 sec | lkTime: 0.8 sec | totTime: 1.95 sec | imp: 23.25%
+farthest:
+-- genCost: 1712.48 units | lkCost: 1642.03 units | genTime: 3.59 sec | lkTime: 0.37 sec | totTime: 3.97 sec | imp: 4.11%
+
+
+<<< TESTING 152.txt ON SOLMAX 1 >>>
+nearest:
+-- genCost: 85314.25 units | lkCost: 80823.01 units | genTime: 2.62 sec | lkTime: 2.77 sec | totTime: 5.39 sec | imp: 5.26%
+farthest:
+-- genCost: 75209.36 units | lkCost: 74972.73 units | genTime: 8.28 sec | lkTime: 1.16 sec | totTime: 9.44 sec | imp: 0.31%
+
+
+<<< TESTING 195.csv ON SOLMAX 1 >>>
+nearest:
+-- genCost: 2789.12 units | lkCost: 2367.19 units | genTime: 4.94 sec | lkTime: 1.23 sec | totTime: 6.17 sec | imp: 15.13%
+farthest:
+-- genCost: 2599.67 units | lkCost: 2420.66 units | genTime: 19.61 sec | lkTime: 1.3 sec | totTime: 20.9 sec | imp: 6.89%
+
+
+<<< TESTING 200.txt ON SOLMAX 1 >>>
+nearest:
+-- genCost: 37249.32 units | lkCost: 31609.27 units | genTime: 5.94 sec | lkTime: 3.41 sec | totTime: 9.34 sec | imp: 15.14%
+farthest:
+-- genCost: 31655.65 units | lkCost: 30525.66 units | genTime: 24.17 sec | lkTime: 1.33 sec | totTime: 25.5 sec | imp: 3.57%
+
+
+<<< TESTING 225.txt ON SOLMAX 1 >>>
+nearest:
+-- genCost: 4719.79 units | lkCost: 4046.82 units | genTime: 7.92 sec | lkTime: 2.84 sec | totTime: 10.76 sec | imp: 14.26%
+farthest:
+-- genCost: 4159.5 units | lkCost: 4041.61 units | genTime: 34.79 sec | lkTime: 3.77 sec | totTime: 38.56 sec | imp: 2.83%
+
+
+<<< TESTING 299.txt ON SOLMAX 1 >>>
+nearest:
+-- genCost: 61017.01 units | lkCost: 49423.77 units | genTime: 19.87 sec | lkTime: 6.7 sec | totTime: 26.58 sec | imp: 19.0%
+farthest:
+-- genCost: 52562.92 units | lkCost: 50456.96 units | genTime: 100.9 sec | lkTime: 4.45 sec | totTime: 105.36 sec | imp: 4.01%
+
+
+<<< TESTING 318.txt ON SOLMAX 1 >>>
+nearest:
+-- genCost: 51640.27 units | lkCost: 46707.92 units | genTime: 24.18 sec | lkTime: 4.89 sec | totTime: 29.08 sec | imp: 9.55%
+farthest:
+-- genCost: 45874.74 units | lkCost: 44328.39 units | genTime: 126.16 sec | lkTime: 5.2 sec | totTime: 131.36 sec | imp: 3.37%
+
+
+<<< TESTING 439.txt ON SOLMAX 1 >>>
+nearest:
+-- genCost: 131702.57 units | lkCost: 117264.63 units | genTime: 63.02 sec | lkTime: 9.06 sec | totTime: 72.09 sec | imp: 10.96%
+farthest:
+-- genCost: 122899.09 units | lkCost: 115628.79 units | genTime: 434.91 sec | lkTime: 20.45 sec | totTime: 455.37 sec | imp: 5.92%
+
+
+<<< TESTING 575.txt ON SOLMAX 1 >>>
+nearest:
+-- genCost: 8368.6 units | lkCost: 6981.77 units | genTime: 132.38 sec | lkTime: 27.28 sec | totTime: 159.66 sec | imp: 16.57%
+farthest:
+-- genCost: 7542.52 units | lkCost: 7033.8 units | genTime: 1195.47 sec | lkTime: 33.15 sec | totTime: 1228.63 sec | imp: 6.74%
+
+
+<<< TESTING 6.csv ON SOLMAX 3 >>>
+nearest:
+-- genCost: 1645.29 units | lkCost: 1526.12 units | genTime: 0.0 sec | lkTime: 0.02 sec | totTime: 0.02 sec | imp: 7.24%
+farthest:
+-- genCost: 1526.12 units | lkCost: 1526.12 units | genTime: 0.0 sec | lkTime: 0.0 sec | totTime: 0.0 sec | imp: 0.0%
+
+
+<<< TESTING 11.csv ON SOLMAX 3 >>>
+nearest:
+-- genCost: 3215.95 units | lkCost: 2896.07 units | genTime: 0.0 sec | lkTime: 0.02 sec | totTime: 0.02 sec | imp: 9.95%
+farthest:
+-- genCost: 2896.07 units | lkCost: 2896.07 units | genTime: 0.0 sec | lkTime: 0.02 sec | totTime: 0.02 sec | imp: 0.0%
+
+
+<<< TESTING 14.csv ON SOLMAX 3 >>>
+nearest:
+-- genCost: 35.31 units | lkCost: 32.41 units | genTime: 0.0 sec | lkTime: 0.03 sec | totTime: 0.03 sec | imp: 8.21%
+farthest:
+-- genCost: 33.0 units | lkCost: 32.41 units | genTime: 0.0 sec | lkTime: 0.03 sec | totTime: 0.03 sec | imp: 1.78%
+
+
+<<< TESTING 26.csv ON SOLMAX 3 >>>
+nearest:
+-- genCost: 4345.05 units | lkCost: 3831.06 units | genTime: 0.02 sec | lkTime: 0.09 sec | totTime: 0.11 sec | imp: 11.83%
+farthest:
+-- genCost: 3986.74 units | lkCost: 3811.04 units | genTime: 0.02 sec | lkTime: 0.08 sec | totTime: 0.09 sec | imp: 4.41%
+
+
+<<< TESTING 29.csv ON SOLMAX 3 >>>
+nearest:
+-- genCost: 10211.18 units | lkCost: 9094.64 units | genTime: 0.02 sec | lkTime: 0.09 sec | totTime: 0.11 sec | imp: 10.93%
+farthest:
+-- genCost: 9379.05 units | lkCost: 9074.15 units | genTime: 0.03 sec | lkTime: 0.11 sec | totTime: 0.14 sec | imp: 3.25%
+
+
+<<< TESTING 48.csv ON SOLMAX 3 >>>
+nearest:
+-- genCost: 40763.44 units | lkCost: 34738.94 units | genTime: 0.08 sec | lkTime: 0.36 sec | totTime: 0.44 sec | imp: 14.78%
+farthest:
+-- genCost: 35667.75 units | lkCost: 33600.56 units | genTime: 0.16 sec | lkTime: 0.66 sec | totTime: 0.81 sec | imp: 5.8%
+
+
+<<< TESTING 52.csv ON SOLMAX 3 >>>
+nearest:
+-- genCost: 8980.92 units | lkCost: 7827.4 units | genTime: 0.11 sec | lkTime: 0.95 sec | totTime: 1.06 sec | imp: 12.84%
+farthest:
+-- genCost: 8120.63 units | lkCost: 7544.37 units | genTime: 0.2 sec | lkTime: 0.27 sec | totTime: 0.47 sec | imp: 7.1%
+
+
+<<< TESTING 76.csv ON SOLMAX 3 >>>
+nearest:
+-- genCost: 617.85 units | lkCost: 550.02 units | genTime: 0.28 sec | lkTime: 0.45 sec | totTime: 0.73 sec | imp: 10.98%
+farthest:
+-- genCost: 583.04 units | lkCost: 558.03 units | genTime: 0.69 sec | lkTime: 0.5 sec | totTime: 1.19 sec | imp: 4.29%
+
+
+<<< TESTING 100.csv ON SOLMAX 3 >>>
+nearest:
+-- genCost: 27658.58 units | lkCost: 21572.31 units | genTime: 0.77 sec | lkTime: 1.53 sec | totTime: 2.3 sec | imp: 22.0%
+farthest:
+-- genCost: 23374.36 units | lkCost: 22437.05 units | genTime: 1.92 sec | lkTime: 2.02 sec | totTime: 3.94 sec | imp: 4.01%
+
+
+<<< TESTING 105.csv ON SOLMAX 3 >>>
+nearest:
+-- genCost: 19025.54 units | lkCost: 14620.96 units | genTime: 0.86 sec | lkTime: 1.8 sec | totTime: 2.66 sec | imp: 23.15%
+farthest:
+-- genCost: 15372.38 units | lkCost: 14550.09 units | genTime: 2.19 sec | lkTime: 1.02 sec | totTime: 3.2 sec | imp: 5.35%
+
+
+<<< TESTING 107.csv ON SOLMAX 3 >>>
+nearest:
+-- genCost: 47464.79 units | lkCost: 44710.29 units | genTime: 0.92 sec | lkTime: 7.45 sec | totTime: 8.37 sec | imp: 5.8%
+farthest:
+-- genCost: 45528.87 units | lkCost: 44666.61 units | genTime: 2.31 sec | lkTime: 3.7 sec | totTime: 6.01 sec | imp: 1.89%
+
+
+<<< TESTING 120.csv ON SOLMAX 3 >>>
+nearest:
+-- genCost: 2162.84 units | lkCost: 1655.25 units | genTime: 1.17 sec | lkTime: 2.39 sec | totTime: 3.56 sec | imp: 23.47%
+farthest:
+-- genCost: 1712.48 units | lkCost: 1632.38 units | genTime: 3.53 sec | lkTime: 1.81 sec | totTime: 5.34 sec | imp: 4.68%
+
+
+<<< TESTING 152.txt ON SOLMAX 3 >>>
+nearest:
+-- genCost: 85314.25 units | lkCost: 78921.3 units | genTime: 2.61 sec | lkTime: 14.92 sec | totTime: 17.53 sec | imp: 7.49%
+farthest:
+-- genCost: 75209.36 units | lkCost: 74953.68 units | genTime: 8.17 sec | lkTime: 4.41 sec | totTime: 12.58 sec | imp: 0.34%
+
+
+<<< TESTING 195.csv ON SOLMAX 3 >>>
+nearest:
+-- genCost: 2789.12 units | lkCost: 2358.65 units | genTime: 4.92 sec | lkTime: 2.98 sec | totTime: 7.91 sec | imp: 15.43%
+farthest:
+-- genCost: 2599.67 units | lkCost: 2394.33 units | genTime: 19.4 sec | lkTime: 1.84 sec | totTime: 21.25 sec | imp: 7.9%
+
+
+<<< TESTING 200.txt ON SOLMAX 3 >>>
+nearest:
+-- genCost: 37249.32 units | lkCost: 30175.43 units | genTime: 5.98 sec | lkTime: 8.03 sec | totTime: 14.01 sec | imp: 18.99%
+farthest:
+-- genCost: 31655.65 units | lkCost: 29985.34 units | genTime: 23.97 sec | lkTime: 4.64 sec | totTime: 28.61 sec | imp: 5.28%
+
+
+<<< TESTING 225.txt ON SOLMAX 3 >>>
+nearest:
+-- genCost: 4719.79 units | lkCost: 3953.93 units | genTime: 7.8 sec | lkTime: 7.14 sec | totTime: 14.94 sec | imp: 16.23%
+farthest:
+-- genCost: 4159.5 units | lkCost: 3951.54 units | genTime: 34.56 sec | lkTime: 8.73 sec | totTime: 43.29 sec | imp: 5.0%
+
+
+<<< TESTING 299.txt ON SOLMAX 3 >>>
+nearest:
+-- genCost: 61017.01 units | lkCost: 48493.28 units | genTime: 19.73 sec | lkTime: 19.23 sec | totTime: 38.96 sec | imp: 20.52%
+farthest:
+-- genCost: 52562.92 units | lkCost: 49491.82 units | genTime: 99.97 sec | lkTime: 15.78 sec | totTime: 115.75 sec | imp: 5.84%
+
+
+<<< TESTING 318.txt ON SOLMAX 3 >>>
+nearest:
+-- genCost: 51640.27 units | lkCost: 43410.48 units | genTime: 23.72 sec | lkTime: 27.68 sec | totTime: 51.4 sec | imp: 15.94%
+farthest:
+-- genCost: 45874.74 units | lkCost: 43633.68 units | genTime: 127.69 sec | lkTime: 14.23 sec | totTime: 141.92 sec | imp: 4.89%
+
+
+<<< TESTING 439.txt ON SOLMAX 3 >>>
+nearest:
+-- genCost: 131702.57 units | lkCost: 114869.84 units | genTime: 64.63 sec | lkTime: 45.77 sec | totTime: 110.4 sec | imp: 12.78%
+farthest:
+-- genCost: 122899.09 units | lkCost: 113825.44 units | genTime: 430.95 sec | lkTime: 47.56 sec | totTime: 478.5 sec | imp: 7.38%
+
+
+<<< TESTING 575.txt ON SOLMAX 3 >>>
+nearest:
+-- genCost: 8368.6 units | lkCost: 6964.08 units | genTime: 133.44 sec | lkTime: 75.89 sec | totTime: 209.33 sec | imp: 16.78%
+farthest:
+-- genCost: 7542.52 units | lkCost: 7012.98 units | genTime: 1197.78 sec | lkTime: 55.84 sec | totTime: 1253.61 sec | imp: 7.02%
+
+
+<<< TESTING 6.csv ON SOLMAX 5 >>>
+nearest:
+-- genCost: 1645.29 units | lkCost: 1526.12 units | genTime: 0.0 sec | lkTime: 0.01 sec | totTime: 0.01 sec | imp: 7.24%
+farthest:
+-- genCost: 1526.12 units | lkCost: 1526.12 units | genTime: 0.0 sec | lkTime: 0.0 sec | totTime: 0.0 sec | imp: 0.0%
+
+
+<<< TESTING 11.csv ON SOLMAX 5 >>>
+nearest:
+-- genCost: 3215.95 units | lkCost: 2896.07 units | genTime: 0.0 sec | lkTime: 0.02 sec | totTime: 0.02 sec | imp: 9.95%
+farthest:
+-- genCost: 2896.07 units | lkCost: 2896.07 units | genTime: 0.0 sec | lkTime: 0.0 sec | totTime: 0.0 sec | imp: 0.0%
+
+
+<<< TESTING 14.csv ON SOLMAX 5 >>>
+nearest:
+-- genCost: 35.31 units | lkCost: 32.41 units | genTime: 0.0 sec | lkTime: 0.06 sec | totTime: 0.06 sec | imp: 8.21%
+farthest:
+-- genCost: 33.0 units | lkCost: 32.41 units | genTime: 0.02 sec | lkTime: 0.03 sec | totTime: 0.05 sec | imp: 1.78%
+
+
+<<< TESTING 26.csv ON SOLMAX 5 >>>
+nearest:
+-- genCost: 4345.05 units | lkCost: 3831.06 units | genTime: 0.03 sec | lkTime: 0.17 sec | totTime: 0.21 sec | imp: 11.83%
+farthest:
+-- genCost: 3986.74 units | lkCost: 3811.04 units | genTime: 0.05 sec | lkTime: 0.17 sec | totTime: 0.22 sec | imp: 4.41%
+
+
+<<< TESTING 29.csv ON SOLMAX 5 >>>
+nearest:
+-- genCost: 10211.18 units | lkCost: 9094.64 units | genTime: 0.03 sec | lkTime: 0.17 sec | totTime: 0.21 sec | imp: 10.93%
+farthest:
+-- genCost: 9379.05 units | lkCost: 9094.64 units | genTime: 0.08 sec | lkTime: 0.1 sec | totTime: 0.18 sec | imp: 3.03%
+
+
+<<< TESTING 48.csv ON SOLMAX 5 >>>
+nearest:
+-- genCost: 40763.44 units | lkCost: 33588.34 units | genTime: 0.11 sec | lkTime: 0.75 sec | totTime: 0.86 sec | imp: 17.6%
+farthest:
+-- genCost: 35667.75 units | lkCost: 33588.34 units | genTime: 0.17 sec | lkTime: 0.73 sec | totTime: 0.9 sec | imp: 5.83%
+
+
+<<< TESTING 52.csv ON SOLMAX 5 >>>
+nearest:
+-- genCost: 8980.92 units | lkCost: 7827.4 units | genTime: 0.14 sec | lkTime: 1.8 sec | totTime: 1.94 sec | imp: 12.84%farthest:
+-- genCost: 8120.63 units | lkCost: 7544.37 units | genTime: 0.3 sec | lkTime: 0.44 sec | totTime: 0.74 sec | imp: 7.1%
+
+
+<<< TESTING 76.csv ON SOLMAX 5 >>>
+nearest:
+-- genCost: 617.85 units | lkCost: 550.02 units | genTime: 0.37 sec | lkTime: 0.74 sec | totTime: 1.11 sec | imp: 10.98%
+farthest:
+-- genCost: 583.04 units | lkCost: 556.17 units | genTime: 0.85 sec | lkTime: 0.75 sec | totTime: 1.6 sec | imp: 4.61%
+
+
+<<< TESTING 100.csv ON SOLMAX 5 >>>
+nearest:
+-- genCost: 27658.58 units | lkCost: 21961.67 units | genTime: 0.95 sec | lkTime: 2.7 sec | totTime: 3.65 sec | imp: 20.6%
+farthest:
+-- genCost: 23374.36 units | lkCost: 22437.05 units | genTime: 2.2 sec | lkTime: 7.74 sec | totTime: 9.94 sec | imp: 4.01%
+
+
+<<< TESTING 105.csv ON SOLMAX 5 >>>
+nearest:
+-- genCost: 19025.54 units | lkCost: 14516.94 units | genTime: 0.99 sec | lkTime: 3.78 sec | totTime: 4.76 sec | imp: 23.7%
+farthest:
+-- genCost: 15372.38 units | lkCost: 14550.09 units | genTime: 2.59 sec | lkTime: 1.93 sec | totTime: 4.52 sec | imp: 5.35%
+
+
+<<< TESTING 107.csv ON SOLMAX 5 >>>
+nearest:
+-- genCost: 47464.79 units | lkCost: 44710.29 units | genTime: 1.05 sec | lkTime: 12.78 sec | totTime: 13.82 sec | imp: 5.8%
+farthest:
+-- genCost: 45528.87 units | lkCost: 44436.24 units | genTime: 2.58 sec | lkTime: 11.29 sec | totTime: 13.87 sec | imp: 2.4%
+
+
+<<< TESTING 120.csv ON SOLMAX 5 >>>
+nearest:
+-- genCost: 2162.84 units | lkCost: 1627.36 units | genTime: 1.24 sec | lkTime: 4.73 sec | totTime: 5.97 sec | imp: 24.76%
+farthest:
+-- genCost: 1712.48 units | lkCost: 1632.38 units | genTime: 4.1 sec | lkTime: 2.95 sec | totTime: 7.05 sec | imp: 4.68%
+
+
+<<< TESTING 152.txt ON SOLMAX 5 >>>
+nearest:
+-- genCost: 85314.25 units | lkCost: 78921.3 units | genTime: 2.89 sec | lkTime: 21.64 sec | totTime: 24.53 sec | imp: 7.49%
+farthest:
+-- genCost: 75209.36 units | lkCost: 74527.57 units | genTime: 9.22 sec | lkTime: 7.88 sec | totTime: 17.1 sec | imp: 0.91%
+
+
+<<< TESTING 195.csv ON SOLMAX 5 >>>
+nearest:
+-- genCost: 2789.12 units | lkCost: 2371.39 units | genTime: 5.38 sec | lkTime: 5.2 sec | totTime: 10.59 sec | imp: 14.98%
+farthest:
+-- genCost: 2599.67 units | lkCost: 2361.08 units | genTime: 21.98 sec | lkTime: 2.66 sec | totTime: 24.65 sec | imp: 9.18%
+
+
+<<< TESTING 200.txt ON SOLMAX 5 >>>
+nearest:
+-- genCost: 37249.32 units | lkCost: 30042.27 units | genTime: 6.65 sec | lkTime: 12.51 sec | totTime: 19.16 sec | imp: 19.35%
+farthest:
+-- genCost: 31655.65 units | lkCost: 29843.11 units | genTime: 27.29 sec | lkTime: 6.93 sec | totTime: 34.21 sec | imp: 5.73%
+
+
+<<< TESTING 225.txt ON SOLMAX 5 >>>
+nearest:
+-- genCost: 4719.79 units | lkCost: 3884.35 units | genTime: 8.54 sec | lkTime: 8.62 sec | totTime: 17.16 sec | imp: 17.7%
+farthest:
+-- genCost: 4159.5 units | lkCost: 3950.54 units | genTime: 39.1 sec | lkTime: 10.7 sec | totTime: 49.8 sec | imp: 5.02%
+
+
+<<< TESTING 299.txt ON SOLMAX 5 >>>
+nearest:
+-- genCost: 61017.01 units | lkCost: 48570.77 units | genTime: 21.65 sec | lkTime: 27.68 sec | totTime: 49.34 sec | imp: 20.4%
+farthest:
+-- genCost: 52562.92 units | lkCost: 49922.42 units | genTime: 112.47 sec | lkTime: 24.98 sec | totTime: 137.45 sec | imp: 5.02%
+
+
+<<< TESTING 318.txt ON SOLMAX 5 >>>
+nearest:
+-- genCost: 51640.27 units | lkCost: 43375.24 units | genTime: 26.52 sec | lkTime: 69.03 sec | totTime: 95.55 sec | imp: 16.01%
+farthest:
+-- genCost: 45874.74 units | lkCost: 43597.14 units | genTime: 144.42 sec | lkTime: 24.42 sec | totTime: 168.84 sec | imp: 4.96%
+
+
+<<< TESTING 439.txt ON SOLMAX 5 >>>
+nearest:
+-- genCost: 131702.57 units | lkCost: 113454.08 units | genTime: 70.08 sec | lkTime: 162.18 sec | totTime: 232.26 sec | imp: 13.86%
+farthest:
+-- genCost: 122899.09 units | lkCost: 112083.07 units | genTime: 486.16 sec | lkTime: 152.82 sec | totTime: 638.98 sec | imp: 8.8%
+
+
+<<< TESTING 575.txt ON SOLMAX 5 >>>
+nearest:
+-- genCost: 8368.6 units | lkCost: 6897.88 units | genTime: 143.7 sec | lkTime: 68.46 sec | totTime: 212.16 sec | imp: 17.57%
+farthest:
+-- genCost: 7542.52 units | lkCost: 6964.22 units | genTime: 0.0 sec | lkTime: 59.77 sec | totTime: 59.77 sec | imp: 7.67%
+
+
+<<< TESTING 6.csv ON SOLMAX 7 >>>
+nearest:
+-- genCost: 1645.29 units | lkCost: 1526.12 units | genTime: 0.0 sec | lkTime: 0.01 sec | totTime: 0.01 sec | imp: 7.24%
+farthest:
+-- genCost: 1526.12 units | lkCost: 1526.12 units | genTime: 0.0 sec | lkTime: 0.0 sec | totTime: 0.0 sec | imp: 0.0%
+
+
+<<< TESTING 11.csv ON SOLMAX 7 >>>
+nearest:
+-- genCost: 3215.95 units | lkCost: 2896.07 units | genTime: 0.0 sec | lkTime: 0.04 sec | totTime: 0.04 sec | imp: 9.95%
+farthest:
+-- genCost: 2896.07 units | lkCost: 2896.07 units | genTime: 0.0 sec | lkTime: 0.02 sec | totTime: 0.02 sec | imp: 0.0%
+
+
+<<< TESTING 14.csv ON SOLMAX 7 >>>
+nearest:
+-- genCost: 35.31 units | lkCost: 32.41 units | genTime: 0.0 sec | lkTime: 0.08 sec | totTime: 0.08 sec | imp: 8.21%
+farthest:
+-- genCost: 33.0 units | lkCost: 32.41 units | genTime: 0.0 sec | lkTime: 0.05 sec | totTime: 0.05 sec | imp: 1.78%
+
+
+<<< TESTING 26.csv ON SOLMAX 7 >>>
+nearest:
+-- genCost: 4345.05 units | lkCost: 3831.06 units | genTime: 0.0 sec | lkTime: 0.21 sec | totTime: 0.21 sec | imp: 11.83%
+farthest:
+-- genCost: 3986.74 units | lkCost: 3811.04 units | genTime: 0.02 sec | lkTime: 0.16 sec | totTime: 0.18 sec | imp: 4.41%
+
+
+<<< TESTING 29.csv ON SOLMAX 7 >>>
+nearest:
+-- genCost: 10211.18 units | lkCost: 9094.64 units | genTime: 0.01 sec | lkTime: 0.16 sec | totTime: 0.18 sec | imp: 10.93%
+farthest:
+-- genCost: 9379.05 units | lkCost: 9094.64 units | genTime: 0.03 sec | lkTime: 0.16 sec | totTime: 0.19 sec | imp: 3.03%
+
+
+<<< TESTING 48.csv ON SOLMAX 7 >>>
+nearest:
+-- genCost: 40763.44 units | lkCost: 33600.56 units | genTime: 0.12 sec | lkTime: 0.93 sec | totTime: 1.05 sec | imp: 17.57%
+farthest:
+-- genCost: 35667.75 units | lkCost: 33588.34 units | genTime: 0.19 sec | lkTime: 0.89 sec | totTime: 1.08 sec | imp: 5.83%
+
+
+<<< TESTING 52.csv ON SOLMAX 7 >>>
+nearest:
+-- genCost: 8980.92 units | lkCost: 7544.37 units | genTime: 0.14 sec | lkTime: 2.28 sec | totTime: 2.42 sec | imp: 16.0%
+farthest:
+-- genCost: 8120.63 units | lkCost: 7544.37 units | genTime: 0.26 sec | lkTime: 0.47 sec | totTime: 0.73 sec | imp: 7.1%
+
+
+<<< TESTING 76.csv ON SOLMAX 7 >>>
+nearest:
+-- genCost: 617.85 units | lkCost: 550.02 units | genTime: 0.34 sec | lkTime: 1.03 sec | totTime: 1.37 sec | imp: 10.98%
+farthest:
+-- genCost: 583.04 units | lkCost: 556.17 units | genTime: 0.8 sec | lkTime: 0.93 sec | totTime: 1.72 sec | imp: 4.61%
+
+
+<<< TESTING 100.csv ON SOLMAX 7 >>>
+nearest:
+-- genCost: 27658.58 units | lkCost: 21961.67 units | genTime: 0.83 sec | lkTime: 3.19 sec | totTime: 4.02 sec | imp: 20.6%
+farthest:
+-- genCost: 23374.36 units | lkCost: 22437.05 units | genTime: 2.2 sec | lkTime: 6.07 sec | totTime: 8.26 sec | imp: 4.01%
+
+
+<<< TESTING 105.csv ON SOLMAX 7 >>>
+nearest:
+-- genCost: 19025.54 units | lkCost: 14677.93 units | genTime: 0.96 sec | lkTime: 5.48 sec | totTime: 6.44 sec | imp: 22.85%
+farthest:
+-- genCost: 15372.38 units | lkCost: 14472.86 units | genTime: 2.54 sec | lkTime: 3.13 sec | totTime: 5.67 sec | imp: 5.85%
+
+
+<<< TESTING 107.csv ON SOLMAX 7 >>>
+nearest:
+-- genCost: 47464.79 units | lkCost: 44659.4 units | genTime: 0.99 sec | lkTime: 30.71 sec | totTime: 31.7 sec | imp: 5.91%
+farthest:
+-- genCost: 45528.87 units | lkCost: 44436.24 units | genTime: 3.65 sec | lkTime: 14.97 sec | totTime: 18.61 sec | imp: 2.4%
+
+
+<<< TESTING 120.csv ON SOLMAX 7 >>>
+nearest:
+-- genCost: 2162.84 units | lkCost: 1627.36 units | genTime: 1.18 sec | lkTime: 7.17 sec | totTime: 8.35 sec | imp: 24.76%
+farthest:
+-- genCost: 1712.48 units | lkCost: 1632.38 units | genTime: 4.58 sec | lkTime: 4.22 sec | totTime: 8.8 sec | imp: 4.68%
+
+
+<<< TESTING 152.txt ON SOLMAX 7 >>>
+nearest:
+-- genCost: 85314.25 units | lkCost: 78921.3 units | genTime: 2.72 sec | lkTime: 33.9 sec | totTime: 36.62 sec | imp: 7.49%
+farthest:
+-- genCost: 75209.36 units | lkCost: 74288.53 units | genTime: 8.31 sec | lkTime: 28.86 sec | totTime: 37.17 sec | imp: 1.22%
+
+
+<<< TESTING 195.csv ON SOLMAX 7 >>>
+nearest:
+-- genCost: 2789.12 units | lkCost: 2364.4 units | genTime: 4.78 sec | lkTime: 4.84 sec | totTime: 9.62 sec | imp: 15.23%
+farthest:
+-- genCost: 2599.67 units | lkCost: 2361.08 units | genTime: 20.21 sec | lkTime: 2.92 sec | totTime: 23.13 sec | imp: 9.18%
+
+
+<<< TESTING 200.txt ON SOLMAX 7 >>>
+nearest:
+-- genCost: 37249.32 units | lkCost: 30183.69 units | genTime: 5.83 sec | lkTime: 22.01 sec | totTime: 27.84 sec | imp: 18.97%
+farthest:
+-- genCost: 31655.65 units | lkCost: 29843.11 units | genTime: 24.25 sec | lkTime: 6.8 sec | totTime: 31.04 sec | imp: 5.73%
+
+
+<<< TESTING 225.txt ON SOLMAX 7 >>>
+nearest:
+-- genCost: 4719.79 units | lkCost: 3924.25 units | genTime: 7.64 sec | lkTime: 13.2 sec | totTime: 20.84 sec | imp: 16.86%
+farthest:
+-- genCost: 4159.5 units | lkCost: 3946.58 units | genTime: 34.82 sec | lkTime: 15.5 sec | totTime: 50.32 sec | imp: 5.12%
+
+
+<<< TESTING 299.txt ON SOLMAX 7 >>>
+nearest:
+-- genCost: 61017.01 units | lkCost: 48724.93 units | genTime: 19.4 sec | lkTime: 37.91 sec | totTime: 57.32 sec | imp: 20.15%
+farthest:
+-- genCost: 52562.92 units | lkCost: 49465.8 units | genTime: 100.85 sec | lkTime: 36.23 sec | totTime: 137.08 sec | imp: 5.89%
+
+
+<<< TESTING 318.txt ON SOLMAX 7 >>>
+nearest:
+-- genCost: 51640.27 units | lkCost: 43182.83 units | genTime: 23.25 sec | lkTime: 85.69 sec | totTime: 108.93 sec | imp: 16.38%
+farthest:
+-- genCost: 45874.74 units | lkCost: 43231.48 units | genTime: 128.01 sec | lkTime: 30.31 sec | totTime: 158.32 sec | imp: 5.76%
+
+
+<<< TESTING 439.txt ON SOLMAX 7 >>>
+nearest:
+-- genCost: 131702.57 units | lkCost: 113881.78 units | genTime: 64.85 sec | lkTime: 217.13 sec | totTime: 281.98 sec | imp: 13.53%
+farthest:
+-- genCost: 122899.09 units | lkCost: 111847.96 units | genTime: 436.65 sec | lkTime: 116.14 sec | totTime: 552.79 sec | imp: 8.99%
+
+
+<<< TESTING 575.txt ON SOLMAX 7 >>>
+nearest:
+-- genCost: 8368.6 units | lkCost: 6903.68 units | genTime: 128.69 sec | lkTime: 141.71 sec | totTime: 270.4 sec | imp: 17.5%
+farthest:
+-- genCost: 7542.52 units | lkCost: 6979.32 units | genTime: 0.0 sec | lkTime: 75.85 sec | totTime: 75.85 sec | imp: 7.47%
+
+
+<<< TESTING 6.csv ON SOLMAX 9 >>>
+nearest:
+-- genCost: 1645.29 units | lkCost: 1526.12 units | genTime: 0.0 sec | lkTime: 0.0 sec | totTime: 0.0 sec | imp: 7.24%
+farthest:
+-- genCost: 1526.12 units | lkCost: 1526.12 units | genTime: 0.0 sec | lkTime: 0.0 sec | totTime: 0.0 sec | imp: 0.0%
+
+
+<<< TESTING 11.csv ON SOLMAX 9 >>>
+nearest:
+-- genCost: 3215.95 units | lkCost: 2896.07 units | genTime: 0.0 sec | lkTime: 0.02 sec | totTime: 0.02 sec | imp: 9.95%
+farthest:
+-- genCost: 2896.07 units | lkCost: 2896.07 units | genTime: 0.0 sec | lkTime: 0.02 sec | totTime: 0.02 sec | imp: 0.0%
+
+
+<<< TESTING 14.csv ON SOLMAX 9 >>>
+nearest:
+-- genCost: 35.31 units | lkCost: 32.41 units | genTime: 0.0 sec | lkTime: 0.05 sec | totTime: 0.05 sec | imp: 8.21%
+farthest:
+-- genCost: 33.0 units | lkCost: 32.41 units | genTime: 0.0 sec | lkTime: 0.03 sec | totTime: 0.03 sec | imp: 1.78%
+
+
+<<< TESTING 26.csv ON SOLMAX 9 >>>
+nearest:
+-- genCost: 4345.05 units | lkCost: 3831.06 units | genTime: 0.02 sec | lkTime: 0.23 sec | totTime: 0.25 sec | imp: 11.83%
+farthest:
+-- genCost: 3986.74 units | lkCost: 3811.04 units | genTime: 0.03 sec | lkTime: 0.27 sec | totTime: 0.3 sec | imp: 4.41%
+
+
+<<< TESTING 29.csv ON SOLMAX 9 >>>
+nearest:
+-- genCost: 10211.18 units | lkCost: 9094.64 units | genTime: 0.03 sec | lkTime: 0.28 sec | totTime: 0.31 sec | imp: 10.93%
+farthest:
+-- genCost: 9379.05 units | lkCost: 9094.64 units | genTime: 0.05 sec | lkTime: 0.14 sec | totTime: 0.19 sec | imp: 3.03%
+
+
+<<< TESTING 48.csv ON SOLMAX 9 >>>
+nearest:
+-- genCost: 40763.44 units | lkCost: 33600.56 units | genTime: 0.09 sec | lkTime: 0.92 sec | totTime: 1.02 sec | imp: 17.57%
+farthest:
+-- genCost: 35667.75 units | lkCost: 33588.34 units | genTime: 0.17 sec | lkTime: 0.87 sec | totTime: 1.05 sec | imp: 5.83%
+
+
+<<< TESTING 52.csv ON SOLMAX 9 >>>
+nearest:
+-- genCost: 8980.92 units | lkCost: 7544.37 units | genTime: 0.13 sec | lkTime: 2.73 sec | totTime: 2.86 sec | imp: 16.0%
+farthest:
+-- genCost: 8120.63 units | lkCost: 7544.37 units | genTime: 0.2 sec | lkTime: 0.5 sec | totTime: 0.7 sec | imp: 7.1%
+
+
+<<< TESTING 76.csv ON SOLMAX 9 >>>
+nearest:
+-- genCost: 617.85 units | lkCost: 550.02 units | genTime: 0.3 sec | lkTime: 1.06 sec | totTime: 1.36 sec | imp: 10.98%
+farthest:
+-- genCost: 583.04 units | lkCost: 560.33 units | genTime: 0.69 sec | lkTime: 0.87 sec | totTime: 1.56 sec | imp: 3.9%
+
+
+<<< TESTING 100.csv ON SOLMAX 9 >>>
+nearest:
+-- genCost: 27658.58 units | lkCost: 21961.67 units | genTime: 0.73 sec | lkTime: 3.41 sec | totTime: 4.14 sec | imp: 20.6%
+farthest:
+-- genCost: 23374.36 units | lkCost: 22437.05 units | genTime: 1.91 sec | lkTime: 5.48 sec | totTime: 7.39 sec | imp: 4.01%
+
+
+<<< TESTING 105.csv ON SOLMAX 9 >>>
+nearest:
+-- genCost: 19025.54 units | lkCost: 14439.7 units | genTime: 0.83 sec | lkTime: 4.47 sec | totTime: 5.3 sec | imp: 24.1%
+farthest:
+-- genCost: 15372.38 units | lkCost: 14383.0 units | genTime: 2.19 sec | lkTime: 4.05 sec | totTime: 6.23 sec | imp: 6.44%
+
+
+<<< TESTING 107.csv ON SOLMAX 9 >>>
+nearest:
+-- genCost: 47464.79 units | lkCost: 44659.4 units | genTime: 0.89 sec | lkTime: 43.43 sec | totTime: 44.32 sec | imp: 5.91%
+farthest:
+-- genCost: 45528.87 units | lkCost: 44436.24 units | genTime: 2.28 sec | lkTime: 23.04 sec | totTime: 25.32 sec | imp: 2.4%
+
+
+<<< TESTING 120.csv ON SOLMAX 9 >>>
+nearest:
+-- genCost: 2162.84 units | lkCost: 1627.36 units | genTime: 1.11 sec | lkTime: 9.33 sec | totTime: 10.44 sec | imp: 24.76%
+farthest:
+-- genCost: 1712.48 units | lkCost: 1632.38 units | genTime: 3.55 sec | lkTime: 4.56 sec | totTime: 8.11 sec | imp: 4.68%
+
+
+<<< TESTING 152.txt ON SOLMAX 9 >>>
+nearest:
+-- genCost: 85314.25 units | lkCost: 78921.3 units | genTime: 2.55 sec | lkTime: 48.95 sec | totTime: 51.49 sec | imp: 7.49%
+farthest:
+-- genCost: 75209.36 units | lkCost: 74288.53 units | genTime: 8.16 sec | lkTime: 40.56 sec | totTime: 48.71 sec | imp: 1.22%
+
+
+<<< TESTING 195.csv ON SOLMAX 9 >>>
+nearest:
+-- genCost: 2789.12 units | lkCost: 2347.9 units | genTime: 4.77 sec | lkTime: 5.17 sec | totTime: 9.94 sec | imp: 15.82%
+farthest:
+-- genCost: 2599.67 units | lkCost: 2361.08 units | genTime: 19.34 sec | lkTime: 3.37 sec | totTime: 22.72 sec | imp: 9.18%
+
+
+<<< TESTING 200.txt ON SOLMAX 9 >>>
+nearest:
+-- genCost: 37249.32 units | lkCost: 30262.41 units | genTime: 5.9 sec | lkTime: 19.58 sec | totTime: 25.48 sec | imp: 18.76%
+farthest:
+-- genCost: 31655.65 units | lkCost: 29903.32 units | genTime: 24.39 sec | lkTime: 14.09 sec | totTime: 38.49 sec | imp: 5.54%
+
+
+<<< TESTING 225.txt ON SOLMAX 9 >>>
+nearest:
+-- genCost: 4719.79 units | lkCost: 3883.23 units | genTime: 7.56 sec | lkTime: 16.05 sec | totTime: 23.61 sec | imp: 17.72%
+farthest:
+-- genCost: 4159.5 units | lkCost: 3946.58 units | genTime: 34.59 sec | lkTime: 17.14 sec | totTime: 51.73 sec | imp: 5.12%
+
+
+<<< TESTING 299.txt ON SOLMAX 9 >>>
+nearest:
+-- genCost: 61017.01 units | lkCost: 48910.6 units | genTime: 19.19 sec | lkTime: 35.18 sec | totTime: 54.37 sec | imp: 19.84%
+farthest:
+-- genCost: 52562.92 units | lkCost: 49410.73 units | genTime: 99.9 sec | lkTime: 33.14 sec | totTime: 133.04 sec | imp: 6.0%
+
+
+<<< TESTING 318.txt ON SOLMAX 9 >>>
+nearest:
+-- genCost: 51640.27 units | lkCost: 42831.0 units | genTime: 23.29 sec | lkTime: 60.45 sec | totTime: 83.74 sec | imp: 17.06%
+farthest:
+-- genCost: 45874.74 units | lkCost: 43250.44 units | genTime: 127.16 sec | lkTime: 155.2 sec | totTime: 282.35 sec | imp: 5.72%
+
+
+<<< TESTING 439.txt ON SOLMAX 9 >>>
+nearest:
+-- genCost: 131702.57 units | lkCost: 112846.4 units | genTime: 62.61 sec | lkTime: 245.16 sec | totTime: 307.78 sec | imp: 14.32%
+farthest:
+-- genCost: 122899.09 units | lkCost: 112320.39 units | genTime: 433.21 sec | lkTime: 215.16 sec | totTime: 648.38 sec | imp: 8.61%
+
+
+<<< TESTING 575.txt ON SOLMAX 9 >>>
+nearest:
+-- genCost: 8368.6 units | lkCost: 6931.13 units | genTime: 127.77 sec | lkTime: 131.65 sec | totTime: 259.42 sec | imp: 17.18%
+farthest:
+-- genCost: 7542.52 units | lkCost: 6969.05 units | genTime: 0.0 sec | lkTime: 83.51 sec | totTime: 83.51 sec | imp: 7.6%
