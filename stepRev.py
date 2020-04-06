@@ -2,6 +2,17 @@ import arr
 import staticVars as sv
 from lkUtils import *
 
+def gui(tour, lines):
+    #draw vertices
+    for coord in sv.guiCoords:
+      index = sv.guiCoords.index(coord)
+      name = sv.cityNames[index]
+      sv.wndw.create_oval((coord[0]-3, coord[1]-3, coord[0] + 3, coord[1] + 3), fill = "red")
+      sv.wndw.create_text(coord[0], coord[1] - 12, fill = "black", font = "Times 10 bold", text = name)
+
+    #draw edges
+    lines = addLines(tour, lines, 1, "black")
+    
 def findCandidates(vert, bFactor, node):
     #unhighlight unused node
     # unusedX = sv.guiCoords[unused][0]
