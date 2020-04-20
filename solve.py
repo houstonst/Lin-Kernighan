@@ -1,6 +1,7 @@
 import time, os
 from reader import *
 from euclidean import *
+from tkinter import *
 
 def solve():
     #clear the console
@@ -65,6 +66,13 @@ def solve():
     end = time.time()
     runtime = end - start
 
+    #run gui
+    root = Tk()
+    root.title("Lin-Kernighan")
+    root.iconbitmap('./graphics/favicon.ico')
+    wndw = Canvas(root, width = sv.width, height = sv.height)
+    wndw.pack(expand = YES, fill=BOTH)
+
     #run lin-kernighan
-    print("<<< RUN LIN-KERNIGHAN ON PROBLEM {} >>>".format(inp))
-    lin(tour, cost, solmax, runtime, option)
+    print("<<< RUNNING LIN-KERNIGHAN ON PROBLEM {} >>>".format(inp))
+    lin(tour, cost, solmax, runtime, option, root, wndw)

@@ -92,11 +92,11 @@ def inSet(nodeSet, edge):
 
 
 #update the GUI with lines
-def addLines(nodeArray, lines, width, color):
+def addLines(nodeArray, lines, width, color, wndw):
     for i in range(len(nodeArray)-1):
       node = nodeArray[i]
       nxt = nodeArray[i+1]
-      a = sv.wndw.create_line(sv.guiCoords[node][0], sv.guiCoords[node][1], sv.guiCoords[nxt][0], sv.guiCoords[nxt][1], fill = color, width = width)
+      a = wndw.create_line(sv.guiCoords[node][0], sv.guiCoords[node][1], sv.guiCoords[nxt][0], sv.guiCoords[nxt][1], fill = color, width = width)
       lines.update({(node, nxt): a})
       lines.update({(nxt, node): a})
 

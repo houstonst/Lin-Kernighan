@@ -4,7 +4,7 @@ from stepFuncs import *
 from lkUtils import *
 from loopFuncs import *
 
-def lin(tour, genCost, solmax, genTime, option):
+def lin(tour, genCost, solmax, genTime, option, root, wndw):
     start = time.time()
 
     #store best tour seen across entire LK heuristic
@@ -41,9 +41,9 @@ def lin(tour, genCost, solmax, genTime, option):
 
     #GUI
     if option != "test1" and option != "test2":
-        gui([], {})
-        addLines(retVal.array, {}, 4, "light green")
-        addLines(originalBest.array, {}, 1, "black")
-        sv.root.mainloop()
+        gui([], {}, wndw)
+        addLines(retVal.array, {}, 4, "light green", wndw)
+        addLines(originalBest.array, {}, 1, "black", wndw)
+        root.mainloop()
 
     return round(retVal.cost, 2)

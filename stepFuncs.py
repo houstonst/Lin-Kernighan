@@ -2,25 +2,19 @@ import arr
 import staticVars as sv
 from lkUtils import *
 
-def gui(tour, lines):
+def gui(tour, lines, wndw):
     #draw vertices
     for coord in sv.guiCoords:
       index = sv.guiCoords.index(coord)
       name = sv.cityNames[index]
-      sv.wndw.create_oval((coord[0]-3, coord[1]-3, coord[0] + 3, coord[1] + 3), fill = "red")
-      sv.wndw.create_text(coord[0], coord[1] - 12, fill = "black", font = "Times 10 bold", text = name)
+      wndw.create_oval((coord[0]-3, coord[1]-3, coord[0] + 3, coord[1] + 3), fill = "red")
+      wndw.create_text(coord[0], coord[1] - 12, fill = "black", font = "Times 10 bold", text = name)
 
     #draw edges
-    lines = addLines(tour, lines, 1, "black")
+    lines = addLines(tour, lines, 1, "black", wndw)
     
 def findCandidates(vert, bFactor, node):
-    #unhighlight unused node
-    # unusedX = sv.guiCoords[unused][0]
-    # unusedY = sv.guiCoords[unused][1]
-    # sv.wndw.create_oval((unusedX-3, unusedY-3, unusedX + 3, unusedY + 3), fill = "red")
-
     #find candidates
-    # print("-Find specified number of candidates from node {}".format(node))
     path = vert.array
     candidates = []
     nodeSublist = sv.wg[node]
@@ -33,7 +27,6 @@ def findCandidates(vert, bFactor, node):
         candidates.sort(key = lambda c:c[1])
         candidates = candidates[:bFactor]
     except: #no candidates exist
-        # print("--No existing candidates\n")
         pass
 
     return candidates

@@ -46,7 +46,7 @@ def randTest():
         for i in range(iteration):
             print("-running iteration {}".format(i+1))
             randTour, randCost = randomTour(sv.rawCoords, sv.cityNames, False)
-            cost = lin(randTour, randCost, solmax, 0, "test2")
+            cost = lin(randTour, randCost, solmax, 0, "test2", None, None)
             if cost < bestCost:
                 bestCost = cost
         print("-best cost: {}\n".format(bestCost)) 

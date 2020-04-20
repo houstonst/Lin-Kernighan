@@ -47,7 +47,7 @@ def genTest():
                 runtime = end - start
 
                 #run lin-kernighan
-                lin(tour, cost, solmax, runtime, "test1")
+                lin(tour, cost, solmax, runtime, "test1", None, None)
 
             if algos[k] == "nearest" or algos[k] == "farthest":
                 print("\n")

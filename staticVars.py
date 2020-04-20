@@ -3,14 +3,9 @@ from screeninfo import get_monitors
 
 """ ONLY STORE STATIC VARIABLES """
 #GUI variables
-# root = Tk()
 monitors = get_monitors()
 height = monitors[0].height- 200
 width = height
-# root.title("Lin-Kernighan")
-# root.iconbitmap('./graphics/favicon.ico')
-# wndw = Canvas(root, width = width, height = height)
-# wndw.pack(expand = YES, fill=BOTH)
 
 #weighted graph
 wg = [] #initially empty. Modified by main.py
