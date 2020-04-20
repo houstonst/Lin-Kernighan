@@ -13,7 +13,8 @@ def test1():
 
     #iterate through files and run lin-kernighan
     files = ["6.csv", "11.csv", "14.csv", "26.csv", "29.csv", "48.csv", "52.csv", "76.csv", "100.csv", "105.csv", "107.csv", "120.csv", "152.txt", "195.csv", "200.txt", "225.txt", "299.txt", "318.txt", "439.txt", "575.txt"]
-    algos = ["nearest", "farthest"]
+    # algos = ["nearest", "farthest", "random"]
+    algos = ["random"]
     for solmax in range (1, 10, 2):
         for j in range(len(files)):
             #cooldown
@@ -52,5 +53,5 @@ def test1():
                 runtime = end - start
 
                 #run lin-kernighan
-                lin(tour, cost, solmax, runtime, "test")
+                lin(tour, cost, solmax, runtime, "test1")
             print("\n")

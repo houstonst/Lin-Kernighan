@@ -24,14 +24,21 @@ def lin(tour, genCost, solmax, genTime, option):
     end = time.time()
     runtime = end - start
     trim = genCost - retVal.cost
-    if option != "test1":
+    if option != "test1" and option != "test2":
+        #Print Data
         print("LK Best Cost: {} units".format(round(retVal.cost)))
         print("Lin-Kernighan runtime: {} sec".format(round(runtime)))
         print("Total runtime: {} sec\n".format(round(genTime + runtime)))
         print("<<< IMPROVEMENTS >>>")
         print("Trimmed: {} units".format(round(trim)))
         print("Reduced by: {}%".format(round(trim/genCost*100)))
-        return retVal.cost
+        
+        #GUI
+        gui([], {})
+        addLines(retVal.array, {}, 4, "light green")
+        addLines(originalBest.array, {}, 1, "black")
+        sv.root.mainloop()
+    
     else:
         print("-- genCost: {} units | lkCost: {} units | genTime: {} sec | lkTime: {} sec | totTime: {} sec | imp: {}%".format(
             round(genCost, 2),
@@ -41,13 +48,3 @@ def lin(tour, genCost, solmax, genTime, option):
             round(genTime + runtime, 2),
             round(trim/genCost*100, 2)
         ))
-    
-    #update GUI
-    if option != "test":
-        gui([], {})
-        addLines(retVal.array, {}, 4, "light green")
-        addLines(originalBest.array, {}, 1, "black")
-
-    #loop GUI
-    if option != "test":
-        sv.root.mainloop()

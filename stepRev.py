@@ -32,7 +32,6 @@ def findCandidates(vert, bFactor, node):
     try: #candidates populated correctly
         candidates.sort(key = lambda c:c[1])
         candidates = candidates[:bFactor]
-        # print("--Candidates: {}\n".format(stringify(candidates)))
     except: #no candidates exist
         # print("--No existing candidates\n")
         pass
@@ -40,6 +39,8 @@ def findCandidates(vert, bFactor, node):
     return candidates
 
 def removeEdge(struct, edge):
+    if edge == (431, 396) or edge == (396, 431):
+        print("HERE")
     struct.array = removeUtil(struct.array, edge)
     if isinstance(struct, arr.Tour):
         removed = set()

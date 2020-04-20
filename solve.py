@@ -50,7 +50,7 @@ def solve(filepath):
     elif algo == "nearest":
         tour, cost = nearestNeighbor(sv.rawCoords, sv.guiCoords, sv.cityNames, sv.height, sv.width, "2", False)
     elif algo == "fixed":
-        tour = [5,3,13,8,10,1,11,9,12,2,7,0,6,4,5] #14
+        tour = [0,5,42,24,10,45,35,4,26,2,29,34,41,16,22,3,23,14,25,13,11,12,15,40,9,1,8,38,31,44,18,7,28,6,37,19,27,17,43,30,36,46,33,20,47,21,32,39,0]
         cost = calculate(tour)
     else:
         tour, cost = randomTour(sv.rawCoords, sv.cityNames, False)
