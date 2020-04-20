@@ -2,7 +2,7 @@ import time, os
 from reader import *
 from euclidean import *
 
-def test2():
+def randTest():
     #clear the console
     clear = lambda: os.system('cls')
     clear()

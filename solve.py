@@ -2,12 +2,17 @@ import time, os
 from reader import *
 from euclidean import *
 
-def solve(filepath):
+def solve():
     #clear the console
     clear = lambda: os.system('cls')
     clear()
     
     #accept input
+    print("Enter a .csv or .txt file [example.csv or example.txt]:\n")
+    inp = input()
+    filepath = "./tests/" + inp
+    clear()
+
     print("Pick a path generation algorithm (random by default):")
     print("""-farthest: Farthest Insertion
 -nearest: Nearest Neighbor
@@ -59,10 +64,7 @@ def solve(filepath):
     #print tour info
     end = time.time()
     runtime = end - start
-    print("Initial Cost: {} units".format(round(cost)))
-    print("Initial Tour: {}".format(stringify(tour)))
-    print("Tour generation runtime: {} sec\n".format(round(runtime)))
 
     #run lin-kernighan
-    print("<<< RUN LIN-KERNIGHAN (SOLMAX = {})>>>".format(solmax))
+    print("<<< RUN LIN-KERNIGHAN ON PROBLEM {} >>>".format(inp))
     lin(tour, cost, solmax, runtime, option)

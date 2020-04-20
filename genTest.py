@@ -2,7 +2,7 @@ import time, os
 from reader import *
 from euclidean import *
 
-def test1():
+def genTest():
     #import after accepting input or else GUI runs annoyingly
     from lk import lin
     import staticVars as sv
