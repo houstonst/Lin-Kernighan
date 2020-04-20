@@ -7,6 +7,7 @@ def solve(filepath):
     clear = lambda: os.system('cls')
     clear()
     
+    #accept input
     print("Pick a path generation algorithm (random by default):")
     print("""-farthest: Farthest Insertion
 -nearest: Nearest Neighbor
@@ -30,7 +31,7 @@ def solve(filepath):
     option = "step"
 
     #import after accepting input or else GUI runs annoyingly
-    from revision import lin
+    from lk import lin
     import staticVars as sv
     from genAlgos.fi import farthestInsertion
     from genAlgos.nn import nearestNeighbor

@@ -4,7 +4,7 @@ from euclidean import *
 
 def test1():
     #import after accepting input or else GUI runs annoyingly
-    from revision import lin
+    from lk import lin
     import staticVars as sv
     from genAlgos.fi import farthestInsertion
     from genAlgos.nn import nearestNeighbor
@@ -13,15 +13,9 @@ def test1():
 
     #iterate through files and run lin-kernighan
     files = ["6.csv", "11.csv", "14.csv", "26.csv", "29.csv", "48.csv", "52.csv", "76.csv", "100.csv", "105.csv", "107.csv", "120.csv", "152.txt", "195.csv", "200.txt", "225.txt", "299.txt", "318.txt", "439.txt", "575.txt"]
-    # algos = ["nearest", "farthest", "random"]
-    algos = ["random"]
+    algos = ["nearest", "farthest", "random"]
     for solmax in range (1, 10, 2):
         for j in range(len(files)):
-            #cooldown
-            if j > 6:
-                # seconds = i**2
-                # sleeper(seconds)
-                pass
 
             #execute
             print("<<< TESTING {} ON SOLMAX {} >>>".format(files[j], solmax))
@@ -54,4 +48,6 @@ def test1():
 
                 #run lin-kernighan
                 lin(tour, cost, solmax, runtime, "test1")
-            print("\n")
+
+            if algos[k] == "nearest" or algos[k] == "farthest":
+                print("\n")

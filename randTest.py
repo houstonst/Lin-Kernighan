@@ -3,12 +3,36 @@ from reader import *
 from euclidean import *
 
 def test2():
+    #clear the console
+    clear = lambda: os.system('cls')
+    clear()
+    
+    #accept input
+    print("Enter a .csv or .txt file [example.csv or example.txt]:\n")
+    inp = input()
+    filepath = "./tests/" + inp
+    clear()
+
+    print("Enter maximum number of random tours to improve:\n")
+    rawCap = input()
+    cap = int(rawCap)
+    clear()
+
+    print("Enter increment value for number of random tours to improve:\n")
+    rawInc = input()
+    inc = int(rawInc)
+    clear()
+
+    print("Choose a solmax:\n")
+    rawsol = input()
+    solmax = int(rawsol)
+    clear()
+
     #import after accepting input or else GUI runs annoyingly
-    from revision import lin
+    from lk import lin
     import staticVars as sv
     from lkUtils import calculate, stringify, sleeper
     from genAlgos.rand import randomTour
-    filepath = './tests/100.csv'
 
     #form GUI and weighted graph
     sv.cityNames, sv.rawCoords, sv.guiCoords = reader(filepath, sv.height, sv.width)
@@ -16,14 +40,13 @@ def test2():
 
     #iterate through random tours
     bestCost = 999999999
-    iterationList = [1, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+    iterationList = [i for i in range(1, cap+1, inc)]
     for iteration in iterationList:
-        print("<<< {} iteration cap >>>".format(iteration))
+        print("<<< {} RANDOM TOUR(S) >>>".format(iteration))
         for i in range(iteration):
-            print("-Running iteration {}".format(i))
+            print("-running iteration {}".format(i+1))
             randTour, randCost = randomTour(sv.rawCoords, sv.cityNames, False)
-            cost = lin(randTour, randCost, 1, 0, "test")
-            print("--Iteration cost: {}".format(cost))
+            cost = lin(randTour, randCost, solmax, 0, "test2")
             if cost < bestCost:
                 bestCost = cost
-        print("-Best Cost: {}\n".format(bestCost)) 
+        print("-best cost: {}\n".format(bestCost)) 

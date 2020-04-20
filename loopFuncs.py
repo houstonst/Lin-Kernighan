@@ -1,5 +1,5 @@
 from lkUtils import *
-from stepRev import *
+from stepFuncs import *
 import copy
 
 def sweep(best, solmax):
