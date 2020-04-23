@@ -43,10 +43,10 @@ def fitter(coords, GUIheight, GUIwidth, file): #force coordinates to fit GUI win
   arbitraryXdiff = maxX - arbitraryXstart
   arbitraryYdiff = maxY - arbitraryYstart
 
-  if arbitraryXdiff > 0 and arbitraryXdiff > arbitraryYdiff:
+  if arbitraryXdiff > 0 and arbitraryXdiff >= arbitraryYdiff:
     #shrink on x
     multiplier = (GUIwidth - 200)/(maxX - minX)
-  elif arbitraryXdiff < 0 and arbitraryXdiff > arbitraryYdiff:
+  elif arbitraryXdiff < 0 and arbitraryXdiff >= arbitraryYdiff:
     #expand on x
     multiplier = (GUIwidth - 200)/(maxX - minX)
   elif arbitraryYdiff > 0 and arbitraryYdiff > arbitraryXdiff:
