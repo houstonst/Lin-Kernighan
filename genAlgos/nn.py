@@ -51,7 +51,6 @@ def nearestNeighbor(initCoords, graph, nameArray, height, width, option, printDa
   wg = weightedGraph(initCoords)
 
   while len(paths) < 1: #build paths
-    # temp = random.randrange(len(graph))
     temp = 0
     if [temp] not in paths:
       paths += [[temp]]

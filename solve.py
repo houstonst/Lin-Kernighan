@@ -26,16 +26,6 @@ def solve():
     solmax = int(rawsol)
     clear()
 
-#     print("Pick to run in step mode, at pace, or fast as possible:")
-#     print("""-step
-# -slow
-# -medium
-# -fast
-# -max"\n"")
-    # option = input()
-    # clear()
-    option = "step"
-
     #import after accepting input or else GUI runs annoyingly
     from lk import lin
     import staticVars as sv
@@ -71,8 +61,9 @@ def solve():
     root.title("Lin-Kernighan")
     root.iconbitmap('./graphics/favicon.ico')
     wndw = Canvas(root, width = sv.width, height = sv.height)
+    wndw.configure(bg = "white")
     wndw.pack(expand = YES, fill=BOTH)
 
     #run lin-kernighan
     print("<<< RUNNING LIN-KERNIGHAN ON PROBLEM {} >>>".format(inp))
-    lin(tour, cost, solmax, runtime, option, root, wndw)
+    lin(tour, cost, solmax, runtime, None, root, wndw)

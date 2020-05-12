@@ -71,7 +71,6 @@ def checkTour(vert):
 def deltaOps(vert, candidate, reverse):
     edgeAdded = addEdge(vert, candidate, reverse)
     if edgeAdded:
-        # print("Edge {} added for gain-sum {}".format(candidate[0], vert.gainSum))
         breakDelta(vert)
         checkedTour, checkedCost = checkTour(vert)
         return checkedTour, checkedCost

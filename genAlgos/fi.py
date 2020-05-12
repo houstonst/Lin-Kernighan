@@ -2,8 +2,6 @@ from lkUtils import stringify
 from tkinter import *
 from euclidean import *
 
-# from tsp import *
-
 def initTour(weightedGraph): #finds initial tour and cost between the two furthest away points
   maxVal = 0                 
   r = 0
